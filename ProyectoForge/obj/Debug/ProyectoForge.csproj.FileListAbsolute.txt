@@ -8,3 +8,4 @@ C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug
 C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.pdb
 C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.csprojResolveAssemblyReference.cache
 C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.picForge.resources
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.MainMenu.resources

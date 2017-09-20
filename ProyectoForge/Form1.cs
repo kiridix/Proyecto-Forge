@@ -21,5 +21,11 @@ namespace ProyectoForge
         {
             this.Close();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuPrincipal.Show();
+        }
     }
 }

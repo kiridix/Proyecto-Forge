@@ -34,10 +34,10 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblRol = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
-            this.panelPassword = new System.Windows.Forms.Panel();
-            this.panelRol = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panelPassword = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panelRol = new System.Windows.Forms.Panel();
             this.cboxRol = new System.Windows.Forms.ComboBox();
             this.llblForgotPassword = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -123,28 +123,6 @@
             this.panelUser.Size = new System.Drawing.Size(267, 42);
             this.panelUser.TabIndex = 6;
             // 
-            // panelPassword
-            // 
-            this.panelPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPassword.Controls.Add(this.textBox2);
-            this.panelPassword.Controls.Add(this.picPassword);
-            this.panelPassword.Location = new System.Drawing.Point(-3, 241);
-            this.panelPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelPassword.Name = "panelPassword";
-            this.panelPassword.Size = new System.Drawing.Size(267, 42);
-            this.panelPassword.TabIndex = 7;
-            // 
-            // panelRol
-            // 
-            this.panelRol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelRol.Controls.Add(this.cboxRol);
-            this.panelRol.Controls.Add(this.picRol);
-            this.panelRol.Location = new System.Drawing.Point(-3, 342);
-            this.panelRol.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelRol.Name = "panelRol";
-            this.panelRol.Size = new System.Drawing.Size(267, 42);
-            this.panelRol.TabIndex = 8;
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
@@ -156,6 +134,17 @@
             this.textBox1.Size = new System.Drawing.Size(200, 16);
             this.textBox1.TabIndex = 7;
             // 
+            // panelPassword
+            // 
+            this.panelPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPassword.Controls.Add(this.textBox2);
+            this.panelPassword.Controls.Add(this.picPassword);
+            this.panelPassword.Location = new System.Drawing.Point(-3, 241);
+            this.panelPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelPassword.Name = "panelPassword";
+            this.panelPassword.Size = new System.Drawing.Size(267, 42);
+            this.panelPassword.TabIndex = 7;
+            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
@@ -164,8 +153,21 @@
             this.textBox2.Location = new System.Drawing.Point(61, 13);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(200, 16);
             this.textBox2.TabIndex = 8;
+            this.textBox2.UseSystemPasswordChar = true;
+            // 
+            // panelRol
+            // 
+            this.panelRol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRol.Controls.Add(this.cboxRol);
+            this.panelRol.Controls.Add(this.picRol);
+            this.panelRol.Location = new System.Drawing.Point(-3, 342);
+            this.panelRol.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelRol.Name = "panelRol";
+            this.panelRol.Size = new System.Drawing.Size(267, 42);
+            this.panelRol.TabIndex = 8;
             // 
             // cboxRol
             // 
@@ -292,6 +294,7 @@
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIngresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // picRol
             // 

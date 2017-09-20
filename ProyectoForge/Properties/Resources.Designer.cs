@@ -113,9 +113,29 @@ namespace ProyectoForge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Profile_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Profile-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Queue_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Queue-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Resume_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Resume-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
