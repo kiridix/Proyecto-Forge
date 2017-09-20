@@ -1,0 +1,10 @@
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\bin\Debug\ProyectoForge.exe.config
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\bin\Debug\ProyectoForge.exe
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\bin\Debug\ProyectoForge.pdb
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.Properties.Resources.resources
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.csproj.GenerateResource.Cache
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.exe
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.pdb
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\source\repos\Proyecto Forge\ProyectoForge\ProyectoForge\obj\Debug\ProyectoForge.picForge.resources
