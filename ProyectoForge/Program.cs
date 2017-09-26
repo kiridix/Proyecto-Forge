@@ -16,7 +16,7 @@ namespace ProyectoForge
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new picForge());
+            Application.Run(new Login());
         }
     }
 }

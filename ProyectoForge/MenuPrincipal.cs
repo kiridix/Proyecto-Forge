@@ -10,26 +10,28 @@ using System.Windows.Forms;
 
 namespace ProyectoForge
 {
-    public partial class MainMenu : Form
+    public partial class MenuPrincipal : Form
     {
-        public MainMenu()
+        public MenuPrincipal()
         {
             InitializeComponent();
         }
 
         private void MainMenu_MouseClick(object sender, MouseEventArgs e)
         {
-
+            cerrarMenu();
         }
         public void cerrarMenu()
         {
-            if (PanelMenu.Width == 150)
-            {
-                PanelMenu.Width = 67;
+                PanelMenu.Width = 88;
                 picLogo.Visible = false;
-            }
         }
+        public void abrirMenu()
+        {
+                PanelMenu.Width = 215;
+                picLogo.Visible = true;
 
+        }
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
         {
 
@@ -37,12 +39,32 @@ namespace ProyectoForge
 
         private void PanelMenu_MouseHover(object sender, EventArgs e)
         {
-            if (PanelMenu.Width == 67)
-            {
-                PanelMenu.Width = 150;
-                picLogo.Visible = true;
+            abrirMenu();
+        }
 
-            }
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPostulantes_MouseHover(object sender, EventArgs e)
+        {
+            abrirMenu();
+        }
+
+        private void btnEntrevistas_MouseHover(object sender, EventArgs e)
+        {
+            abrirMenu();
+        }
+
+        private void btnCurriculums_MouseHover(object sender, EventArgs e)
+        {
+            abrirMenu();
+        }
+
+        private void btnPostulantes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
