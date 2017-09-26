@@ -19,3 +19,14 @@ C:\Users\Forge082015\Desktop\Proyecto-Forge\ProyectoForge\bin\Debug\ProyectoForg
 C:\Users\Forge082015\Desktop\Proyecto-Forge\ProyectoForge\bin\Debug\ProyectoForge.pdb
 C:\Users\Forge082015\Desktop\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.Login.resources
 C:\Users\Forge082015\Desktop\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.MenuPrincipal.resources
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\bin\Debug\ProyectoForge.exe.config
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\bin\Debug\ProyectoForge.exe
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\bin\Debug\ProyectoForge.pdb
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.csprojResolveAssemblyReference.cache
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.Login.resources
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.MenuPrincipal.resources
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.Properties.Resources.resources
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.GenerateResource.Cache
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.CoreCompileInputs.cache
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.exe
+C:\Users\nickp\OneDrive\Documentos\GitHub\Proyecto-Forge\ProyectoForge\obj\Debug\ProyectoForge.pdb
