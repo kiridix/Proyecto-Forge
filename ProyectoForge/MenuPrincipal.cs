@@ -118,6 +118,7 @@ namespace ProyectoForge
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
 
         private void BajaSolicitudEmpresa_Click(object sender, EventArgs e)
