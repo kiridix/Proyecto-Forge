@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoForge
 {
     public partial class MenuPrincipal : Form
     {
+        public int menuOption = 0;
         public MenuPrincipal()
         {
             InitializeComponent();
+            TabMain.SelectTab(2);
         }
 
         private void MainMenu_MouseClick(object sender, MouseEventArgs e)
@@ -23,13 +18,26 @@ namespace ProyectoForge
         }
         public void cerrarMenu()
         {
-                PanelMenu.Width = 88;
-                picLogo.Visible = false;
+            PanelMenu.Width = 78;
+            picLogo.Visible = false;
+            Line1.Visible = false;
+            Line2.Visible = false;
+            btnCrear.Visible = false;
+            btnEliminar.Visible = false;
+            btnModificar.Visible = false;
+
+
+
         }
         public void abrirMenu()
         {
                 PanelMenu.Width = 215;
                 picLogo.Visible = true;
+            Line1.Visible = true;
+            Line2.Visible = true;
+            btnCrear.Visible = true;
+            btnEliminar.Visible = true;
+            btnModificar.Visible = true;
 
         }
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
@@ -64,7 +72,7 @@ namespace ProyectoForge
 
         private void btnPostulantes_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(0);
+            menuOption = 1;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -104,7 +112,72 @@ namespace ProyectoForge
 
         private void btnEntrevistas_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(1);
+            menuOption = 2;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BajaSolicitudEmpresa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonSolicitudNacional_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            menuOption = 4;
+        }
+
+        private void btnCurriculums_Click(object sender, EventArgs e)
+        {
+            menuOption = 3;
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            switch (menuOption)
+            {
+                case 4: TabMain.SelectTab(0);
+                    break;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            switch (menuOption)
+            {
+                case 4:
+                    TabMain.SelectTab(1);
+                    break;
+            }
+        }
+
+        private void tabPage1_MouseHover(object sender, EventArgs e)
+        {
+            cerrarMenu();
+
         }
     }
 }

@@ -103,6 +103,16 @@ namespace ProyectoForge.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_New_Message_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-New Message-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Password_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Password-64", resourceCulture);
