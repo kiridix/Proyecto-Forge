@@ -64,7 +64,7 @@ namespace ProyectoForge
 
         private void btnPostulantes_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectTab(0);
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -80,6 +80,31 @@ namespace ProyectoForge
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+            cerrarMenu();
+        }
+
+        private void tabPage1_MouseClick(object sender, MouseEventArgs e)
+        {
+            cerrarMenu();
+        }
+
+        private void tabPage2_MouseClick(object sender, MouseEventArgs e)
+        {
+            cerrarMenu();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrevistas_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
         }
     }
 }
