@@ -62,3 +62,13 @@ C:\Users\Forgealumnos6\Desktop\lobaoihfg\Proyecto-forge\ProyectoForge\obj\Debug\
 C:\Users\Forgealumnos6\Desktop\lobaoihfg\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.MenuPrincipal.resources
 C:\Users\Forgealumnos6\Desktop\lobaoihfg\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.Properties.Resources.resources
 C:\Users\Forgealumnos6\Desktop\lobaoihfg\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.GenerateResource.Cache
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\bin\Debug\ProyectoForge.exe.config
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\bin\Debug\ProyectoForge.exe
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\bin\Debug\ProyectoForge.pdb
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csprojResolveAssemblyReference.cache
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.Login.resources
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.MenuPrincipal.resources
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.Properties.Resources.resources
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.GenerateResource.Cache
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.exe
+C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.pdb

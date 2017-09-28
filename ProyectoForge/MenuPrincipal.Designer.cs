@@ -156,9 +156,9 @@
             this.Line2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Line2.Location = new System.Drawing.Point(7, 464);
+            this.Line2.Location = new System.Drawing.Point(7, 555);
             this.Line2.Name = "Line2";
-            this.Line2.Size = new System.Drawing.Size(200, 2);
+            this.Line2.Size = new System.Drawing.Size(200, 3);
             this.Line2.TabIndex = 28;
             this.Line2.UseVisualStyleBackColor = true;
             // 
@@ -169,9 +169,9 @@
             this.Line1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Line1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Line1.Location = new System.Drawing.Point(7, 363);
+            this.Line1.Location = new System.Drawing.Point(7, 454);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(200, 2);
+            this.Line1.Size = new System.Drawing.Size(200, 3);
             this.Line1.TabIndex = 27;
             this.Line1.UseVisualStyleBackColor = true;
             // 
@@ -182,9 +182,9 @@
             this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(7, 433);
+            this.btnModificar.Location = new System.Drawing.Point(7, 524);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(200, 25);
+            this.btnModificar.Size = new System.Drawing.Size(200, 26);
             this.btnModificar.TabIndex = 26;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -196,9 +196,9 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(9, 400);
+            this.btnEliminar.Location = new System.Drawing.Point(9, 491);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(200, 25);
+            this.btnEliminar.Size = new System.Drawing.Size(200, 26);
             this.btnEliminar.TabIndex = 25;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -211,9 +211,9 @@
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrear.Location = new System.Drawing.Point(9, 367);
+            this.btnCrear.Location = new System.Drawing.Point(9, 458);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(200, 25);
+            this.btnCrear.Size = new System.Drawing.Size(200, 26);
             this.btnCrear.TabIndex = 23;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
@@ -229,10 +229,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ProyectoForge.Properties.Resources.icons8_Exit_50;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(6, 470);
+            this.button1.Location = new System.Drawing.Point(6, 572);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 50);
+            this.button1.Size = new System.Drawing.Size(203, 51);
             this.button1.TabIndex = 21;
             this.button1.Text = "Salir";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -341,7 +341,7 @@
             this.TabMain.Multiline = true;
             this.TabMain.Name = "TabMain";
             this.TabMain.SelectedIndex = 0;
-            this.TabMain.Size = new System.Drawing.Size(858, 558);
+            this.TabMain.Size = new System.Drawing.Size(858, 656);
             this.TabMain.TabIndex = 20;
             this.TabMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
             // 
@@ -376,7 +376,7 @@
             this.AltaSolicitudEmpresa.Location = new System.Drawing.Point(4, 25);
             this.AltaSolicitudEmpresa.Name = "AltaSolicitudEmpresa";
             this.AltaSolicitudEmpresa.Padding = new System.Windows.Forms.Padding(3);
-            this.AltaSolicitudEmpresa.Size = new System.Drawing.Size(850, 529);
+            this.AltaSolicitudEmpresa.Size = new System.Drawing.Size(850, 627);
             this.AltaSolicitudEmpresa.TabIndex = 0;
             this.AltaSolicitudEmpresa.Text = "Alta de solicitud de empresa";
             this.AltaSolicitudEmpresa.Click += new System.EventHandler(this.tabPage1_Click);
@@ -388,7 +388,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.button2.Location = new System.Drawing.Point(776, 263);
+            this.button2.Location = new System.Drawing.Point(776, 303);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(24, 25);
             this.button2.TabIndex = 29;
@@ -400,7 +400,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.button4.Location = new System.Drawing.Point(410, 264);
+            this.button4.Location = new System.Drawing.Point(410, 304);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(24, 25);
             this.button4.TabIndex = 28;
@@ -409,7 +409,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(604, 176);
+            this.panel11.Location = new System.Drawing.Point(604, 216);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(124, 2);
             this.panel11.TabIndex = 27;
@@ -417,7 +417,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(411, 176);
+            this.panel10.Location = new System.Drawing.Point(411, 216);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(124, 2);
             this.panel10.TabIndex = 26;
@@ -427,7 +427,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.panel9);
-            this.panel6.Location = new System.Drawing.Point(411, 140);
+            this.panel6.Location = new System.Drawing.Point(411, 180);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(317, 2);
             this.panel6.TabIndex = 25;
@@ -462,7 +462,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(411, 98);
+            this.panel1.Location = new System.Drawing.Point(411, 138);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(317, 2);
             this.panel1.TabIndex = 22;
@@ -497,7 +497,7 @@
             this.buttonASolicitudAceptar.BackColor = System.Drawing.Color.White;
             this.buttonASolicitudAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonASolicitudAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonASolicitudAceptar.Location = new System.Drawing.Point(440, 414);
+            this.buttonASolicitudAceptar.Location = new System.Drawing.Point(440, 454);
             this.buttonASolicitudAceptar.Name = "buttonASolicitudAceptar";
             this.buttonASolicitudAceptar.Size = new System.Drawing.Size(99, 26);
             this.buttonASolicitudAceptar.TabIndex = 21;
@@ -507,7 +507,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(509, 300);
+            this.dataGridView2.Location = new System.Drawing.Point(509, 340);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(306, 90);
             this.dataGridView2.TabIndex = 19;
@@ -515,7 +515,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(163, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(163, 340);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(306, 90);
             this.dataGridView1.TabIndex = 18;
@@ -524,7 +524,7 @@
             // 
             this.comboBoxASolicitudConocimientos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBoxASolicitudConocimientos.FormattingEnabled = true;
-            this.comboBoxASolicitudConocimientos.Location = new System.Drawing.Point(614, 261);
+            this.comboBoxASolicitudConocimientos.Location = new System.Drawing.Point(614, 301);
             this.comboBoxASolicitudConocimientos.Name = "comboBoxASolicitudConocimientos";
             this.comboBoxASolicitudConocimientos.Size = new System.Drawing.Size(156, 24);
             this.comboBoxASolicitudConocimientos.TabIndex = 15;
@@ -533,7 +533,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(490, 264);
+            this.label8.Location = new System.Drawing.Point(490, 304);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 20);
             this.label8.TabIndex = 14;
@@ -543,7 +543,7 @@
             // 
             this.comboBoxASolicitudEstudios.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBoxASolicitudEstudios.FormattingEnabled = true;
-            this.comboBoxASolicitudEstudios.Location = new System.Drawing.Point(240, 261);
+            this.comboBoxASolicitudEstudios.Location = new System.Drawing.Point(240, 301);
             this.comboBoxASolicitudEstudios.Name = "comboBoxASolicitudEstudios";
             this.comboBoxASolicitudEstudios.Size = new System.Drawing.Size(156, 24);
             this.comboBoxASolicitudEstudios.TabIndex = 13;
@@ -552,7 +552,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(156, 264);
+            this.label7.Location = new System.Drawing.Point(156, 304);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 20);
             this.label7.TabIndex = 12;
@@ -562,7 +562,7 @@
             // 
             this.radioButtonSolicitudInternacional.AutoSize = true;
             this.radioButtonSolicitudInternacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonSolicitudInternacional.Location = new System.Drawing.Point(502, 225);
+            this.radioButtonSolicitudInternacional.Location = new System.Drawing.Point(502, 265);
             this.radioButtonSolicitudInternacional.Name = "radioButtonSolicitudInternacional";
             this.radioButtonSolicitudInternacional.Size = new System.Drawing.Size(119, 24);
             this.radioButtonSolicitudInternacional.TabIndex = 11;
@@ -574,7 +574,7 @@
             // 
             this.radioButtonSolicitudNacional.AutoSize = true;
             this.radioButtonSolicitudNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonSolicitudNacional.Location = new System.Drawing.Point(274, 225);
+            this.radioButtonSolicitudNacional.Location = new System.Drawing.Point(274, 265);
             this.radioButtonSolicitudNacional.Name = "radioButtonSolicitudNacional";
             this.radioButtonSolicitudNacional.Size = new System.Drawing.Size(88, 24);
             this.radioButtonSolicitudNacional.TabIndex = 10;
@@ -589,7 +589,7 @@
             this.comboBoxASolicitudCondicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxASolicitudCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxASolicitudCondicion.FormattingEnabled = true;
-            this.comboBoxASolicitudCondicion.Location = new System.Drawing.Point(411, 190);
+            this.comboBoxASolicitudCondicion.Location = new System.Drawing.Point(411, 230);
             this.comboBoxASolicitudCondicion.Name = "comboBoxASolicitudCondicion";
             this.comboBoxASolicitudCondicion.Size = new System.Drawing.Size(317, 28);
             this.comboBoxASolicitudCondicion.TabIndex = 9;
@@ -599,7 +599,7 @@
             this.textBoxASolicitudMaximo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxASolicitudMaximo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxASolicitudMaximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxASolicitudMaximo.Location = new System.Drawing.Point(604, 156);
+            this.textBoxASolicitudMaximo.Location = new System.Drawing.Point(604, 196);
             this.textBoxASolicitudMaximo.Name = "textBoxASolicitudMaximo";
             this.textBoxASolicitudMaximo.Size = new System.Drawing.Size(124, 19);
             this.textBoxASolicitudMaximo.TabIndex = 8;
@@ -609,7 +609,7 @@
             this.textBoxASolicitudMinimo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxASolicitudMinimo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxASolicitudMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxASolicitudMinimo.Location = new System.Drawing.Point(411, 157);
+            this.textBoxASolicitudMinimo.Location = new System.Drawing.Point(411, 197);
             this.textBoxASolicitudMinimo.Name = "textBoxASolicitudMinimo";
             this.textBoxASolicitudMinimo.Size = new System.Drawing.Size(124, 19);
             this.textBoxASolicitudMinimo.TabIndex = 7;
@@ -619,7 +619,7 @@
             this.textBoxASolicitudNombreSolicitud.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxASolicitudNombreSolicitud.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxASolicitudNombreSolicitud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxASolicitudNombreSolicitud.Location = new System.Drawing.Point(411, 119);
+            this.textBoxASolicitudNombreSolicitud.Location = new System.Drawing.Point(411, 159);
             this.textBoxASolicitudNombreSolicitud.Name = "textBoxASolicitudNombreSolicitud";
             this.textBoxASolicitudNombreSolicitud.Size = new System.Drawing.Size(317, 19);
             this.textBoxASolicitudNombreSolicitud.TabIndex = 6;
@@ -631,7 +631,7 @@
             this.textBoxASolicitudNombreE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxASolicitudNombreE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxASolicitudNombreE.ForeColor = System.Drawing.Color.White;
-            this.textBoxASolicitudNombreE.Location = new System.Drawing.Point(411, 77);
+            this.textBoxASolicitudNombreE.Location = new System.Drawing.Point(411, 117);
             this.textBoxASolicitudNombreE.Name = "textBoxASolicitudNombreE";
             this.textBoxASolicitudNombreE.Size = new System.Drawing.Size(317, 19);
             this.textBoxASolicitudNombreE.TabIndex = 5;
@@ -640,7 +640,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(156, 193);
+            this.label6.Location = new System.Drawing.Point(156, 233);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(185, 20);
             this.label6.TabIndex = 4;
@@ -650,7 +650,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(535, 155);
+            this.label4.Location = new System.Drawing.Point(535, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 3;
@@ -660,7 +660,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(156, 155);
+            this.label3.Location = new System.Drawing.Point(156, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(182, 20);
             this.label3.TabIndex = 2;
@@ -670,7 +670,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(156, 118);
+            this.label2.Location = new System.Drawing.Point(156, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 20);
             this.label2.TabIndex = 1;
@@ -681,7 +681,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(156, 77);
+            this.label1.Location = new System.Drawing.Point(156, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 20);
             this.label1.TabIndex = 0;
@@ -815,7 +815,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(850, 529);
+            this.tabPage1.Size = new System.Drawing.Size(850, 627);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click_1);
