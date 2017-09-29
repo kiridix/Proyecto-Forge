@@ -72,3 +72,6 @@ C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.Prop
 C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.GenerateResource.Cache
 C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.exe
 C:\Users\matim\Desktop\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.pdb
+C:\Users\Valentina\Desktop\Forge\Proyecto-Forge-master\ProyectoForge\bin\Debug\ProyectoForge.exe.config
+C:\Users\Valentina\Desktop\Forge\Proyecto-Forge-master\ProyectoForge\obj\Debug\ProyectoForge.exe
+C:\Users\Valentina\Desktop\Forge\Proyecto-Forge-master\ProyectoForge\obj\Debug\ProyectoForge.pdb
