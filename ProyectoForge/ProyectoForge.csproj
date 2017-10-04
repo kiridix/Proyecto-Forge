@@ -122,5 +122,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-New Message-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Company-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Graduation Cap-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

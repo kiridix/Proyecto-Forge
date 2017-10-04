@@ -32,7 +32,6 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblRol = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,9 +40,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.picPassword = new System.Windows.Forms.PictureBox();
-            this.panelRol = new System.Windows.Forms.Panel();
-            this.cboxRol = new System.Windows.Forms.ComboBox();
-            this.picRol = new System.Windows.Forms.PictureBox();
             this.llblForgotPassword = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,8 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPassword)).BeginInit();
-            this.panelRol.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picRol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +60,7 @@
             this.PanelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelHeader.Location = new System.Drawing.Point(0, 0);
-            this.PanelHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelHeader.Margin = new System.Windows.Forms.Padding(2);
             this.PanelHeader.Name = "PanelHeader";
             this.PanelHeader.Size = new System.Drawing.Size(394, 6);
             this.PanelHeader.TabIndex = 0;
@@ -86,7 +80,7 @@
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(9, 67);
+            this.lblUser.Location = new System.Drawing.Point(9, 90);
             this.lblUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(123, 16);
@@ -97,31 +91,20 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(9, 135);
+            this.lblPassword.Location = new System.Drawing.Point(9, 158);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(77, 16);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Contraseña";
             // 
-            // lblRol
-            // 
-            this.lblRol.AutoSize = true;
-            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRol.Location = new System.Drawing.Point(9, 197);
-            this.lblRol.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(29, 16);
-            this.lblRol.TabIndex = 4;
-            this.lblRol.Text = "Rol";
-            // 
             // panelUser
             // 
             this.panelUser.Controls.Add(this.panel1);
             this.panelUser.Controls.Add(this.textBox1);
             this.panelUser.Controls.Add(this.picUser);
-            this.panelUser.Location = new System.Drawing.Point(-2, 82);
-            this.panelUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelUser.Location = new System.Drawing.Point(-2, 105);
+            this.panelUser.Margin = new System.Windows.Forms.Padding(2);
             this.panelUser.Name = "panelUser";
             this.panelUser.Size = new System.Drawing.Size(172, 26);
             this.panelUser.TabIndex = 6;
@@ -130,7 +113,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(49, 21);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(112, 2);
             this.panel1.TabIndex = 18;
@@ -141,7 +124,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(52, 6);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(105, 15);
             this.textBox1.TabIndex = 7;
@@ -150,7 +133,7 @@
             // 
             this.picUser.Image = global::ProyectoForge.Properties.Resources.icons8_User_50;
             this.picUser.Location = new System.Drawing.Point(10, 1);
-            this.picUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picUser.Margin = new System.Windows.Forms.Padding(2);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(24, 24);
             this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,8 +145,8 @@
             this.panelPassword.Controls.Add(this.panel2);
             this.panelPassword.Controls.Add(this.textBox2);
             this.panelPassword.Controls.Add(this.picPassword);
-            this.panelPassword.Location = new System.Drawing.Point(-2, 150);
-            this.panelPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelPassword.Location = new System.Drawing.Point(-2, 173);
+            this.panelPassword.Margin = new System.Windows.Forms.Padding(2);
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(172, 26);
             this.panelPassword.TabIndex = 7;
@@ -172,7 +155,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel2.Location = new System.Drawing.Point(50, 22);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(112, 2);
             this.panel2.TabIndex = 19;
@@ -184,7 +167,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(53, 8);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(105, 15);
@@ -195,59 +178,18 @@
             // 
             this.picPassword.Image = global::ProyectoForge.Properties.Resources.icons8_Password_64;
             this.picPassword.Location = new System.Drawing.Point(10, 1);
-            this.picPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPassword.Margin = new System.Windows.Forms.Padding(2);
             this.picPassword.Name = "picPassword";
             this.picPassword.Size = new System.Drawing.Size(24, 24);
             this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPassword.TabIndex = 6;
             this.picPassword.TabStop = false;
             // 
-            // panelRol
-            // 
-            this.panelRol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelRol.Controls.Add(this.cboxRol);
-            this.panelRol.Controls.Add(this.picRol);
-            this.panelRol.Location = new System.Drawing.Point(-2, 213);
-            this.panelRol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panelRol.Name = "panelRol";
-            this.panelRol.Size = new System.Drawing.Size(172, 26);
-            this.panelRol.TabIndex = 8;
-            // 
-            // cboxRol
-            // 
-            this.cboxRol.BackColor = System.Drawing.SystemColors.Control;
-            this.cboxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboxRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxRol.FormattingEnabled = true;
-            this.cboxRol.Items.AddRange(new object[] {
-            "a",
-            "a",
-            "a",
-            "a",
-            "a"});
-            this.cboxRol.Location = new System.Drawing.Point(38, 5);
-            this.cboxRol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cboxRol.Name = "cboxRol";
-            this.cboxRol.Size = new System.Drawing.Size(132, 24);
-            this.cboxRol.TabIndex = 7;
-            // 
-            // picRol
-            // 
-            this.picRol.Image = global::ProyectoForge.Properties.Resources.icons8_Queue_50;
-            this.picRol.Location = new System.Drawing.Point(10, 1);
-            this.picRol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.picRol.Name = "picRol";
-            this.picRol.Size = new System.Drawing.Size(24, 24);
-            this.picRol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picRol.TabIndex = 6;
-            this.picRol.TabStop = false;
-            // 
             // llblForgotPassword
             // 
             this.llblForgotPassword.AutoSize = true;
             this.llblForgotPassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.llblForgotPassword.Location = new System.Drawing.Point(9, 178);
+            this.llblForgotPassword.Location = new System.Drawing.Point(9, 201);
             this.llblForgotPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llblForgotPassword.Name = "llblForgotPassword";
             this.llblForgotPassword.Size = new System.Drawing.Size(106, 13);
@@ -267,7 +209,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(246, 227);
+            this.label2.Location = new System.Drawing.Point(250, 227);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 2);
@@ -277,7 +219,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(226, 213);
+            this.label3.Location = new System.Drawing.Point(230, 213);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 18);
@@ -302,7 +244,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(374, 8);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(12, 13);
             this.button1.TabIndex = 17;
@@ -312,8 +254,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoForge.Properties.Resources.fb_forge;
-            this.pictureBox1.Location = new System.Drawing.Point(208, 83);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(212, 83);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(153, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -327,8 +269,8 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.Image = global::ProyectoForge.Properties.Resources.icons8_Login_50;
-            this.btnIngresar.Location = new System.Drawing.Point(9, 258);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Location = new System.Drawing.Point(10, 254);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(160, 59);
             this.btnIngresar.TabIndex = 9;
@@ -351,17 +293,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.llblForgotPassword);
             this.Controls.Add(this.btnIngresar);
-            this.Controls.Add(this.panelRol);
             this.Controls.Add(this.panelPassword);
             this.Controls.Add(this.panelUser);
-            this.Controls.Add(this.lblRol);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.PanelHeader);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.picForge_Load);
@@ -371,8 +311,6 @@
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPassword)).EndInit();
-            this.panelRol.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picRol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -385,17 +323,13 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.Panel panelUser;
         private System.Windows.Forms.PictureBox picUser;
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.PictureBox picPassword;
-        private System.Windows.Forms.Panel panelRol;
-        private System.Windows.Forms.PictureBox picRol;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.ComboBox cboxRol;
         private System.Windows.Forms.LinkLabel llblForgotPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

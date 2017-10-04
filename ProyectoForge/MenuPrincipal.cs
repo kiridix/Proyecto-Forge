@@ -160,7 +160,11 @@ namespace ProyectoForge
         {
             switch (menuOption)
             {
+                case 2: TabMain.SelectTab(12);
+                    break;
                 case 4: TabMain.SelectTab(0);
+                    break;
+                case 5: TabMain.SelectTab(3);
                     break;
             }
         }
@@ -169,6 +173,9 @@ namespace ProyectoForge
         {
             switch (menuOption)
             {
+                case 2:
+                    TabMain.SelectTab(10);
+                    break;
                 case 4:
                     TabMain.SelectTab(1);
                     break;
@@ -189,6 +196,45 @@ namespace ProyectoForge
         private void label41_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            switch (menuOption)
+            {
+                case 2:
+                    TabMain.SelectTab(11);
+                    break;
+                case 4:
+                    TabMain.SelectTab(2);
+                    break;
+                case 5:
+                    TabMain.SelectTab(4);
+                    break;
+            }
+        }
+
+        private void btnEmpresas_Click(object sender, EventArgs e)
+        {
+            this.menuOption = 5;
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            switch (menuOption)
+            {
+                case 3: TabMain.SelectTab(9);
+                    break;
+                case 5:
+                    TabMain.SelectTab(5);
+                    break;
+            }
+        }
+
+        private void btnCualidades_Click(object sender, EventArgs e)
+        {
+            this.menuOption = 6;
+            TabMain.SelectTab(6);
         }
     }
 }
