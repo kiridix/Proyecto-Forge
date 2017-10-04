@@ -24,8 +24,6 @@ namespace ProyectoForge
             Line1.Visible = false;
             Line2.Visible = false;
             btnCrear.Visible = false;
-            btnEliminar.Visible = false;
-            btnModificar.Visible = false;
 
 
 
@@ -37,8 +35,6 @@ namespace ProyectoForge
             Line1.Visible = true;
             Line2.Visible = true;
             btnCrear.Visible = true;
-            btnEliminar.Visible = true;
-            btnModificar.Visible = true;
 
         }
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
@@ -266,6 +262,56 @@ namespace ProyectoForge
         private void btnVerLP_Click(object sender, EventArgs e)
         {
             TabMain.SelectTab(15);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(4);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(0);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(12);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(11);
+        }
+
+        private void btnMatcheo_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(7);
+        }
+
+        private void btnMSEAceptarE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click_1(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(12);
+        }
+
+        private void btnModificarME_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(15);
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(15);
+        }
+
+        private void button16_Click_1(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(4);
         }
     }
 }
