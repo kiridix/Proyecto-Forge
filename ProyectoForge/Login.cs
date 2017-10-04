@@ -25,9 +25,17 @@ namespace ProyectoForge
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MenuPrincipal frm = new MenuPrincipal();
-            frm.Show();
+          
+            if (BD.Login(txtUser.Text, txtPass.Text))
+            {
+                this.Hide();
+                MenuPrincipal frm = new MenuPrincipal();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+            }
         }
 
         private void picForge_Load(object sender, EventArgs e)
@@ -36,6 +44,11 @@ namespace ProyectoForge
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void llblForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }

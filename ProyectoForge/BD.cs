@@ -55,9 +55,57 @@ namespace ProyectoForge
                 }
             }
         }
-        public static Boolean Login(string user, string pass)
+        public static void insertarUser()
         {
-            return true;
+            conn.Open();
+            String sentenciaSQL = "Insert into usuario (ci, idrol, nombre, contraseña) values (1234567, 3, 'Matias', '1234')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static void insertPersona()
+        {
+            conn.Open();
+            String sentenciaSQL = "INSERT INTO persona(ci, nombre, apellido, fech_nac, tel ) VALUES (1234567,'Mati','Martinez','20170809','26008003')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+           
+        }
+        public static void instertarRol()
+        {
+            conn.Open();
+            String sentenciaSQL = "  INSERT INTO ROL(NOMBRE, FUNCION) VALUES('ADMINISTRADOR', 'Administrar el sistema')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+          
+        }
+        public static Boolean Login(string usuario, String contraseña)
+        {
+            try
+            {
+                conn.Open();
+                String sentenciaSQL = "SELECT NOMBRE FROM USUARIO WHERE NOMBRE = '" + usuario + "' AND CONTRASEÑA = '" + contraseña + "'";
+                cmnd = new SqlCommand(sentenciaSQL, conn);
+                dtr = cmnd.ExecuteReader();
+                if (dtr.HasRows)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
         public static void prueba(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion, DateTime date, string email)
         {
@@ -98,7 +146,7 @@ namespace ProyectoForge
             try
             {
                 conn.Open();
-                cmnd = new SqlCommand("SELECT * FROM postulante", conn);
+                cmnd = new SqlCommand("SELECT * FROM usuario", conn);
                 dtr = cmnd.ExecuteReader();
                 dt.Load(dtr);
                 dtr.Close();

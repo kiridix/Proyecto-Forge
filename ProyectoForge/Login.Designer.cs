@@ -34,11 +34,11 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.picPassword = new System.Windows.Forms.PictureBox();
             this.llblForgotPassword = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -101,7 +101,7 @@
             // panelUser
             // 
             this.panelUser.Controls.Add(this.panel1);
-            this.panelUser.Controls.Add(this.textBox1);
+            this.panelUser.Controls.Add(this.txtUser);
             this.panelUser.Controls.Add(this.picUser);
             this.panelUser.Location = new System.Drawing.Point(-2, 105);
             this.panelUser.Margin = new System.Windows.Forms.Padding(2);
@@ -118,16 +118,16 @@
             this.panel1.Size = new System.Drawing.Size(112, 2);
             this.panel1.TabIndex = 18;
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(52, 6);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 15);
-            this.textBox1.TabIndex = 7;
+            this.txtUser.BackColor = System.Drawing.SystemColors.Control;
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(52, 6);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(105, 15);
+            this.txtUser.TabIndex = 7;
             // 
             // picUser
             // 
@@ -143,7 +143,7 @@
             // panelPassword
             // 
             this.panelPassword.Controls.Add(this.panel2);
-            this.panelPassword.Controls.Add(this.textBox2);
+            this.panelPassword.Controls.Add(this.txtPass);
             this.panelPassword.Controls.Add(this.picPassword);
             this.panelPassword.Location = new System.Drawing.Point(-2, 173);
             this.panelPassword.Margin = new System.Windows.Forms.Padding(2);
@@ -161,18 +161,18 @@
             this.panel2.TabIndex = 19;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(53, 8);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(105, 15);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtPass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(53, 8);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(105, 15);
+            this.txtPass.TabIndex = 8;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // picPassword
             // 
@@ -196,6 +196,7 @@
             this.llblForgotPassword.TabIndex = 10;
             this.llblForgotPassword.TabStop = true;
             this.llblForgotPassword.Text = "Olvide mi contraseña";
+            this.llblForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblForgotPassword_LinkClicked);
             // 
             // label1
             // 
@@ -327,8 +328,8 @@
         private System.Windows.Forms.PictureBox picUser;
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.PictureBox picPassword;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.LinkLabel llblForgotPassword;
         private System.Windows.Forms.Label label1;
