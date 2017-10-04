@@ -52,6 +52,8 @@ namespace ProyectoForge
         private void btnPostulantes_Click(object sender, EventArgs e)
         {
             menuOption = 1;
+            SelectMenu(1);
+            enableOptions();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -194,10 +196,22 @@ namespace ProyectoForge
                     break;
             }
         }
-
+        public void disableOptions()
+        {
+            btnCrear.Enabled = false;
+            btnListar.Enabled = false;
+        
+        }
+        public void enableOptions()
+        {
+            btnCrear.Enabled = true;
+            btnListar.Enabled = true;
+        }
         private void btnEmpresas_Click(object sender, EventArgs e)
         {
             this.menuOption = 5;
+            SelectMenu(2);
+            enableOptions();
         }
 
         private void btnListar_Click(object sender, EventArgs e)
@@ -207,8 +221,6 @@ namespace ProyectoForge
                 case 1:
                     TabMain.SelectTab(14);
                     break;
-                case 3: TabMain.SelectTab(9);
-                    break;
                 case 5:
                     TabMain.SelectTab(5);
                     break;
@@ -217,8 +229,9 @@ namespace ProyectoForge
 
         private void btnCualidades_Click(object sender, EventArgs e)
         {
-            this.menuOption = 6;
-            TabMain.SelectTab(6);
+            TabMain.SelectTab(3);
+            SelectMenu(3);
+            disableOptions();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -268,11 +281,16 @@ namespace ProyectoForge
 
         private void btnMatcheo_Click(object sender, EventArgs e)
         {
+            menuOption = 4;
             TabMain.SelectTab(7);
+            SelectMenu(4);
+            disableOptions();
+
         }
 
         private void btnMSEAceptarE_Click(object sender, EventArgs e)
         {
+            SelectMenu(4);
 
         }
 
@@ -344,6 +362,26 @@ namespace ProyectoForge
         private void txtAEMonto_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void quitarSelect()
+        {
+            btnPostulantes.BackColor = System.Drawing.Color.WhiteSmoke;
+               btnEmpresas.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnCualidades.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnMatcheo.BackColor = System.Drawing.Color.WhiteSmoke;
+        }
+        private void SelectMenu(int op) {
+            quitarSelect();
+            switch (op){
+                case 1: this.btnPostulantes.BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
+                    break;
+                case 2: this.btnEmpresas.BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
+                    break;
+                case 3: this.btnCualidades.BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
+                    break;
+                case 4: this.btnMatcheo.BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
+                    break;
+            }
         }
     }
 }
