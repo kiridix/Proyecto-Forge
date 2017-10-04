@@ -351,7 +351,7 @@
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(215, 741);
+            this.PanelMenu.Size = new System.Drawing.Size(215, 689);
             this.PanelMenu.TabIndex = 3;
             this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
             this.PanelMenu.MouseHover += new System.EventHandler(this.PanelMenu_MouseHover);
@@ -366,7 +366,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::ProyectoForge.Properties.Resources.icons8_Graduation_Cap_50;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(6, 474);
+            this.button3.Location = new System.Drawing.Point(6, 465);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(201, 56);
             this.button3.TabIndex = 33;
@@ -400,7 +400,7 @@
             this.btnListar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListar.Location = new System.Drawing.Point(7, 683);
+            this.btnListar.Location = new System.Drawing.Point(7, 624);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(200, 26);
             this.btnListar.TabIndex = 31;
@@ -453,7 +453,7 @@
             this.Line2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Line2.Location = new System.Drawing.Point(7, 713);
+            this.Line2.Location = new System.Drawing.Point(7, 654);
             this.Line2.Name = "Line2";
             this.Line2.Size = new System.Drawing.Size(200, 3);
             this.Line2.TabIndex = 28;
@@ -466,7 +466,7 @@
             this.Line1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Line1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Line1.Location = new System.Drawing.Point(7, 586);
+            this.Line1.Location = new System.Drawing.Point(7, 527);
             this.Line1.Name = "Line1";
             this.Line1.Size = new System.Drawing.Size(200, 3);
             this.Line1.TabIndex = 27;
@@ -479,7 +479,7 @@
             this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(7, 656);
+            this.btnModificar.Location = new System.Drawing.Point(7, 597);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(200, 26);
             this.btnModificar.TabIndex = 26;
@@ -494,7 +494,7 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(9, 623);
+            this.btnEliminar.Location = new System.Drawing.Point(9, 564);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(200, 26);
             this.btnEliminar.TabIndex = 25;
@@ -509,7 +509,7 @@
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrear.Location = new System.Drawing.Point(9, 590);
+            this.btnCrear.Location = new System.Drawing.Point(9, 531);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(200, 26);
             this.btnCrear.TabIndex = 23;
@@ -527,10 +527,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ProyectoForge.Properties.Resources.icons8_Exit_50;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(4, 718);
+            this.button1.Location = new System.Drawing.Point(4, 662);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 52);
+            this.button1.Size = new System.Drawing.Size(203, 21);
             this.button1.TabIndex = 21;
             this.button1.Text = "Salir";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -3021,7 +3021,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 741);
+            this.ClientSize = new System.Drawing.Size(909, 689);
             this.Controls.Add(this.PanelHeader);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.TabMain);
@@ -3029,6 +3029,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "l";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainMenu_MouseClick);
