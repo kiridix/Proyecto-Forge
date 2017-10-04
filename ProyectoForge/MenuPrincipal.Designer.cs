@@ -1152,7 +1152,7 @@
             this.txtACEstudio.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtACEstudio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtACEstudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtACEstudio.ForeColor = System.Drawing.Color.White;
+            this.txtACEstudio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtACEstudio.Location = new System.Drawing.Point(488, 328);
             this.txtACEstudio.Name = "txtACEstudio";
             this.txtACEstudio.Size = new System.Drawing.Size(144, 19);
@@ -1163,7 +1163,7 @@
             this.txtACConocimiento.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtACConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtACConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtACConocimiento.ForeColor = System.Drawing.Color.White;
+            this.txtACConocimiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtACConocimiento.Location = new System.Drawing.Point(488, 37);
             this.txtACConocimiento.Name = "txtACConocimiento";
             this.txtACConocimiento.Size = new System.Drawing.Size(144, 19);
@@ -1338,6 +1338,7 @@
             this.txtLEEmail.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLEEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLEEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLEEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLEEmail.Location = new System.Drawing.Point(532, 131);
             this.txtLEEmail.Name = "txtLEEmail";
             this.txtLEEmail.Size = new System.Drawing.Size(144, 19);
@@ -1348,18 +1349,18 @@
             this.txtLERUT.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLERUT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLERUT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLERUT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLERUT.Location = new System.Drawing.Point(532, 93);
             this.txtLERUT.Name = "txtLERUT";
             this.txtLERUT.Size = new System.Drawing.Size(144, 19);
             this.txtLERUT.TabIndex = 35;
-            this.txtLERUT.Visible = false;
             // 
             // txtLENombre
             // 
             this.txtLENombre.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLENombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLENombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLENombre.ForeColor = System.Drawing.Color.White;
+            this.txtLENombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLENombre.Location = new System.Drawing.Point(532, 51);
             this.txtLENombre.Name = "txtLENombre";
             this.txtLENombre.Size = new System.Drawing.Size(144, 19);
@@ -1468,6 +1469,7 @@
             this.AltaEmpresa.Controls.Add(this.label16);
             this.AltaEmpresa.Controls.Add(this.label17);
             this.AltaEmpresa.Controls.Add(this.label18);
+            this.AltaEmpresa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AltaEmpresa.Location = new System.Drawing.Point(4, 46);
             this.AltaEmpresa.Name = "AltaEmpresa";
             this.AltaEmpresa.Padding = new System.Windows.Forms.Padding(3);
@@ -1523,11 +1525,12 @@
             this.txtAEMonto.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAEMonto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAEMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAEMonto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAEMonto.Location = new System.Drawing.Point(549, 470);
             this.txtAEMonto.Name = "txtAEMonto";
             this.txtAEMonto.Size = new System.Drawing.Size(170, 19);
             this.txtAEMonto.TabIndex = 61;
-            this.txtAEMonto.Visible = false;
+            this.txtAEMonto.TextChanged += new System.EventHandler(this.txtAEMonto_TextChanged);
             // 
             // txtAEDireccionFiscal
             // 
@@ -1539,28 +1542,31 @@
             this.txtAEDireccionFiscal.Name = "txtAEDireccionFiscal";
             this.txtAEDireccionFiscal.Size = new System.Drawing.Size(139, 19);
             this.txtAEDireccionFiscal.TabIndex = 63;
+            this.txtAEDireccionFiscal.TextChanged += new System.EventHandler(this.txtAEDireccionFiscal_TextChanged);
             // 
             // txtAENombre
             // 
             this.txtAENombre.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAENombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAENombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAENombre.ForeColor = System.Drawing.Color.White;
+            this.txtAENombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAENombre.Location = new System.Drawing.Point(549, 29);
             this.txtAENombre.Name = "txtAENombre";
             this.txtAENombre.Size = new System.Drawing.Size(170, 19);
             this.txtAENombre.TabIndex = 61;
+            this.txtAENombre.TextChanged += new System.EventHandler(this.txtAENombre_TextChanged);
             // 
             // txtAEDireccionFisica
             // 
             this.txtAEDireccionFisica.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAEDireccionFisica.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAEDireccionFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAEDireccionFisica.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAEDireccionFisica.Location = new System.Drawing.Point(352, 221);
             this.txtAEDireccionFisica.Name = "txtAEDireccionFisica";
             this.txtAEDireccionFisica.Size = new System.Drawing.Size(170, 19);
             this.txtAEDireccionFisica.TabIndex = 59;
-            this.txtAEDireccionFisica.Visible = false;
+            this.txtAEDireccionFisica.TextChanged += new System.EventHandler(this.txtAEDireccionFisica_TextChanged);
             // 
             // txtAERUT
             // 
@@ -1572,26 +1578,31 @@
             this.txtAERUT.Name = "txtAERUT";
             this.txtAERUT.Size = new System.Drawing.Size(139, 19);
             this.txtAERUT.TabIndex = 57;
+            this.txtAERUT.TextChanged += new System.EventHandler(this.txtAERUT_TextChanged);
             // 
             // txtAETelefono
             // 
             this.txtAETelefono.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAETelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAETelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAETelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAETelefono.Location = new System.Drawing.Point(352, 173);
             this.txtAETelefono.Name = "txtAETelefono";
             this.txtAETelefono.Size = new System.Drawing.Size(170, 19);
             this.txtAETelefono.TabIndex = 37;
+            this.txtAETelefono.TextChanged += new System.EventHandler(this.txtAETelefono_TextChanged);
             // 
             // txtAERubro
             // 
             this.txtAERubro.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAERubro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAERubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAERubro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAERubro.Location = new System.Drawing.Point(352, 119);
             this.txtAERubro.Name = "txtAERubro";
             this.txtAERubro.Size = new System.Drawing.Size(170, 19);
             this.txtAERubro.TabIndex = 36;
+            this.txtAERubro.TextChanged += new System.EventHandler(this.txtAERubro_TextChanged);
             // 
             // txtAEEmail
             // 
@@ -1602,7 +1613,7 @@
             this.txtAEEmail.Name = "txtAEEmail";
             this.txtAEEmail.Size = new System.Drawing.Size(139, 19);
             this.txtAEEmail.TabIndex = 35;
-            this.txtAEEmail.Visible = false;
+            this.txtAEEmail.TextChanged += new System.EventHandler(this.txtAEEmail_TextChanged);
             // 
             // panel33
             // 
@@ -1860,11 +1871,13 @@
             this.cmbAETipoContrato.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbAETipoContrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbAETipoContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAETipoContrato.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmbAETipoContrato.FormattingEnabled = true;
             this.cmbAETipoContrato.Location = new System.Drawing.Point(549, 402);
             this.cmbAETipoContrato.Name = "cmbAETipoContrato";
             this.cmbAETipoContrato.Size = new System.Drawing.Size(200, 28);
             this.cmbAETipoContrato.TabIndex = 38;
+            this.cmbAETipoContrato.SelectedIndexChanged += new System.EventHandler(this.cmbAETipoContrato_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -2229,12 +2242,13 @@
             this.TabMain.Controls.Add(this.lblTipoAP);
             this.TabMain.Controls.Add(this.ListarPostulantes);
             this.TabMain.Controls.Add(this.tabPage3);
-            this.TabMain.Location = new System.Drawing.Point(56, -41);
+            this.TabMain.Location = new System.Drawing.Point(56, -39);
             this.TabMain.Multiline = true;
             this.TabMain.Name = "TabMain";
             this.TabMain.SelectedIndex = 0;
             this.TabMain.Size = new System.Drawing.Size(858, 816);
             this.TabMain.TabIndex = 20;
+            this.TabMain.SelectedIndexChanged += new System.EventHandler(this.TabMain_SelectedIndexChanged);
             this.TabMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
             // 
             // lblTipoAP
@@ -2307,6 +2321,7 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(652, 112);
             this.comboBox1.Name = "comboBox1";
@@ -2382,7 +2397,7 @@
             this.txtTelPadresAP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTelPadresAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelPadresAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelPadresAP.ForeColor = System.Drawing.Color.White;
+            this.txtTelPadresAP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTelPadresAP.Location = new System.Drawing.Point(288, 409);
             this.txtTelPadresAP.Name = "txtTelPadresAP";
             this.txtTelPadresAP.Size = new System.Drawing.Size(128, 19);
@@ -2438,7 +2453,7 @@
             this.txtCredencialAP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCredencialAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCredencialAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCredencialAP.ForeColor = System.Drawing.Color.White;
+            this.txtCredencialAP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCredencialAP.Location = new System.Drawing.Point(288, 352);
             this.txtCredencialAP.Name = "txtCredencialAP";
             this.txtCredencialAP.Size = new System.Drawing.Size(128, 19);
@@ -2513,7 +2528,7 @@
             this.txtApellidoAP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtApellidoAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellidoAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoAP.ForeColor = System.Drawing.Color.White;
+            this.txtApellidoAP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtApellidoAP.Location = new System.Drawing.Point(288, 211);
             this.txtApellidoAP.Name = "txtApellidoAP";
             this.txtApellidoAP.Size = new System.Drawing.Size(128, 19);
@@ -2569,7 +2584,7 @@
             this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBox2.Location = new System.Drawing.Point(288, 142);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(128, 19);
@@ -2625,7 +2640,7 @@
             this.txtCiAP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCiAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCiAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCiAP.ForeColor = System.Drawing.Color.White;
+            this.txtCiAP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCiAP.Location = new System.Drawing.Point(288, 79);
             this.txtCiAP.Name = "txtCiAP";
             this.txtCiAP.Size = new System.Drawing.Size(128, 19);
@@ -2721,6 +2736,7 @@
             this.txtApellidoLP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtApellidoLP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellidoLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoLP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtApellidoLP.Location = new System.Drawing.Point(673, 104);
             this.txtApellidoLP.Name = "txtApellidoLP";
             this.txtApellidoLP.Size = new System.Drawing.Size(144, 19);
@@ -2806,6 +2822,7 @@
             this.txtEmailLP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtEmailLP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmailLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailLP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEmailLP.Location = new System.Drawing.Point(523, 142);
             this.txtEmailLP.Name = "txtEmailLP";
             this.txtEmailLP.Size = new System.Drawing.Size(144, 19);
@@ -2816,6 +2833,7 @@
             this.txtNombreLP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNombreLP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreLP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNombreLP.Location = new System.Drawing.Point(523, 104);
             this.txtNombreLP.Name = "txtNombreLP";
             this.txtNombreLP.Size = new System.Drawing.Size(144, 19);
@@ -2826,7 +2844,7 @@
             this.txtCiLP.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCiLP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCiLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCiLP.ForeColor = System.Drawing.Color.White;
+            this.txtCiLP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCiLP.Location = new System.Drawing.Point(523, 62);
             this.txtCiLP.Name = "txtCiLP";
             this.txtCiLP.Size = new System.Drawing.Size(144, 19);
@@ -3302,7 +3320,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(170, 19);
             this.textBox1.TabIndex = 88;
-            this.textBox1.Visible = false;
             // 
             // textBox3
             // 
@@ -3335,7 +3352,6 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(139, 19);
             this.textBox9.TabIndex = 70;
-            this.textBox9.Visible = false;
             // 
             // panel49
             // 
@@ -3633,7 +3649,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(170, 19);
             this.textBox5.TabIndex = 85;
-            this.textBox5.Visible = false;
             // 
             // button19
             // 
@@ -3740,7 +3755,6 @@
             this.txtAEnNombreP.Name = "txtAEnNombreP";
             this.txtAEnNombreP.Size = new System.Drawing.Size(212, 19);
             this.txtAEnNombreP.TabIndex = 118;
-            this.txtAEnNombreP.Visible = false;
             // 
             // panel126
             // 
@@ -3844,7 +3858,6 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(212, 19);
             this.textBox10.TabIndex = 136;
-            this.textBox10.Visible = false;
             // 
             // label10
             // 

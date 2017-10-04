@@ -15,28 +15,10 @@ namespace ProyectoForge
 
         private void MainMenu_MouseClick(object sender, MouseEventArgs e)
         {
-            cerrarMenu();
+         
         }
-        public void cerrarMenu()
-        {
-            PanelMenu.Width = 78;
-            picLogo.Visible = false;
-            Line1.Visible = false;
-            Line2.Visible = false;
-            btnCrear.Visible = false;
+       
 
-
-
-        }
-        public void abrirMenu()
-        {
-                PanelMenu.Width = 215;
-                picLogo.Visible = true;
-            Line1.Visible = true;
-            Line2.Visible = true;
-            btnCrear.Visible = true;
-
-        }
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
         {
 
@@ -44,7 +26,7 @@ namespace ProyectoForge
 
         private void PanelMenu_MouseHover(object sender, EventArgs e)
         {
-            abrirMenu();
+        
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -54,17 +36,17 @@ namespace ProyectoForge
 
         private void btnPostulantes_MouseHover(object sender, EventArgs e)
         {
-            abrirMenu();
+           
         }
 
         private void btnEntrevistas_MouseHover(object sender, EventArgs e)
         {
-            abrirMenu();
+            
         }
 
         private void btnCurriculums_MouseHover(object sender, EventArgs e)
         {
-            abrirMenu();
+            
         }
 
         private void btnPostulantes_Click(object sender, EventArgs e)
@@ -89,17 +71,17 @@ namespace ProyectoForge
 
         private void tabControl1_MouseClick(object sender, MouseEventArgs e)
         {
-            cerrarMenu();
+            
         }
 
         private void tabPage1_MouseClick(object sender, MouseEventArgs e)
         {
-            cerrarMenu();
+            
         }
 
         private void tabPage2_MouseClick(object sender, MouseEventArgs e)
         {
-            cerrarMenu();
+            
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -183,7 +165,7 @@ namespace ProyectoForge
 
         private void tabPage1_MouseHover(object sender, EventArgs e)
         {
-            cerrarMenu();
+        
 
         }
 
@@ -312,6 +294,56 @@ namespace ProyectoForge
         private void button16_Click_1(object sender, EventArgs e)
         {
             TabMain.SelectTab(4);
+        }
+
+        private void TabMain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAENombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAERubro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAETelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAEDireccionFisica_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAERUT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAEEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAEDireccionFiscal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbAETipoContrato_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAEMonto_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
