@@ -241,12 +241,16 @@ namespace ProyectoForge
 
         private void button3_Click(object sender, EventArgs e)
         {
-          //  BD.InsertarPostulante(Int32.Parse(txtCiAP.Text), 123, 25000, "Uruguay", "Desarrollo", "palermo 5605", "Matiasmartineeez@gmail.com");
+           
+            this.Text = "22/11/2009";
+
+            DateTime date = DateTime.ParseExact(this.Text, "dd/MM/yyyy", null);
+            BD.prueba(Int32.Parse(txtCiAP.Text), 123, 25000, "Uruguay", "Desarrollo", "palermo 5605", date, "Matiasmartineeez@gmail.com");
                 }
 
         private void btnBuscarLP_Click(object sender, EventArgs e)
         {
-        //    dgvLP.DataSource = BD.ListarPostulantes();
+            dgvLP.DataSource = BD.ListarPostulantes();
         }
 
         private void dgvLP_CellContentClick(object sender, DataGridViewCellEventArgs e)

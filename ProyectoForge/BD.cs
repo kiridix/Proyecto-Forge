@@ -12,7 +12,7 @@ namespace ProyectoForge
     {
 
 
-        private static SqlConnection conn = new SqlConnection("user id=dev;password=forge2017;server=devforge.c0muduoou4ac.us-east-1.rds.amazonaws.com;Trusted_Connection=No;database=pruebaxd;connection timeout=30");
+        private static SqlConnection conn = new SqlConnection("user id=dev;password=forge2017;server=devforge.c0muduoou4ac.us-east-1.rds.amazonaws.com;Trusted_Connection=No;database=bd_forge;connection timeout=30");
         private static SqlCommand cmnd;
         private static SqlDataReader dtr;
 
@@ -55,12 +55,24 @@ namespace ProyectoForge
                 }
             }
         }
-            public static int InsertarPostulante(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion, string email)
+        public static Boolean Login(string user, string pass)
+        {
+            return true;
+        }
+        public static void prueba(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion, DateTime date, string email)
+        {
+            conn.Open();
+            String sentenciaSQL = "INSERT INTO postulante VALUES (" + ci + ", '" + null + "', " + null + ", '" + null + "', " + sueldoEsperado + ", '" + paisDePreferencia + "', '" + null + "', '" + puestoDePreferencia + "', '" + direccion + "', '" + email + "')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+            public static int InsertarPostulante(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion,DateTime date, string email)
         {
             try
             {
                 conn.Open();
-                String sentenciaSQL = "INSERT INTO postulante VALUES (" + ci + ", '" + idPostulante + "', '" + null + "', '" + null + "', '" + null + "', '" + sueldoEsperado + "', '" + paisDePreferencia + "', '" + null + "', '" + puestoDePreferencia + "', '" + direccion + "', '" + email + "')";
+                String sentenciaSQL = "INSERT INTO postulante VALUES (" + ci + ", '" + idPostulante + "', '" + "a" + "', '" + date + "', '" + null + "', '" + sueldoEsperado + "', '" + paisDePreferencia + "', '" + null + "', '" + puestoDePreferencia + "', '" + direccion + "', '" + email + "')";
                 cmnd = new SqlCommand(sentenciaSQL, conn);
                 cmnd.ExecuteNonQuery();
                 conn.Close();
