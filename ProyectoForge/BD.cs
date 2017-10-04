@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace ProbandoConeccionSQLServer
+namespace ProyectoForge
 {
     public class BD
     {
@@ -55,13 +55,12 @@ namespace ProbandoConeccionSQLServer
                 }
             }
         }
-
-        public static int InsertarPostulante(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion, string email)
+            public static int InsertarPostulante(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion, string email)
         {
             try
             {
                 conn.Open();
-                String sentenciaSQL = "INSERT INTO postulante VALUES (" + ci + ", '" + idPostulante + "', '" + null + "', '" + null + "', '" + null + "', '" + sueldoEsperado + "', '" + paisDePreferencia + "', '" +  null + "', '" + puestoDePreferencia + "', '" + direccion + "', '" + email + "')";
+                String sentenciaSQL = "INSERT INTO postulante VALUES (" + ci + ", '" + idPostulante + "', '" + null + "', '" + null + "', '" + null + "', '" + sueldoEsperado + "', '" + paisDePreferencia + "', '" + null + "', '" + puestoDePreferencia + "', '" + direccion + "', '" + email + "')";
                 cmnd = new SqlCommand(sentenciaSQL, conn);
                 cmnd.ExecuteNonQuery();
                 conn.Close();
@@ -81,13 +80,13 @@ namespace ProbandoConeccionSQLServer
                 }
             }
         }
-        public static System.Data.DataTable ListPeople()
+        public static System.Data.DataTable ListarPostulantes()
         {
             System.Data.DataTable dt = new System.Data.DataTable();
             try
             {
                 conn.Open();
-                cmnd = new SqlCommand("SELECT * FROM persona", conn);
+                cmnd = new SqlCommand("SELECT * FROM postulante", conn);
                 dtr = cmnd.ExecuteReader();
                 dt.Load(dtr);
                 dtr.Close();

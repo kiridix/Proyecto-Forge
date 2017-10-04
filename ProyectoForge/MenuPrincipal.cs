@@ -10,6 +10,7 @@ namespace ProyectoForge
         {
             InitializeComponent();
             TabMain.SelectTab(2);
+            
         }
 
         private void MainMenu_MouseClick(object sender, MouseEventArgs e)
@@ -160,6 +161,8 @@ namespace ProyectoForge
         {
             switch (menuOption)
             {
+                case 1: TabMain.SelectTab(13);
+                    break;
                 case 2: TabMain.SelectTab(12);
                     break;
                 case 4: TabMain.SelectTab(0);
@@ -223,6 +226,9 @@ namespace ProyectoForge
         {
             switch (menuOption)
             {
+                case 1:
+                    TabMain.SelectTab(14);
+                    break;
                 case 3: TabMain.SelectTab(9);
                     break;
                 case 5:
@@ -235,6 +241,31 @@ namespace ProyectoForge
         {
             this.menuOption = 6;
             TabMain.SelectTab(6);
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+          //  BD.InsertarPostulante(Int32.Parse(txtCiAP.Text), 123, 25000, "Uruguay", "Desarrollo", "palermo 5605", "Matiasmartineeez@gmail.com");
+                }
+
+        private void btnBuscarLP_Click(object sender, EventArgs e)
+        {
+        //    dgvLP.DataSource = BD.ListarPostulantes();
+        }
+
+        private void dgvLP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnVerLP_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(15);
         }
     }
 }
