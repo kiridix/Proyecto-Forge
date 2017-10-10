@@ -98,7 +98,6 @@
             this.btnMSEAgregarEstudio = new System.Windows.Forms.Button();
             this.AltaCualidades = new System.Windows.Forms.TabPage();
             this.label31 = new System.Windows.Forms.Label();
-            this.btnACModificarEstudio = new System.Windows.Forms.Button();
             this.btnACEliminarEstudio = new System.Windows.Forms.Button();
             this.btnACAgregarEstudio = new System.Windows.Forms.Button();
             this.dataGridACEstudio = new System.Windows.Forms.DataGridView();
@@ -107,7 +106,6 @@
             this.txtACConocimiento = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.btnACModificarConocimiento = new System.Windows.Forms.Button();
             this.btnACEliminarConocimiento = new System.Windows.Forms.Button();
             this.btnACAgregarConocimiento = new System.Windows.Forms.Button();
             this.panelRelleno11 = new System.Windows.Forms.Panel();
@@ -302,7 +300,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboxConocimientos = new System.Windows.Forms.ComboBox();
             this.VerPostulante = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label62 = new System.Windows.Forms.Label();
@@ -450,6 +448,10 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblUserCreadoCorrectamente = new System.Windows.Forms.Label();
             this.pictureBoxAP = new System.Windows.Forms.PictureBox();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtDescripcionConcoimiento = new System.Windows.Forms.TextBox();
+            this.panel153 = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.AltaEntrevista.SuspendLayout();
@@ -1352,8 +1354,9 @@
             // AltaCualidades
             // 
             this.AltaCualidades.BackColor = System.Drawing.Color.Gainsboro;
+            this.AltaCualidades.Controls.Add(this.txtDescripcionConcoimiento);
+            this.AltaCualidades.Controls.Add(this.panel153);
             this.AltaCualidades.Controls.Add(this.label31);
-            this.AltaCualidades.Controls.Add(this.btnACModificarEstudio);
             this.AltaCualidades.Controls.Add(this.btnACEliminarEstudio);
             this.AltaCualidades.Controls.Add(this.btnACAgregarEstudio);
             this.AltaCualidades.Controls.Add(this.dataGridACEstudio);
@@ -1362,7 +1365,6 @@
             this.AltaCualidades.Controls.Add(this.txtACConocimiento);
             this.AltaCualidades.Controls.Add(this.label33);
             this.AltaCualidades.Controls.Add(this.label25);
-            this.AltaCualidades.Controls.Add(this.btnACModificarConocimiento);
             this.AltaCualidades.Controls.Add(this.btnACEliminarConocimiento);
             this.AltaCualidades.Controls.Add(this.btnACAgregarConocimiento);
             this.AltaCualidades.Controls.Add(this.panelRelleno11);
@@ -1385,24 +1387,12 @@
             this.label31.TabIndex = 81;
             this.label31.Text = "Seleccionar estudio";
             // 
-            // btnACModificarEstudio
-            // 
-            this.btnACModificarEstudio.BackColor = System.Drawing.Color.White;
-            this.btnACModificarEstudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnACModificarEstudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnACModificarEstudio.Location = new System.Drawing.Point(683, 479);
-            this.btnACModificarEstudio.Name = "btnACModificarEstudio";
-            this.btnACModificarEstudio.Size = new System.Drawing.Size(99, 26);
-            this.btnACModificarEstudio.TabIndex = 80;
-            this.btnACModificarEstudio.Text = "Modificar";
-            this.btnACModificarEstudio.UseVisualStyleBackColor = false;
-            // 
             // btnACEliminarEstudio
             // 
             this.btnACEliminarEstudio.BackColor = System.Drawing.Color.White;
             this.btnACEliminarEstudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnACEliminarEstudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnACEliminarEstudio.Location = new System.Drawing.Point(683, 532);
+            this.btnACEliminarEstudio.Location = new System.Drawing.Point(683, 455);
             this.btnACEliminarEstudio.Name = "btnACEliminarEstudio";
             this.btnACEliminarEstudio.Size = new System.Drawing.Size(99, 26);
             this.btnACEliminarEstudio.TabIndex = 79;
@@ -1454,7 +1444,7 @@
             this.txtACConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtACConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtACConocimiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtACConocimiento.Location = new System.Drawing.Point(488, 37);
+            this.txtACConocimiento.Location = new System.Drawing.Point(345, 38);
             this.txtACConocimiento.Name = "txtACConocimiento";
             this.txtACConocimiento.Size = new System.Drawing.Size(144, 19);
             this.txtACConocimiento.TabIndex = 65;
@@ -1479,29 +1469,18 @@
             this.label25.TabIndex = 73;
             this.label25.Text = "Seleccionar conocimiento";
             // 
-            // btnACModificarConocimiento
-            // 
-            this.btnACModificarConocimiento.BackColor = System.Drawing.Color.White;
-            this.btnACModificarConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnACModificarConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnACModificarConocimiento.Location = new System.Drawing.Point(683, 202);
-            this.btnACModificarConocimiento.Name = "btnACModificarConocimiento";
-            this.btnACModificarConocimiento.Size = new System.Drawing.Size(99, 26);
-            this.btnACModificarConocimiento.TabIndex = 72;
-            this.btnACModificarConocimiento.Text = "Modificar";
-            this.btnACModificarConocimiento.UseVisualStyleBackColor = false;
-            // 
             // btnACEliminarConocimiento
             // 
             this.btnACEliminarConocimiento.BackColor = System.Drawing.Color.White;
             this.btnACEliminarConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnACEliminarConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnACEliminarConocimiento.Location = new System.Drawing.Point(683, 255);
+            this.btnACEliminarConocimiento.Location = new System.Drawing.Point(683, 180);
             this.btnACEliminarConocimiento.Name = "btnACEliminarConocimiento";
             this.btnACEliminarConocimiento.Size = new System.Drawing.Size(99, 26);
             this.btnACEliminarConocimiento.TabIndex = 71;
             this.btnACEliminarConocimiento.Text = "Eliminar";
             this.btnACEliminarConocimiento.UseVisualStyleBackColor = false;
+            this.btnACEliminarConocimiento.Click += new System.EventHandler(this.btnACEliminarConocimiento_Click);
             // 
             // btnACAgregarConocimiento
             // 
@@ -1514,11 +1493,12 @@
             this.btnACAgregarConocimiento.TabIndex = 69;
             this.btnACAgregarConocimiento.Text = "Agregar";
             this.btnACAgregarConocimiento.UseVisualStyleBackColor = false;
+            this.btnACAgregarConocimiento.Click += new System.EventHandler(this.btnACAgregarConocimiento_Click);
             // 
             // panelRelleno11
             // 
             this.panelRelleno11.BackColor = System.Drawing.Color.White;
-            this.panelRelleno11.Location = new System.Drawing.Point(488, 58);
+            this.panelRelleno11.Location = new System.Drawing.Point(345, 59);
             this.panelRelleno11.Name = "panelRelleno11";
             this.panelRelleno11.Size = new System.Drawing.Size(144, 2);
             this.panelRelleno11.TabIndex = 70;
@@ -2968,7 +2948,7 @@
             this.TabMain.Controls.Add(this.ListarPostulantes);
             this.TabMain.Controls.Add(this.tabPage3);
             this.TabMain.Controls.Add(this.CrearPostulante);
-            this.TabMain.Location = new System.Drawing.Point(56, -38);
+            this.TabMain.Location = new System.Drawing.Point(56, -40);
             this.TabMain.Multiline = true;
             this.TabMain.Name = "TabMain";
             this.TabMain.SelectedIndex = 0;
@@ -3229,6 +3209,8 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.btnGuardar);
+            this.tabPage3.Controls.Add(this.btnModificar);
             this.tabPage3.Controls.Add(this.txtPaisPreferenciaVP);
             this.tabPage3.Controls.Add(this.panel115);
             this.tabPage3.Controls.Add(this.txtPuestoPreferenciaVP);
@@ -3260,7 +3242,7 @@
             this.tabPage3.Controls.Add(this.button12);
             this.tabPage3.Controls.Add(this.button9);
             this.tabPage3.Controls.Add(this.button11);
-            this.tabPage3.Controls.Add(this.comboBox2);
+            this.tabPage3.Controls.Add(this.cboxConocimientos);
             this.tabPage3.Controls.Add(this.VerPostulante);
             this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.label62);
@@ -3611,14 +3593,15 @@
             this.button11.Text = "Agregar";
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // cboxConocimientos
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(647, 309);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(147, 24);
-            this.comboBox2.TabIndex = 62;
+            this.cboxConocimientos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboxConocimientos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxConocimientos.FormattingEnabled = true;
+            this.cboxConocimientos.Location = new System.Drawing.Point(651, 311);
+            this.cboxConocimientos.Name = "cboxConocimientos";
+            this.cboxConocimientos.Size = new System.Drawing.Size(141, 24);
+            this.cboxConocimientos.TabIndex = 62;
             // 
             // VerPostulante
             // 
@@ -5149,6 +5132,50 @@
             this.pictureBoxAP.TabIndex = 89;
             this.pictureBoxAP.TabStop = false;
             // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(608, 217);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(99, 26);
+            this.btnModificar.TabIndex = 105;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(729, 217);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(99, 26);
+            this.btnGuardar.TabIndex = 106;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            // 
+            // txtDescripcionConcoimiento
+            // 
+            this.txtDescripcionConcoimiento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDescripcionConcoimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescripcionConcoimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionConcoimiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtDescripcionConcoimiento.Location = new System.Drawing.Point(495, 38);
+            this.txtDescripcionConcoimiento.Multiline = true;
+            this.txtDescripcionConcoimiento.Name = "txtDescripcionConcoimiento";
+            this.txtDescripcionConcoimiento.Size = new System.Drawing.Size(144, 64);
+            this.txtDescripcionConcoimiento.TabIndex = 82;
+            // 
+            // panel153
+            // 
+            this.panel153.BackColor = System.Drawing.Color.White;
+            this.panel153.Location = new System.Drawing.Point(495, 102);
+            this.panel153.Name = "panel153";
+            this.panel153.Size = new System.Drawing.Size(144, 2);
+            this.panel153.TabIndex = 83;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -5336,7 +5363,6 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TabPage AltaCualidades;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Button btnACModificarEstudio;
         private System.Windows.Forms.Button btnACEliminarEstudio;
         private System.Windows.Forms.Button btnACAgregarEstudio;
         private System.Windows.Forms.DataGridView dataGridACEstudio;
@@ -5345,7 +5371,6 @@
         private System.Windows.Forms.TextBox txtACConocimiento;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button btnACModificarConocimiento;
         private System.Windows.Forms.Button btnACEliminarConocimiento;
         private System.Windows.Forms.Button btnACAgregarConocimiento;
         private System.Windows.Forms.Panel panelRelleno11;
@@ -5491,7 +5516,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboxConocimientos;
         private System.Windows.Forms.DataGridView VerPostulante;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label62;
@@ -5708,5 +5733,9 @@
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblUserCreadoCorrectamente;
         private System.Windows.Forms.PictureBox pictureBoxAP;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.TextBox txtDescripcionConcoimiento;
+        private System.Windows.Forms.Panel panel153;
     }
 }

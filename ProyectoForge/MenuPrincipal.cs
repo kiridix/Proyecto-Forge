@@ -234,6 +234,8 @@ namespace ProyectoForge
             TabMain.SelectTab(7);
             SelectMenu(3);
             disableOptions();
+            listarConocimientos();
+
         }
         private string prepararDate(string[] dt)
         {
@@ -311,6 +313,7 @@ namespace ProyectoForge
             int ci = (int)dgvLP.CurrentRow.Cells["ci"].Value;
             postulante p = new postulante(ci.ToString());
             cargarVistaPostulante(p);
+            BD.listarConocimientos(cboxConocimientos);
             TabMain.SelectTab(15);
 
         }
@@ -541,6 +544,24 @@ namespace ProyectoForge
                 pictureBoxAP.Image = Image.FromFile(dialog.FileName);
                 this.foto = Image.FromFile(dialog.FileName);
             }
+        }
+
+        private void btnACAgregarConocimiento_Click(object sender, EventArgs e)
+        {
+            BD.insertConocimiento(txtACConocimiento.Text, txtDescripcionConcoimiento.Text);
+            listarConocimientos();
+            txtACConocimiento.Text = "";
+            txtDescripcionConcoimiento.Text = "";
+        }
+
+        private void btnACEliminarConocimiento_Click(object sender, EventArgs e)
+        {
+            BD.deleteConocimiento((string)dataGridACConocimientos.CurrentRow.Cells["nombre"].Value);
+            listarConocimientos();
+        }
+        private void listarConocimientos()
+        {
+            dataGridACConocimientos.DataSource = BD.Listar("conocimiento");
         }
     }
     }

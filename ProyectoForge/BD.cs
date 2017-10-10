@@ -158,6 +158,7 @@ namespace ProyectoForge
             datos = (byte[])dr["foto"];
             System.IO.MemoryStream ms = new System.IO.MemoryStream(datos);
             Image foto = Bitmap.FromStream(ms);
+            conn.Close();
             return foto;
 
 
@@ -252,6 +253,36 @@ namespace ProyectoForge
 
 
             return 0;
+        }
+        public static void deleteConocimiento(string nombre)
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM conocimiento where nombre like '%" + nombre + "%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
+        }
+        public static void listarConocimientos(ComboBox cb)
+        {
+            cb.Items.Clear();
+            conn.Open();
+            SqlCommand cmnd = new SqlCommand("Select * from conocimiento", conn);
+            SqlDataReader dr = cmnd.ExecuteReader();
+            while (dr.Read())
+            {
+                cb.Items.Add(dr[1].ToString());
+            }
+            cb.SelectedIndex = 0;
+            conn.Close();
+        }
+        public static void insertConocimiento(string conocimiento, string desc)
+        {
+
+            conn.Open();
+            String sentenciaSQL = "INSERT INTO conocimiento(NOMBRE, DESCRIPCION) VALUES ('"+ conocimiento +"', '"+  desc +"')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
         }
     }
     }
