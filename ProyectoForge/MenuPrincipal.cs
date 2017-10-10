@@ -233,6 +233,7 @@ namespace ProyectoForge
             dataGridACEstudio.DataSource = BD.Listar("estudio");
             listarConocimientos();
 
+
         }
         private string prepararDate(string[] dt)
         {
@@ -311,7 +312,8 @@ namespace ProyectoForge
             postulante p = new postulante(ci.ToString());
             cargarVistaPostulante(p);
             this.P = p;
-            BD.listarConocimientos(cboxConocimientos);
+            BD.listarConocimientos(cboxConocimientos, "conocimiento");
+            BD.listarConocimientos(comboBox3, "estudio");
             dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
             TabMain.SelectTab(15);
 
@@ -584,16 +586,19 @@ namespace ProyectoForge
 
         private void button11_Click(object sender, EventArgs e)
         {
-            int idcon = Int32.Parse(BD.getIdcon(cboxConocimientos));
+            int idcon = Int32.Parse(BD.getIdcon(cboxConocimientos, "idcon","conocimiento","nombre"));
             int idpos = Int32.Parse(BD.getIdPostulante(P.Ci));
-            BD.insetrarConocimiento(idcon, idpos);
+            BD.insertarConocimiento(idcon, idpos);
             dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
 
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
+            int idest = Int32.Parse(BD.getIdcon(comboBox3, "idestudio", "estudio", "nombre"));
+            int id = Int32.Parse(BD.getIdPostulante(P.Ci));
+            BD.insertarestudio(idest, id,dateTimePicker1,dateTimePicker2);
+            dataGridView3.DataSource = BD.Listar("posee");
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -625,6 +630,12 @@ namespace ProyectoForge
         private void btnVerLE_Click(object sender, EventArgs e)
         {
             TabMain.SelectedIndex = 5;
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
     }

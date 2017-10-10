@@ -450,6 +450,8 @@
             this.lblUserCreadoAP = new System.Windows.Forms.Label();
             this.AltaPostulante = new System.Windows.Forms.TabPage();
             this.dtpFecvenAP = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.AltaEntrevista.SuspendLayout();
@@ -1122,7 +1124,6 @@
             this.txtLPNombreP.Name = "txtLPNombreP";
             this.txtLPNombreP.Size = new System.Drawing.Size(144, 19);
             this.txtLPNombreP.TabIndex = 66;
-            this.txtLPNombreP.Text = "v";
             this.txtLPNombreP.Visible = false;
             // 
             // txtLPCI
@@ -3235,6 +3236,8 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.dateTimePicker4);
+            this.tabPage3.Controls.Add(this.dateTimePicker1);
             this.tabPage3.Controls.Add(this.btnGuardar);
             this.tabPage3.Controls.Add(this.btnModificar);
             this.tabPage3.Controls.Add(this.txtPaisPreferenciaVP);
@@ -3289,6 +3292,7 @@
             this.tabPage3.Size = new System.Drawing.Size(850, 766);
             this.tabPage3.TabIndex = 19;
             this.tabPage3.Text = "VerPostulante";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // btnGuardar
             // 
@@ -3656,6 +3660,7 @@
             // 
             // dgvConocimientosVP
             // 
+            this.dgvConocimientosVP.AllowUserToAddRows = false;
             this.dgvConocimientosVP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConocimientosVP.Location = new System.Drawing.Point(521, 357);
             this.dgvConocimientosVP.Name = "dgvConocimientosVP";
@@ -3684,7 +3689,7 @@
             // 
             this.comboBox3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(254, 306);
+            this.comboBox3.Location = new System.Drawing.Point(254, 277);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(156, 24);
             this.comboBox3.TabIndex = 55;
@@ -3693,7 +3698,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(170, 311);
+            this.label67.Location = new System.Drawing.Point(170, 282);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(85, 20);
             this.label67.TabIndex = 54;
@@ -5161,6 +5166,22 @@
             this.dtpFecvenAP.Size = new System.Drawing.Size(204, 20);
             this.dtpFecvenAP.TabIndex = 55;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(195, 324);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(87, 22);
+            this.dateTimePicker1.TabIndex = 107;
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(302, 324);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(86, 22);
+            this.dateTimePicker4.TabIndex = 108;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -5720,5 +5741,7 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.TextBox txtDescripcionConcoimiento;
         private System.Windows.Forms.Panel panel153;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

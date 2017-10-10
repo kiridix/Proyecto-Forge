@@ -272,11 +272,11 @@ namespace ProyectoForge
             dtr.Close();
             conn.Close();
         }
-        public static void listarConocimientos(ComboBox cb)
+        public static void listarConocimientos(ComboBox cb, string tabla)
         {
             cb.Items.Clear();
             conn.Open();
-            SqlCommand cmnd = new SqlCommand("Select * from conocimiento", conn);
+            SqlCommand cmnd = new SqlCommand("Select * from "+tabla+"", conn);
             SqlDataReader dr = cmnd.ExecuteReader();
             while (dr.Read())
             {
@@ -293,12 +293,17 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
         }
-        public static string getIdcon(ComboBox cb)
+
+
+
+
+
+        public static string getIdcon(ComboBox cb, string atributo, string tabla, string compara)
         {
 
             string idcon = string.Empty;
             conn.Open();
-            string sentenciaSQL = "SELECT idcon FROM conocimiento where nombre = '" + cb.SelectedItem.ToString() + "'";
+            string sentenciaSQL = "SELECT "+atributo+" FROM "+tabla+" where "+compara+" = '" + cb.SelectedItem.ToString() + "'";
             cmnd = new SqlCommand(sentenciaSQL, conn);
             idcon = Convert.ToString(cmnd.ExecuteScalar());
             conn.Close();
@@ -309,19 +314,40 @@ namespace ProyectoForge
         {
             string Ci = string.Empty;
             conn.Open();
-            string sentenciaSQL = "SELECT idpostulante FROM postulante where ci = '" + ci + "'";
+            string sentenciaSQL = "SELECT idpostulante FROM postulante where ci = '" + ci + "'";       
             cmnd = new SqlCommand(sentenciaSQL, conn);
             Ci = Convert.ToString(cmnd.ExecuteScalar());
             conn.Close();
             return Ci;
         }
-        public static void insetrarConocimiento(int idcon, int idpost)
+
+
+
+        public static void insertarestudio (int idestudio, int idpostulante, DateTimePicker fech_inicio, DateTimePicker fech_fin)
+        {
+            conn.Open();
+            string sentenciaSQL = "insert into posee(idestudio,idpostulante,fech_inicio,fech_fin) values ("+idestudio+","+idpostulante+",'"+fech_inicio.Value+"','"+fech_fin.Value+"')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static void insertarConocimiento(int idcon, int idpost)
         {
             conn.Open();
             string sentenciaSQL = "insert into tiene (idcon, idpostulante) Values (" + idcon + ", " + idpost + ")";
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
+        }
+
+        public static DataTable listarMasEstudios()
+        {
+            DataTable dt = new DataTable();
+            conn.Open();
+            cmnd = new SqlCommand("SELECT * FROM POSEE"); //TRABAJO DE SANTIAGO NO TOCAR CANT TAUCH DIS TU TURUTU YU YU YIUNUYT TU TUT UTyugihoAHREXD
+            dt.Load(cmnd.ExecuteReader());
+            conn.Close();
+            return dt;
         }
         public static DataTable ListarMasConocimientos(int idpos)
         {
