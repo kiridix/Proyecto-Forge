@@ -1122,6 +1122,7 @@
             this.txtLPNombreP.Name = "txtLPNombreP";
             this.txtLPNombreP.Size = new System.Drawing.Size(144, 19);
             this.txtLPNombreP.TabIndex = 66;
+            this.txtLPNombreP.Text = "v";
             this.txtLPNombreP.Visible = false;
             // 
             // txtLPCI
@@ -1416,6 +1417,7 @@
             this.btnACEliminarEstudio.TabIndex = 79;
             this.btnACEliminarEstudio.Text = "Eliminar";
             this.btnACEliminarEstudio.UseVisualStyleBackColor = false;
+            this.btnACEliminarEstudio.Click += new System.EventHandler(this.btnACEliminarEstudio_Click);
             // 
             // btnACAgregarEstudio
             // 
@@ -1432,6 +1434,7 @@
             // 
             // dataGridACEstudio
             // 
+            this.dataGridACEstudio.AllowUserToAddRows = false;
             this.dataGridACEstudio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridACEstudio.Location = new System.Drawing.Point(258, 407);
             this.dataGridACEstudio.Name = "dataGridACEstudio";
@@ -1525,6 +1528,7 @@
             // 
             // dataGridACConocimientos
             // 
+            this.dataGridACConocimientos.AllowUserToAddRows = false;
             this.dataGridACConocimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridACConocimientos.Location = new System.Drawing.Point(258, 130);
             this.dataGridACConocimientos.Name = "dataGridACConocimientos";
@@ -1600,6 +1604,7 @@
             this.btnVerLE.TabIndex = 75;
             this.btnVerLE.Text = "Ver";
             this.btnVerLE.UseVisualStyleBackColor = false;
+            this.btnVerLE.Click += new System.EventHandler(this.btnVerLE_Click);
             // 
             // btnBuscarEmpresa
             // 
@@ -1788,6 +1793,7 @@
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(354, 300);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
@@ -3927,6 +3933,7 @@
             // 
             // dtpFechVen
             // 
+            this.dtpFechVen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechVen.Location = new System.Drawing.Point(546, 151);
             this.dtpFechVen.Name = "dtpFechVen";
             this.dtpFechVen.Size = new System.Drawing.Size(200, 22);
@@ -4173,6 +4180,7 @@
             // 
             // dtpFechNac
             // 
+            this.dtpFechNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechNac.Location = new System.Drawing.Point(245, 271);
             this.dtpFechNac.Name = "dtpFechNac";
             this.dtpFechNac.Size = new System.Drawing.Size(200, 22);

@@ -264,6 +264,14 @@ namespace ProyectoForge
             dtr.Close();
             conn.Close();
         }
+        public static void deleteEstudio(string nombre)
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM estudio where nombre like '%" + nombre + "%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
+        }
         public static void listarConocimientos(ComboBox cb)
         {
             cb.Items.Clear();
@@ -296,6 +304,7 @@ namespace ProyectoForge
             conn.Close();
             return idcon;
         }
+
         public static string getIdPostulante(string ci)
         {
             string Ci = string.Empty;
@@ -353,6 +362,15 @@ namespace ProyectoForge
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
+        }
+        public static void EliminarConocimiento(int idcon)
+        {
+            conn.Open();
+            string sentenciaSql = "delete from tiene where idcon=" + idcon + "";
+            cmnd = new SqlCommand(sentenciaSql, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+
         }
     }
     }

@@ -108,3 +108,14 @@ C:\Users\Nacho\Desktop\LPm\proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.
 C:\Users\Nacho\Desktop\LPm\proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.CoreCompileInputs.cache
 C:\Users\Nacho\Desktop\LPm\proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.exe
 C:\Users\Nacho\Desktop\LPm\proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.pdb
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\bin\Debug\ProyectoForge.exe.config
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\bin\Debug\ProyectoForge.exe
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\bin\Debug\ProyectoForge.pdb
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csprojResolveAssemblyReference.cache
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.Login.resources
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.MenuPrincipal.resources
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.Properties.Resources.resources
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.GenerateResource.Cache
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.csproj.CoreCompileInputs.cache
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.exe
+C:\Users\edgar20t\source\repos\Proyecto-forge\ProyectoForge\obj\Debug\ProyectoForge.pdb

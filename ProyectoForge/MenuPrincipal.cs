@@ -524,8 +524,11 @@ namespace ProyectoForge
 
         private void btnCrearAP_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show(dtpFechNac.Value.Date.ToString());
+
             BD.insertPersona(Int32.Parse(txtCi.Text), txtNombre.Text, txtApellido.Text, dtpFechNac.Value.Date, txtTelefono.Text);
-            BD.InsertarPostulante(pictureBoxAP ,Int32.Parse(txtCi.Text), cboxTipoLic.Text, dtpFechVen.Value.Date, Int32.Parse(txtSueldoEsperado.Text), txtPaisPreferencia.Text, txtPuestoPreferencia.Text, txtDireccion.Text, txtEmail.Text);
+            BD.InsertarPostulante(pictureBoxAP, Int32.Parse(txtCi.Text), cboxTipoLic.Text, dtpFechVen.Value.Date, Int32.Parse(txtSueldoEsperado.Text), txtPaisPreferencia.Text, txtPuestoPreferencia.Text, txtDireccion.Text, txtEmail.Text);
             clearCamposAP();
             Blink();
         }
@@ -559,6 +562,7 @@ namespace ProyectoForge
 
         private void btnACEliminarConocimiento_Click(object sender, EventArgs e)
         {
+            BD.EliminarConocimiento((int)dataGridACConocimientos.CurrentRow.Cells["idcon"].Value);
             BD.deleteConocimiento((string)dataGridACConocimientos.CurrentRow.Cells["nombre"].Value);
             listarConocimientos();
         }
@@ -599,6 +603,17 @@ namespace ProyectoForge
         {
             BD.instertEstudio(txtACEstudio.Text);
             dataGridACEstudio.DataSource = BD.Listar("estudio");
+        }
+
+        private void btnACEliminarEstudio_Click(object sender, EventArgs e)
+        {
+            BD.deleteEstudio((string)dataGridACEstudio.CurrentRow.Cells["nombre"].Value);
+            dataGridACEstudio.DataSource =  BD.Listar("estudio");
+        }
+
+        private void btnVerLE_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectedIndex = 5;
         }
     }
     }
