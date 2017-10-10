@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Data;
 
 namespace ProyectoForge
 {
@@ -131,15 +133,34 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
         }
-            public static int InsertarPostulante(int ci, string licencia, DateTime fecLic, int sueldo, string pais, string cargo, string direccion, string email)
+        public static int InsertarPostulante(PictureBox pic,int ci, string licencia, DateTime fecLic, int sueldo, string pais, string cargo, string direccion, string email)
         {
-                conn.Open();
-                String sentenciaSQL = "Insert into postulante values ("+ ci +", '"+ licencia +"', '"+ fecLic +"', null , "+ sueldo +" , '"+ pais +"' , null , '"+ cargo +"', '" + direccion + "', '" + email + "')";
-                cmnd = new SqlCommand(sentenciaSQL, conn);
-                cmnd.ExecuteNonQuery();
-                conn.Close();
-                return 0;
+            conn.Open();
+            String sentenciaSQL = "Insert into postulante values (" + ci + ", '" + licencia + "', '" + fecLic + "', null , " + sueldo + " , '" + pais + "' , @foto , '" + cargo + "', '" + direccion + "', '" + email + "')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.Parameters.Add("@foto", SqlDbType.Image);
+            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+
+            pic.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            cmnd.Parameters["@foto"].Value = ms.GetBuffer();
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+            return 0;
            
+        }
+        public static Image SelectImage(string tabla, string donde) {
+            conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT foto FROM " + tabla + " WHERE ci=" + donde + "", conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "postulante");
+            byte[] datos = new byte[0];
+            DataRow dr = ds.Tables["postulante"].Rows[0];
+            datos = (byte[])dr["foto"];
+            System.IO.MemoryStream ms = new System.IO.MemoryStream(datos);
+            Image foto = Bitmap.FromStream(ms);
+            return foto;
+
+
         }
         public static System.Data.DataTable Listar(string Table)
         {

@@ -449,6 +449,7 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblUserCreadoCorrectamente = new System.Windows.Forms.Label();
+            this.pictureBoxAP = new System.Windows.Forms.PictureBox();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.AltaEntrevista.SuspendLayout();
@@ -548,6 +549,7 @@
             this.panel146.SuspendLayout();
             this.panel149.SuspendLayout();
             this.panel150.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAP)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
@@ -4457,6 +4459,7 @@
             // CrearPostulante
             // 
             this.CrearPostulante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CrearPostulante.Controls.Add(this.pictureBoxAP);
             this.CrearPostulante.Controls.Add(this.lblUserCreadoCorrectamente);
             this.CrearPostulante.Controls.Add(this.panel149);
             this.CrearPostulante.Controls.Add(this.txtTelefono);
@@ -4817,7 +4820,7 @@
             // 
             this.lblSueldoEsperado.AutoSize = true;
             this.lblSueldoEsperado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSueldoEsperado.Location = new System.Drawing.Point(493, 325);
+            this.lblSueldoEsperado.Location = new System.Drawing.Point(494, 250);
             this.lblSueldoEsperado.Name = "lblSueldoEsperado";
             this.lblSueldoEsperado.Size = new System.Drawing.Size(130, 20);
             this.lblSueldoEsperado.TabIndex = 70;
@@ -4828,7 +4831,7 @@
             this.panel137.BackColor = System.Drawing.Color.White;
             this.panel137.Controls.Add(this.panel138);
             this.panel137.Controls.Add(this.panel140);
-            this.panel137.Location = new System.Drawing.Point(640, 343);
+            this.panel137.Location = new System.Drawing.Point(641, 268);
             this.panel137.Name = "panel137";
             this.panel137.Size = new System.Drawing.Size(128, 3);
             this.panel137.TabIndex = 72;
@@ -4864,7 +4867,7 @@
             this.txtSueldoEsperado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSueldoEsperado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSueldoEsperado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtSueldoEsperado.Location = new System.Drawing.Point(640, 325);
+            this.txtSueldoEsperado.Location = new System.Drawing.Point(641, 250);
             this.txtSueldoEsperado.Name = "txtSueldoEsperado";
             this.txtSueldoEsperado.Size = new System.Drawing.Size(128, 19);
             this.txtSueldoEsperado.TabIndex = 71;
@@ -4874,7 +4877,7 @@
             this.panel141.BackColor = System.Drawing.Color.White;
             this.panel141.Controls.Add(this.panel142);
             this.panel141.Controls.Add(this.panel144);
-            this.panel141.Location = new System.Drawing.Point(640, 282);
+            this.panel141.Location = new System.Drawing.Point(641, 207);
             this.panel141.Name = "panel141";
             this.panel141.Size = new System.Drawing.Size(128, 3);
             this.panel141.TabIndex = 75;
@@ -4910,7 +4913,7 @@
             this.txtPuestoPreferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPuestoPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuestoPreferencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPuestoPreferencia.Location = new System.Drawing.Point(640, 264);
+            this.txtPuestoPreferencia.Location = new System.Drawing.Point(641, 189);
             this.txtPuestoPreferencia.Name = "txtPuestoPreferencia";
             this.txtPuestoPreferencia.Size = new System.Drawing.Size(128, 19);
             this.txtPuestoPreferencia.TabIndex = 74;
@@ -4919,7 +4922,7 @@
             // 
             this.lblPuestoPreferencia.AutoSize = true;
             this.lblPuestoPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuestoPreferencia.Location = new System.Drawing.Point(486, 263);
+            this.lblPuestoPreferencia.Location = new System.Drawing.Point(487, 188);
             this.lblPuestoPreferencia.Name = "lblPuestoPreferencia";
             this.lblPuestoPreferencia.Size = new System.Drawing.Size(137, 20);
             this.lblPuestoPreferencia.TabIndex = 73;
@@ -4930,7 +4933,7 @@
             this.panel145.BackColor = System.Drawing.Color.White;
             this.panel145.Controls.Add(this.panel146);
             this.panel145.Controls.Add(this.panel148);
-            this.panel145.Location = new System.Drawing.Point(640, 407);
+            this.panel145.Location = new System.Drawing.Point(641, 332);
             this.panel145.Name = "panel145";
             this.panel145.Size = new System.Drawing.Size(128, 3);
             this.panel145.TabIndex = 78;
@@ -4966,7 +4969,7 @@
             this.txtPaisPreferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPaisPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPaisPreferencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPaisPreferencia.Location = new System.Drawing.Point(640, 389);
+            this.txtPaisPreferencia.Location = new System.Drawing.Point(641, 314);
             this.txtPaisPreferencia.Name = "txtPaisPreferencia";
             this.txtPaisPreferencia.Size = new System.Drawing.Size(128, 19);
             this.txtPaisPreferencia.TabIndex = 77;
@@ -4975,7 +4978,7 @@
             // 
             this.lblPaisPreferencia.AutoSize = true;
             this.lblPaisPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaisPreferencia.Location = new System.Drawing.Point(486, 388);
+            this.lblPaisPreferencia.Location = new System.Drawing.Point(487, 313);
             this.lblPaisPreferencia.Name = "lblPaisPreferencia";
             this.lblPaisPreferencia.Size = new System.Drawing.Size(137, 20);
             this.lblPaisPreferencia.TabIndex = 76;
@@ -5048,7 +5051,7 @@
             // 
             this.lblFoto.AutoSize = true;
             this.lblFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoto.Location = new System.Drawing.Point(486, 444);
+            this.lblFoto.Location = new System.Drawing.Point(572, 353);
             this.lblFoto.Name = "lblFoto";
             this.lblFoto.Size = new System.Drawing.Size(42, 20);
             this.lblFoto.TabIndex = 83;
@@ -5061,12 +5064,13 @@
             this.btnSubirFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubirFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubirFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubirFoto.Location = new System.Drawing.Point(639, 446);
+            this.btnSubirFoto.Location = new System.Drawing.Point(485, 377);
             this.btnSubirFoto.Name = "btnSubirFoto";
             this.btnSubirFoto.Size = new System.Drawing.Size(129, 26);
             this.btnSubirFoto.TabIndex = 84;
             this.btnSubirFoto.Text = "Subir";
             this.btnSubirFoto.UseVisualStyleBackColor = false;
+            this.btnSubirFoto.Click += new System.EventHandler(this.btnSubirFoto_Click);
             // 
             // panel149
             // 
@@ -5134,6 +5138,16 @@
             this.lblUserCreadoCorrectamente.Size = new System.Drawing.Size(224, 20);
             this.lblUserCreadoCorrectamente.TabIndex = 88;
             this.lblUserCreadoCorrectamente.Text = "Usuario creado correctamente";
+            this.lblUserCreadoCorrectamente.Visible = false;
+            // 
+            // pictureBoxAP
+            // 
+            this.pictureBoxAP.Location = new System.Drawing.Point(629, 351);
+            this.pictureBoxAP.Name = "pictureBoxAP";
+            this.pictureBoxAP.Size = new System.Drawing.Size(151, 138);
+            this.pictureBoxAP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAP.TabIndex = 89;
+            this.pictureBoxAP.TabStop = false;
             // 
             // MenuPrincipal
             // 
@@ -5264,6 +5278,7 @@
             this.panel146.ResumeLayout(false);
             this.panel149.ResumeLayout(false);
             this.panel150.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5692,5 +5707,6 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblUserCreadoCorrectamente;
+        private System.Windows.Forms.PictureBox pictureBoxAP;
     }
 }

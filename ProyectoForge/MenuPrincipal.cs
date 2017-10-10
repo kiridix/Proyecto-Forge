@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -324,6 +325,7 @@ namespace ProyectoForge
             txtSueldoEsperadoVP.Text = p.SueldoEsperado.ToString();
             txtPaisPreferenciaVP.Text = p.PaisPreferncia;
             txtPuestoPreferenciaVP.Text = p.PuestoPreferencia;
+            pictureBox2.Image = p.Foto;
 
         }
 
@@ -520,7 +522,7 @@ namespace ProyectoForge
         private void btnCrearAP_Click(object sender, EventArgs e)
         {
             BD.insertPersona(Int32.Parse(txtCi.Text), txtNombre.Text, txtApellido.Text, dtpFechNac.Value.Date, txtTelefono.Text);
-            BD.InsertarPostulante(Int32.Parse(txtCi.Text), cboxTipoLic.Text, dtpFechVen.Value.Date, Int32.Parse(txtSueldoEsperado.Text), txtPaisPreferencia.Text, txtPuestoPreferencia.Text, txtDireccion.Text, txtEmail.Text);
+            BD.InsertarPostulante(pictureBoxAP ,Int32.Parse(txtCi.Text), cboxTipoLic.Text, dtpFechVen.Value.Date, Int32.Parse(txtSueldoEsperado.Text), txtPaisPreferencia.Text, txtPuestoPreferencia.Text, txtDireccion.Text, txtEmail.Text);
             clearCamposAP();
             Blink();
         }
@@ -528,6 +530,17 @@ namespace ProyectoForge
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        public Image foto;
+        private void btnSubirFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            DialogResult result = dialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                pictureBoxAP.Image = Image.FromFile(dialog.FileName);
+                this.foto = Image.FromFile(dialog.FileName);
+            }
         }
     }
     }

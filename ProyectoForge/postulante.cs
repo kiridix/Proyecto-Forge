@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,8 @@ namespace ProyectoForge
         private string puestoPreferencia;
         private string direccion;
         private string email;
-
+        private Image foto;
+ 
         public postulante(string ci)
         {
             this.ci = ci;
@@ -39,6 +41,7 @@ namespace ProyectoForge
         public string PuestoPreferencia { get => puestoPreferencia; set => puestoPreferencia = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Email { get => email; set => email = value; }
+        public Image Foto { get => foto; set => foto = value; }
 
         public void CargarPostulante()
         {
@@ -53,6 +56,7 @@ namespace ProyectoForge
             this.puestoPreferencia = BD.Select("puesto_prefencia", "postulante", ci.ToString());
             this.direccion = BD.Select("direccion", "postulante", ci.ToString());
             this.email = BD.Select("email", "postulante", ci.ToString());
+            this.foto = BD.SelectImage("postulante", ci.ToString());
 
 
         }
