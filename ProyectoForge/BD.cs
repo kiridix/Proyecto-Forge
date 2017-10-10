@@ -37,7 +37,7 @@ namespace ProyectoForge
             try
             {
                 conn.Open();
-                String sentenciaSQL = "INSERT INTO persona VALUES (" + ci + ", '" + nombre + "', '" + apellido + "', '"+ fecha +"', '"+ telefono +"')";
+                String sentenciaSQL = "INSERT INTO persona VALUES (" + ci + ", '" + nombre + "', '" + apellido + "', '" + fecha + "', '" + telefono + "')";
                 cmnd = new SqlCommand(sentenciaSQL, conn);
                 cmnd.ExecuteNonQuery();
                 conn.Close();
@@ -72,7 +72,7 @@ namespace ProyectoForge
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
-           
+
         }
         public static void deletePersona(string ci)
         {
@@ -85,7 +85,7 @@ namespace ProyectoForge
         public static void deletePostulante(string ci)
         {
             conn.Open();
-            String sentenciaSQL = "DELETE FROM postulante WHERE ci='"+ ci +"'";
+            String sentenciaSQL = "DELETE FROM postulante WHERE ci='" + ci + "'";
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
@@ -97,7 +97,7 @@ namespace ProyectoForge
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
-          
+
         }
         public static Boolean Login(string usuario, String contraseña)
         {
@@ -133,7 +133,7 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
         }
-        public static int InsertarPostulante(PictureBox pic,int ci, string licencia, DateTime fecLic, int sueldo, string pais, string cargo, string direccion, string email)
+        public static int InsertarPostulante(PictureBox pic, int ci, string licencia, DateTime fecLic, int sueldo, string pais, string cargo, string direccion, string email)
         {
             conn.Open();
             String sentenciaSQL = "Insert into postulante values (" + ci + ", '" + licencia + "', '" + fecLic + "', null , " + sueldo + " , '" + pais + "' , @foto , '" + cargo + "', '" + direccion + "', '" + email + "')";
@@ -146,9 +146,10 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
             return 0;
-           
+
         }
-        public static Image SelectImage(string tabla, string donde) {
+        public static Image SelectImage(string tabla, string donde)
+        {
             conn.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT foto FROM " + tabla + " WHERE ci=" + donde + "", conn);
             DataSet ds = new DataSet();
@@ -181,14 +182,15 @@ namespace ProyectoForge
                 return null;
             }
         }
-            public static string Select(string dato, string tabla, string donde) {
-                string resultado = string.Empty;
-                conn.Open();
-                cmnd = new SqlCommand("SELECT "+ dato +" FROM "+ tabla +" WHERE ci=" + donde +"", conn);
-                resultado = Convert.ToString(cmnd.ExecuteScalar());
-                conn.Close();
-                return resultado;
-            }
+        public static string Select(string dato, string tabla, string donde)
+        {
+            string resultado = string.Empty;
+            conn.Open();
+            cmnd = new SqlCommand("SELECT " + dato + " FROM " + tabla + " WHERE ci=" + donde + "", conn);
+            resultado = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return resultado;
+        }
         public static int InsertEmpresa(int rut, string nombre, string direccion_fiscal, String direccion_ficica, String tel, String email, DateTime fecha_ingreso, String rubro)
 
         {
@@ -277,12 +279,64 @@ namespace ProyectoForge
         }
         public static void insertConocimiento(string conocimiento, string desc)
         {
-
             conn.Open();
-            String sentenciaSQL = "INSERT INTO conocimiento(NOMBRE, DESCRIPCION) VALUES ('"+ conocimiento +"', '"+  desc +"')";
+            String sentenciaSQL = "INSERT INTO conocimiento(NOMBRE, DESCRIPCION) VALUES ('" + conocimiento + "', '" + desc + "')";
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
+        }
+        public static string getIdcon(ComboBox cb)
+        {
+
+            string idcon = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT idcon FROM conocimiento where nombre = '" + cb.SelectedItem.ToString() + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            idcon = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return idcon;
+        }
+        public static string getIdPostulante(string ci)
+        {
+            string Ci = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT idpostulante FROM postulante where ci = '" + ci + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            Ci = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return Ci;
+        }
+        public static void insetrarConocimiento(int idcon, int idpost)
+        {
+            conn.Open();
+            string sentenciaSQL = "insert into tiene (idcon, idpostulante) Values (" + idcon + ", " + idpost + ")";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static DataTable ListarMasConocimientos(int idpos)
+        {
+
+            System.Data.DataTable dt = new System.Data.DataTable();
+                conn.Open();
+                cmnd = new SqlCommand("SELECT conocimiento.nombre, conocimiento.descripcion, tiene.idcon FROM conocimiento, tiene WHERE tiene.idcon=conocimiento.idcon AND tiene.idpostulante= "+ idpos +"", conn);
+                dtr = cmnd.ExecuteReader();
+                dt.Load(dtr);
+                dtr.Close();
+                conn.Close();
+                return dt;
+        }
+        public static int BorrarconocimientoP(int idcon, int idpos)
+
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM tiene where idcon="+idcon+" and idpostulante="+idpos+"", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
+
+
+            return 0;
         }
     }
     }

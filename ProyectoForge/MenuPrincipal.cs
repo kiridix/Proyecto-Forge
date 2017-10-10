@@ -145,11 +145,7 @@ namespace ProyectoForge
             {
                 case 1: TabMain.SelectTab(16);
                     break;
-                case 2: TabMain.SelectTab(12);
-                    break;
-                case 4: TabMain.SelectTab(0);
-                    break;
-                case 5: TabMain.SelectTab(3);
+                case 5: TabMain.SelectTab(4);
                     break;
             }
         }
@@ -224,7 +220,7 @@ namespace ProyectoForge
                     TabMain.SelectTab(14);
                     break;
                 case 5:
-                    TabMain.SelectTab(5);
+                    TabMain.SelectTab(6);
                     break;
             }
         }
@@ -313,10 +309,12 @@ namespace ProyectoForge
             int ci = (int)dgvLP.CurrentRow.Cells["ci"].Value;
             postulante p = new postulante(ci.ToString());
             cargarVistaPostulante(p);
+            this.P = p;
             BD.listarConocimientos(cboxConocimientos);
             TabMain.SelectTab(15);
 
         }
+        private postulante p;
         private void cargarVistaPostulante(postulante p)
         {
             p.CargarPostulante();
@@ -535,6 +533,9 @@ namespace ProyectoForge
 
         }
         public Image foto;
+
+        internal postulante P { get => p; set => p = value; }
+
         private void btnSubirFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -562,6 +563,30 @@ namespace ProyectoForge
         private void listarConocimientos()
         {
             dataGridACConocimientos.DataSource = BD.Listar("conocimiento");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            int idcon = Int32.Parse(BD.getIdcon(cboxConocimientos));
+            int idpos = Int32.Parse(BD.getIdPostulante(P.Ci));
+            BD.insetrarConocimiento(idcon, idpos);
+            dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
+            // BD.ListarMasConocimientos(dgvConocimientosVP);
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            int idcon = (int)dgvConocimientosVP.CurrentRow.Cells["idcon"].Value;
+            int idpos = Int32.Parse(BD.getIdPostulante(P.Ci));
+            BD.BorrarconocimientoP(idcon, idpos);
+            dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
+
         }
     }
     }

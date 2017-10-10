@@ -97,6 +97,8 @@
             this.btnMSEAgregarConocimiento = new System.Windows.Forms.Button();
             this.btnMSEAgregarEstudio = new System.Windows.Forms.Button();
             this.AltaCualidades = new System.Windows.Forms.TabPage();
+            this.txtDescripcionConcoimiento = new System.Windows.Forms.TextBox();
+            this.panel153 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.btnACEliminarEstudio = new System.Windows.Forms.Button();
             this.btnACAgregarEstudio = new System.Windows.Forms.Button();
@@ -269,6 +271,8 @@
             this.lblNombreYApellido = new System.Windows.Forms.Label();
             this.lblCiLP = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.txtPaisPreferenciaVP = new System.Windows.Forms.TextBox();
             this.panel115 = new System.Windows.Forms.Panel();
             this.txtPuestoPreferenciaVP = new System.Windows.Forms.TextBox();
@@ -301,13 +305,11 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.cboxConocimientos = new System.Windows.Forms.ComboBox();
-            this.VerPostulante = new System.Windows.Forms.DataGridView();
+            this.dgvConocimientosVP = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label62 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -317,6 +319,72 @@
             this.label23 = new System.Windows.Forms.Label();
             this.lblNombreVP = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CrearPostulante = new System.Windows.Forms.TabPage();
+            this.pictureBoxAP = new System.Windows.Forms.PictureBox();
+            this.lblUserCreadoCorrectamente = new System.Windows.Forms.Label();
+            this.panel149 = new System.Windows.Forms.Panel();
+            this.panel150 = new System.Windows.Forms.Panel();
+            this.panel151 = new System.Windows.Forms.Panel();
+            this.panel152 = new System.Windows.Forms.Panel();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.btnSubirFoto = new System.Windows.Forms.Button();
+            this.lblFoto = new System.Windows.Forms.Label();
+            this.dtpFechVen = new System.Windows.Forms.DateTimePicker();
+            this.lblDecVenc = new System.Windows.Forms.Label();
+            this.cboxTipoLic = new System.Windows.Forms.ComboBox();
+            this.lblTipoLicencia = new System.Windows.Forms.Label();
+            this.panel145 = new System.Windows.Forms.Panel();
+            this.panel146 = new System.Windows.Forms.Panel();
+            this.panel147 = new System.Windows.Forms.Panel();
+            this.panel148 = new System.Windows.Forms.Panel();
+            this.txtPaisPreferencia = new System.Windows.Forms.TextBox();
+            this.lblPaisPreferencia = new System.Windows.Forms.Label();
+            this.panel141 = new System.Windows.Forms.Panel();
+            this.panel142 = new System.Windows.Forms.Panel();
+            this.panel143 = new System.Windows.Forms.Panel();
+            this.panel144 = new System.Windows.Forms.Panel();
+            this.txtPuestoPreferencia = new System.Windows.Forms.TextBox();
+            this.lblPuestoPreferencia = new System.Windows.Forms.Label();
+            this.panel137 = new System.Windows.Forms.Panel();
+            this.panel138 = new System.Windows.Forms.Panel();
+            this.panel139 = new System.Windows.Forms.Panel();
+            this.panel140 = new System.Windows.Forms.Panel();
+            this.txtSueldoEsperado = new System.Windows.Forms.TextBox();
+            this.lblSueldoEsperado = new System.Windows.Forms.Label();
+            this.btnCrearAP = new System.Windows.Forms.Button();
+            this.dtpFechNac = new System.Windows.Forms.DateTimePicker();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.panel119 = new System.Windows.Forms.Panel();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel120 = new System.Windows.Forms.Panel();
+            this.panel121 = new System.Windows.Forms.Panel();
+            this.panel122 = new System.Windows.Forms.Panel();
+            this.panel123 = new System.Windows.Forms.Panel();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblCredencialAP = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel124 = new System.Windows.Forms.Panel();
+            this.panel125 = new System.Windows.Forms.Panel();
+            this.panel127 = new System.Windows.Forms.Panel();
+            this.panel128 = new System.Windows.Forms.Panel();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.panel129 = new System.Windows.Forms.Panel();
+            this.panel130 = new System.Windows.Forms.Panel();
+            this.panel131 = new System.Windows.Forms.Panel();
+            this.panel132 = new System.Windows.Forms.Panel();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.panel133 = new System.Windows.Forms.Panel();
+            this.panel134 = new System.Windows.Forms.Panel();
+            this.panel135 = new System.Windows.Forms.Panel();
+            this.panel136 = new System.Windows.Forms.Panel();
+            this.txtCi = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
             this.panel106 = new System.Windows.Forms.Panel();
             this.panel107 = new System.Windows.Forms.Panel();
             this.panel108 = new System.Windows.Forms.Panel();
@@ -382,76 +450,6 @@
             this.lblUserCreadoAP = new System.Windows.Forms.Label();
             this.AltaPostulante = new System.Windows.Forms.TabPage();
             this.dtpFecvenAP = new System.Windows.Forms.DateTimePicker();
-            this.CrearPostulante = new System.Windows.Forms.TabPage();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.panel119 = new System.Windows.Forms.Panel();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel120 = new System.Windows.Forms.Panel();
-            this.panel121 = new System.Windows.Forms.Panel();
-            this.panel122 = new System.Windows.Forms.Panel();
-            this.panel123 = new System.Windows.Forms.Panel();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblCredencialAP = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel124 = new System.Windows.Forms.Panel();
-            this.panel125 = new System.Windows.Forms.Panel();
-            this.panel127 = new System.Windows.Forms.Panel();
-            this.panel128 = new System.Windows.Forms.Panel();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.panel129 = new System.Windows.Forms.Panel();
-            this.panel130 = new System.Windows.Forms.Panel();
-            this.panel131 = new System.Windows.Forms.Panel();
-            this.panel132 = new System.Windows.Forms.Panel();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.panel133 = new System.Windows.Forms.Panel();
-            this.panel134 = new System.Windows.Forms.Panel();
-            this.panel135 = new System.Windows.Forms.Panel();
-            this.panel136 = new System.Windows.Forms.Panel();
-            this.txtCi = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.dtpFechNac = new System.Windows.Forms.DateTimePicker();
-            this.btnCrearAP = new System.Windows.Forms.Button();
-            this.lblSueldoEsperado = new System.Windows.Forms.Label();
-            this.panel137 = new System.Windows.Forms.Panel();
-            this.panel138 = new System.Windows.Forms.Panel();
-            this.panel139 = new System.Windows.Forms.Panel();
-            this.panel140 = new System.Windows.Forms.Panel();
-            this.txtSueldoEsperado = new System.Windows.Forms.TextBox();
-            this.panel141 = new System.Windows.Forms.Panel();
-            this.panel142 = new System.Windows.Forms.Panel();
-            this.panel143 = new System.Windows.Forms.Panel();
-            this.panel144 = new System.Windows.Forms.Panel();
-            this.txtPuestoPreferencia = new System.Windows.Forms.TextBox();
-            this.lblPuestoPreferencia = new System.Windows.Forms.Label();
-            this.panel145 = new System.Windows.Forms.Panel();
-            this.panel146 = new System.Windows.Forms.Panel();
-            this.panel147 = new System.Windows.Forms.Panel();
-            this.panel148 = new System.Windows.Forms.Panel();
-            this.txtPaisPreferencia = new System.Windows.Forms.TextBox();
-            this.lblPaisPreferencia = new System.Windows.Forms.Label();
-            this.lblTipoLicencia = new System.Windows.Forms.Label();
-            this.cboxTipoLic = new System.Windows.Forms.ComboBox();
-            this.dtpFechVen = new System.Windows.Forms.DateTimePicker();
-            this.lblDecVenc = new System.Windows.Forms.Label();
-            this.lblFoto = new System.Windows.Forms.Label();
-            this.btnSubirFoto = new System.Windows.Forms.Button();
-            this.panel149 = new System.Windows.Forms.Panel();
-            this.panel150 = new System.Windows.Forms.Panel();
-            this.panel151 = new System.Windows.Forms.Panel();
-            this.panel152 = new System.Windows.Forms.Panel();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblUserCreadoCorrectamente = new System.Windows.Forms.Label();
-            this.pictureBoxAP = new System.Windows.Forms.PictureBox();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtDescripcionConcoimiento = new System.Windows.Forms.TextBox();
-            this.panel153 = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.AltaEntrevista.SuspendLayout();
@@ -510,9 +508,29 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerPostulante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConocimientosVP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.CrearPostulante.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAP)).BeginInit();
+            this.panel149.SuspendLayout();
+            this.panel150.SuspendLayout();
+            this.panel145.SuspendLayout();
+            this.panel146.SuspendLayout();
+            this.panel141.SuspendLayout();
+            this.panel142.SuspendLayout();
+            this.panel137.SuspendLayout();
+            this.panel138.SuspendLayout();
+            this.panel52.SuspendLayout();
+            this.panel53.SuspendLayout();
+            this.panel120.SuspendLayout();
+            this.panel121.SuspendLayout();
+            this.panel124.SuspendLayout();
+            this.panel125.SuspendLayout();
+            this.panel129.SuspendLayout();
+            this.panel130.SuspendLayout();
+            this.panel133.SuspendLayout();
+            this.panel134.SuspendLayout();
             this.panel106.SuspendLayout();
             this.panel107.SuspendLayout();
             this.panel88.SuspendLayout();
@@ -532,26 +550,6 @@
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
             this.AltaPostulante.SuspendLayout();
-            this.CrearPostulante.SuspendLayout();
-            this.panel52.SuspendLayout();
-            this.panel53.SuspendLayout();
-            this.panel120.SuspendLayout();
-            this.panel121.SuspendLayout();
-            this.panel124.SuspendLayout();
-            this.panel125.SuspendLayout();
-            this.panel129.SuspendLayout();
-            this.panel130.SuspendLayout();
-            this.panel133.SuspendLayout();
-            this.panel134.SuspendLayout();
-            this.panel137.SuspendLayout();
-            this.panel138.SuspendLayout();
-            this.panel141.SuspendLayout();
-            this.panel142.SuspendLayout();
-            this.panel145.SuspendLayout();
-            this.panel146.SuspendLayout();
-            this.panel149.SuspendLayout();
-            this.panel150.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAP)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
@@ -1376,6 +1374,26 @@
             this.AltaCualidades.Size = new System.Drawing.Size(850, 766);
             this.AltaCualidades.TabIndex = 7;
             this.AltaCualidades.Text = "Cualidades";
+            // 
+            // txtDescripcionConcoimiento
+            // 
+            this.txtDescripcionConcoimiento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDescripcionConcoimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescripcionConcoimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionConcoimiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtDescripcionConcoimiento.Location = new System.Drawing.Point(495, 38);
+            this.txtDescripcionConcoimiento.Multiline = true;
+            this.txtDescripcionConcoimiento.Name = "txtDescripcionConcoimiento";
+            this.txtDescripcionConcoimiento.Size = new System.Drawing.Size(144, 64);
+            this.txtDescripcionConcoimiento.TabIndex = 82;
+            // 
+            // panel153
+            // 
+            this.panel153.BackColor = System.Drawing.Color.White;
+            this.panel153.Location = new System.Drawing.Point(495, 102);
+            this.panel153.Name = "panel153";
+            this.panel153.Size = new System.Drawing.Size(144, 2);
+            this.panel153.TabIndex = 83;
             // 
             // label31
             // 
@@ -2948,7 +2966,7 @@
             this.TabMain.Controls.Add(this.ListarPostulantes);
             this.TabMain.Controls.Add(this.tabPage3);
             this.TabMain.Controls.Add(this.CrearPostulante);
-            this.TabMain.Location = new System.Drawing.Point(56, -40);
+            this.TabMain.Location = new System.Drawing.Point(56, -39);
             this.TabMain.Multiline = true;
             this.TabMain.Name = "TabMain";
             this.TabMain.SelectedIndex = 0;
@@ -3243,13 +3261,11 @@
             this.tabPage3.Controls.Add(this.button9);
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Controls.Add(this.cboxConocimientos);
-            this.tabPage3.Controls.Add(this.VerPostulante);
+            this.tabPage3.Controls.Add(this.dgvConocimientosVP);
             this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.label62);
             this.tabPage3.Controls.Add(this.comboBox3);
             this.tabPage3.Controls.Add(this.label67);
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.button8);
             this.tabPage3.Controls.Add(this.label50);
             this.tabPage3.Controls.Add(this.label49);
             this.tabPage3.Controls.Add(this.label48);
@@ -3265,6 +3281,30 @@
             this.tabPage3.Size = new System.Drawing.Size(850, 766);
             this.tabPage3.TabIndex = 19;
             this.tabPage3.Text = "VerPostulante";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(729, 217);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(99, 26);
+            this.btnGuardar.TabIndex = 106;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(608, 217);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(99, 26);
+            this.btnModificar.TabIndex = 105;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
             // txtPaisPreferenciaVP
             // 
@@ -3568,6 +3608,7 @@
             this.button12.TabIndex = 75;
             this.button12.Text = "Agregar";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button9
             // 
@@ -3580,6 +3621,7 @@
             this.button9.TabIndex = 74;
             this.button9.Text = "Eliminar";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button11
             // 
@@ -3592,6 +3634,7 @@
             this.button11.TabIndex = 73;
             this.button11.Text = "Agregar";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // cboxConocimientos
             // 
@@ -3603,13 +3646,13 @@
             this.cboxConocimientos.Size = new System.Drawing.Size(141, 24);
             this.cboxConocimientos.TabIndex = 62;
             // 
-            // VerPostulante
+            // dgvConocimientosVP
             // 
-            this.VerPostulante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VerPostulante.Location = new System.Drawing.Point(521, 357);
-            this.VerPostulante.Name = "VerPostulante";
-            this.VerPostulante.Size = new System.Drawing.Size(223, 90);
-            this.VerPostulante.TabIndex = 61;
+            this.dgvConocimientosVP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConocimientosVP.Location = new System.Drawing.Point(521, 357);
+            this.dgvConocimientosVP.Name = "dgvConocimientosVP";
+            this.dgvConocimientosVP.Size = new System.Drawing.Size(223, 90);
+            this.dgvConocimientosVP.TabIndex = 61;
             // 
             // dataGridView3
             // 
@@ -3635,7 +3678,7 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(254, 306);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(199, 24);
+            this.comboBox3.Size = new System.Drawing.Size(156, 24);
             this.comboBox3.TabIndex = 55;
             // 
             // label67
@@ -3647,30 +3690,6 @@
             this.label67.Size = new System.Drawing.Size(85, 20);
             this.label67.TabIndex = 54;
             this.label67.Text = "Estudios: *";
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.button7.Location = new System.Drawing.Point(804, 306);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(24, 25);
-            this.button7.TabIndex = 60;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.button8.Location = new System.Drawing.Point(459, 308);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(24, 25);
-            this.button8.TabIndex = 59;
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // label50
             // 
@@ -3753,6 +3772,699 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // CrearPostulante
+            // 
+            this.CrearPostulante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CrearPostulante.Controls.Add(this.pictureBoxAP);
+            this.CrearPostulante.Controls.Add(this.lblUserCreadoCorrectamente);
+            this.CrearPostulante.Controls.Add(this.panel149);
+            this.CrearPostulante.Controls.Add(this.txtTelefono);
+            this.CrearPostulante.Controls.Add(this.lblTelefono);
+            this.CrearPostulante.Controls.Add(this.btnSubirFoto);
+            this.CrearPostulante.Controls.Add(this.lblFoto);
+            this.CrearPostulante.Controls.Add(this.dtpFechVen);
+            this.CrearPostulante.Controls.Add(this.lblDecVenc);
+            this.CrearPostulante.Controls.Add(this.cboxTipoLic);
+            this.CrearPostulante.Controls.Add(this.lblTipoLicencia);
+            this.CrearPostulante.Controls.Add(this.panel145);
+            this.CrearPostulante.Controls.Add(this.txtPaisPreferencia);
+            this.CrearPostulante.Controls.Add(this.lblPaisPreferencia);
+            this.CrearPostulante.Controls.Add(this.panel141);
+            this.CrearPostulante.Controls.Add(this.txtPuestoPreferencia);
+            this.CrearPostulante.Controls.Add(this.lblPuestoPreferencia);
+            this.CrearPostulante.Controls.Add(this.panel137);
+            this.CrearPostulante.Controls.Add(this.txtSueldoEsperado);
+            this.CrearPostulante.Controls.Add(this.lblSueldoEsperado);
+            this.CrearPostulante.Controls.Add(this.btnCrearAP);
+            this.CrearPostulante.Controls.Add(this.dtpFechNac);
+            this.CrearPostulante.Controls.Add(this.panel52);
+            this.CrearPostulante.Controls.Add(this.txtDireccion);
+            this.CrearPostulante.Controls.Add(this.label22);
+            this.CrearPostulante.Controls.Add(this.panel120);
+            this.CrearPostulante.Controls.Add(this.txtEmail);
+            this.CrearPostulante.Controls.Add(this.lblCredencialAP);
+            this.CrearPostulante.Controls.Add(this.label29);
+            this.CrearPostulante.Controls.Add(this.panel124);
+            this.CrearPostulante.Controls.Add(this.txtApellido);
+            this.CrearPostulante.Controls.Add(this.label30);
+            this.CrearPostulante.Controls.Add(this.panel129);
+            this.CrearPostulante.Controls.Add(this.txtNombre);
+            this.CrearPostulante.Controls.Add(this.label43);
+            this.CrearPostulante.Controls.Add(this.panel133);
+            this.CrearPostulante.Controls.Add(this.txtCi);
+            this.CrearPostulante.Controls.Add(this.label44);
+            this.CrearPostulante.Location = new System.Drawing.Point(4, 46);
+            this.CrearPostulante.Name = "CrearPostulante";
+            this.CrearPostulante.Padding = new System.Windows.Forms.Padding(3);
+            this.CrearPostulante.Size = new System.Drawing.Size(850, 766);
+            this.CrearPostulante.TabIndex = 20;
+            this.CrearPostulante.Text = "tabPage1";
+            // 
+            // pictureBoxAP
+            // 
+            this.pictureBoxAP.Location = new System.Drawing.Point(629, 351);
+            this.pictureBoxAP.Name = "pictureBoxAP";
+            this.pictureBoxAP.Size = new System.Drawing.Size(151, 138);
+            this.pictureBoxAP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAP.TabIndex = 89;
+            this.pictureBoxAP.TabStop = false;
+            // 
+            // lblUserCreadoCorrectamente
+            // 
+            this.lblUserCreadoCorrectamente.AutoSize = true;
+            this.lblUserCreadoCorrectamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserCreadoCorrectamente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblUserCreadoCorrectamente.Location = new System.Drawing.Point(400, 565);
+            this.lblUserCreadoCorrectamente.Name = "lblUserCreadoCorrectamente";
+            this.lblUserCreadoCorrectamente.Size = new System.Drawing.Size(224, 20);
+            this.lblUserCreadoCorrectamente.TabIndex = 88;
+            this.lblUserCreadoCorrectamente.Text = "Usuario creado correctamente";
+            this.lblUserCreadoCorrectamente.Visible = false;
+            // 
+            // panel149
+            // 
+            this.panel149.BackColor = System.Drawing.Color.White;
+            this.panel149.Controls.Add(this.panel150);
+            this.panel149.Controls.Add(this.panel152);
+            this.panel149.Location = new System.Drawing.Point(312, 463);
+            this.panel149.Name = "panel149";
+            this.panel149.Size = new System.Drawing.Size(128, 3);
+            this.panel149.TabIndex = 87;
+            // 
+            // panel150
+            // 
+            this.panel150.BackColor = System.Drawing.Color.White;
+            this.panel150.Controls.Add(this.panel151);
+            this.panel150.Location = new System.Drawing.Point(0, 11);
+            this.panel150.Name = "panel150";
+            this.panel150.Size = new System.Drawing.Size(311, 2);
+            this.panel150.TabIndex = 24;
+            // 
+            // panel151
+            // 
+            this.panel151.BackColor = System.Drawing.Color.White;
+            this.panel151.Location = new System.Drawing.Point(0, 39);
+            this.panel151.Name = "panel151";
+            this.panel151.Size = new System.Drawing.Size(311, 2);
+            this.panel151.TabIndex = 23;
+            // 
+            // panel152
+            // 
+            this.panel152.BackColor = System.Drawing.Color.White;
+            this.panel152.Location = new System.Drawing.Point(0, 39);
+            this.panel152.Name = "panel152";
+            this.panel152.Size = new System.Drawing.Size(311, 2);
+            this.panel152.TabIndex = 23;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtTelefono.Location = new System.Drawing.Point(312, 445);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(128, 19);
+            this.txtTelefono.TabIndex = 86;
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Location = new System.Drawing.Point(231, 444);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(71, 20);
+            this.lblTelefono.TabIndex = 85;
+            this.lblTelefono.Text = "Telefono";
+            // 
+            // btnSubirFoto
+            // 
+            this.btnSubirFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubirFoto.FlatAppearance.BorderSize = 0;
+            this.btnSubirFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubirFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubirFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSubirFoto.Location = new System.Drawing.Point(485, 377);
+            this.btnSubirFoto.Name = "btnSubirFoto";
+            this.btnSubirFoto.Size = new System.Drawing.Size(129, 26);
+            this.btnSubirFoto.TabIndex = 84;
+            this.btnSubirFoto.Text = "Subir";
+            this.btnSubirFoto.UseVisualStyleBackColor = false;
+            this.btnSubirFoto.Click += new System.EventHandler(this.btnSubirFoto_Click);
+            // 
+            // lblFoto
+            // 
+            this.lblFoto.AutoSize = true;
+            this.lblFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoto.Location = new System.Drawing.Point(572, 353);
+            this.lblFoto.Name = "lblFoto";
+            this.lblFoto.Size = new System.Drawing.Size(42, 20);
+            this.lblFoto.TabIndex = 83;
+            this.lblFoto.Text = "Foto";
+            // 
+            // dtpFechVen
+            // 
+            this.dtpFechVen.Location = new System.Drawing.Point(546, 151);
+            this.dtpFechVen.Name = "dtpFechVen";
+            this.dtpFechVen.Size = new System.Drawing.Size(200, 22);
+            this.dtpFechVen.TabIndex = 82;
+            // 
+            // lblDecVenc
+            // 
+            this.lblDecVenc.AutoSize = true;
+            this.lblDecVenc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDecVenc.Location = new System.Drawing.Point(569, 112);
+            this.lblDecVenc.Name = "lblDecVenc";
+            this.lblDecVenc.Size = new System.Drawing.Size(164, 20);
+            this.lblDecVenc.TabIndex = 81;
+            this.lblDecVenc.Text = "Fecha de vencimiento";
+            // 
+            // cboxTipoLic
+            // 
+            this.cboxTipoLic.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxTipoLic.FormattingEnabled = true;
+            this.cboxTipoLic.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "V",
+            "U",
+            "X",
+            "Y",
+            "Z"});
+            this.cboxTipoLic.Location = new System.Drawing.Point(652, 61);
+            this.cboxTipoLic.Name = "cboxTipoLic";
+            this.cboxTipoLic.Size = new System.Drawing.Size(128, 24);
+            this.cboxTipoLic.TabIndex = 80;
+            this.cboxTipoLic.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // lblTipoLicencia
+            // 
+            this.lblTipoLicencia.AutoSize = true;
+            this.lblTipoLicencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoLicencia.Location = new System.Drawing.Point(518, 61);
+            this.lblTipoLicencia.Name = "lblTipoLicencia";
+            this.lblTipoLicencia.Size = new System.Drawing.Size(117, 20);
+            this.lblTipoLicencia.TabIndex = 79;
+            this.lblTipoLicencia.Text = "Tipo de licencia";
+            // 
+            // panel145
+            // 
+            this.panel145.BackColor = System.Drawing.Color.White;
+            this.panel145.Controls.Add(this.panel146);
+            this.panel145.Controls.Add(this.panel148);
+            this.panel145.Location = new System.Drawing.Point(641, 332);
+            this.panel145.Name = "panel145";
+            this.panel145.Size = new System.Drawing.Size(128, 3);
+            this.panel145.TabIndex = 78;
+            // 
+            // panel146
+            // 
+            this.panel146.BackColor = System.Drawing.Color.White;
+            this.panel146.Controls.Add(this.panel147);
+            this.panel146.Location = new System.Drawing.Point(0, 11);
+            this.panel146.Name = "panel146";
+            this.panel146.Size = new System.Drawing.Size(311, 2);
+            this.panel146.TabIndex = 24;
+            // 
+            // panel147
+            // 
+            this.panel147.BackColor = System.Drawing.Color.White;
+            this.panel147.Location = new System.Drawing.Point(0, 39);
+            this.panel147.Name = "panel147";
+            this.panel147.Size = new System.Drawing.Size(311, 2);
+            this.panel147.TabIndex = 23;
+            // 
+            // panel148
+            // 
+            this.panel148.BackColor = System.Drawing.Color.White;
+            this.panel148.Location = new System.Drawing.Point(0, 39);
+            this.panel148.Name = "panel148";
+            this.panel148.Size = new System.Drawing.Size(311, 2);
+            this.panel148.TabIndex = 23;
+            // 
+            // txtPaisPreferencia
+            // 
+            this.txtPaisPreferencia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPaisPreferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPaisPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPaisPreferencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPaisPreferencia.Location = new System.Drawing.Point(641, 314);
+            this.txtPaisPreferencia.Name = "txtPaisPreferencia";
+            this.txtPaisPreferencia.Size = new System.Drawing.Size(128, 19);
+            this.txtPaisPreferencia.TabIndex = 77;
+            // 
+            // lblPaisPreferencia
+            // 
+            this.lblPaisPreferencia.AutoSize = true;
+            this.lblPaisPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaisPreferencia.Location = new System.Drawing.Point(487, 313);
+            this.lblPaisPreferencia.Name = "lblPaisPreferencia";
+            this.lblPaisPreferencia.Size = new System.Drawing.Size(137, 20);
+            this.lblPaisPreferencia.TabIndex = 76;
+            this.lblPaisPreferencia.Text = "Puesto preferente";
+            // 
+            // panel141
+            // 
+            this.panel141.BackColor = System.Drawing.Color.White;
+            this.panel141.Controls.Add(this.panel142);
+            this.panel141.Controls.Add(this.panel144);
+            this.panel141.Location = new System.Drawing.Point(641, 207);
+            this.panel141.Name = "panel141";
+            this.panel141.Size = new System.Drawing.Size(128, 3);
+            this.panel141.TabIndex = 75;
+            // 
+            // panel142
+            // 
+            this.panel142.BackColor = System.Drawing.Color.White;
+            this.panel142.Controls.Add(this.panel143);
+            this.panel142.Location = new System.Drawing.Point(0, 11);
+            this.panel142.Name = "panel142";
+            this.panel142.Size = new System.Drawing.Size(311, 2);
+            this.panel142.TabIndex = 24;
+            // 
+            // panel143
+            // 
+            this.panel143.BackColor = System.Drawing.Color.White;
+            this.panel143.Location = new System.Drawing.Point(0, 39);
+            this.panel143.Name = "panel143";
+            this.panel143.Size = new System.Drawing.Size(311, 2);
+            this.panel143.TabIndex = 23;
+            // 
+            // panel144
+            // 
+            this.panel144.BackColor = System.Drawing.Color.White;
+            this.panel144.Location = new System.Drawing.Point(0, 39);
+            this.panel144.Name = "panel144";
+            this.panel144.Size = new System.Drawing.Size(311, 2);
+            this.panel144.TabIndex = 23;
+            // 
+            // txtPuestoPreferencia
+            // 
+            this.txtPuestoPreferencia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPuestoPreferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPuestoPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuestoPreferencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPuestoPreferencia.Location = new System.Drawing.Point(641, 189);
+            this.txtPuestoPreferencia.Name = "txtPuestoPreferencia";
+            this.txtPuestoPreferencia.Size = new System.Drawing.Size(128, 19);
+            this.txtPuestoPreferencia.TabIndex = 74;
+            // 
+            // lblPuestoPreferencia
+            // 
+            this.lblPuestoPreferencia.AutoSize = true;
+            this.lblPuestoPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuestoPreferencia.Location = new System.Drawing.Point(487, 188);
+            this.lblPuestoPreferencia.Name = "lblPuestoPreferencia";
+            this.lblPuestoPreferencia.Size = new System.Drawing.Size(137, 20);
+            this.lblPuestoPreferencia.TabIndex = 73;
+            this.lblPuestoPreferencia.Text = "Puesto preferente";
+            // 
+            // panel137
+            // 
+            this.panel137.BackColor = System.Drawing.Color.White;
+            this.panel137.Controls.Add(this.panel138);
+            this.panel137.Controls.Add(this.panel140);
+            this.panel137.Location = new System.Drawing.Point(641, 268);
+            this.panel137.Name = "panel137";
+            this.panel137.Size = new System.Drawing.Size(128, 3);
+            this.panel137.TabIndex = 72;
+            // 
+            // panel138
+            // 
+            this.panel138.BackColor = System.Drawing.Color.White;
+            this.panel138.Controls.Add(this.panel139);
+            this.panel138.Location = new System.Drawing.Point(0, 11);
+            this.panel138.Name = "panel138";
+            this.panel138.Size = new System.Drawing.Size(311, 2);
+            this.panel138.TabIndex = 24;
+            // 
+            // panel139
+            // 
+            this.panel139.BackColor = System.Drawing.Color.White;
+            this.panel139.Location = new System.Drawing.Point(0, 39);
+            this.panel139.Name = "panel139";
+            this.panel139.Size = new System.Drawing.Size(311, 2);
+            this.panel139.TabIndex = 23;
+            // 
+            // panel140
+            // 
+            this.panel140.BackColor = System.Drawing.Color.White;
+            this.panel140.Location = new System.Drawing.Point(0, 39);
+            this.panel140.Name = "panel140";
+            this.panel140.Size = new System.Drawing.Size(311, 2);
+            this.panel140.TabIndex = 23;
+            // 
+            // txtSueldoEsperado
+            // 
+            this.txtSueldoEsperado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSueldoEsperado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSueldoEsperado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSueldoEsperado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSueldoEsperado.Location = new System.Drawing.Point(641, 250);
+            this.txtSueldoEsperado.Name = "txtSueldoEsperado";
+            this.txtSueldoEsperado.Size = new System.Drawing.Size(128, 19);
+            this.txtSueldoEsperado.TabIndex = 71;
+            // 
+            // lblSueldoEsperado
+            // 
+            this.lblSueldoEsperado.AutoSize = true;
+            this.lblSueldoEsperado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSueldoEsperado.Location = new System.Drawing.Point(494, 250);
+            this.lblSueldoEsperado.Name = "lblSueldoEsperado";
+            this.lblSueldoEsperado.Size = new System.Drawing.Size(130, 20);
+            this.lblSueldoEsperado.TabIndex = 70;
+            this.lblSueldoEsperado.Text = "Sueldo esperado";
+            // 
+            // btnCrearAP
+            // 
+            this.btnCrearAP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCrearAP.FlatAppearance.BorderSize = 0;
+            this.btnCrearAP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearAP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCrearAP.Location = new System.Drawing.Point(345, 597);
+            this.btnCrearAP.Name = "btnCrearAP";
+            this.btnCrearAP.Size = new System.Drawing.Size(324, 63);
+            this.btnCrearAP.TabIndex = 69;
+            this.btnCrearAP.Text = "Crear";
+            this.btnCrearAP.UseVisualStyleBackColor = false;
+            this.btnCrearAP.Click += new System.EventHandler(this.btnCrearAP_Click);
+            // 
+            // dtpFechNac
+            // 
+            this.dtpFechNac.Location = new System.Drawing.Point(245, 271);
+            this.dtpFechNac.Name = "dtpFechNac";
+            this.dtpFechNac.Size = new System.Drawing.Size(200, 22);
+            this.dtpFechNac.TabIndex = 57;
+            // 
+            // panel52
+            // 
+            this.panel52.BackColor = System.Drawing.Color.White;
+            this.panel52.Controls.Add(this.panel53);
+            this.panel52.Controls.Add(this.panel119);
+            this.panel52.Location = new System.Drawing.Point(312, 411);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(128, 3);
+            this.panel52.TabIndex = 56;
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.White;
+            this.panel53.Controls.Add(this.panel54);
+            this.panel53.Location = new System.Drawing.Point(0, 11);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(311, 2);
+            this.panel53.TabIndex = 24;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.White;
+            this.panel54.Location = new System.Drawing.Point(0, 39);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(311, 2);
+            this.panel54.TabIndex = 23;
+            // 
+            // panel119
+            // 
+            this.panel119.BackColor = System.Drawing.Color.White;
+            this.panel119.Location = new System.Drawing.Point(0, 39);
+            this.panel119.Name = "panel119";
+            this.panel119.Size = new System.Drawing.Size(311, 2);
+            this.panel119.TabIndex = 23;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtDireccion.Location = new System.Drawing.Point(312, 393);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(128, 19);
+            this.txtDireccion.TabIndex = 55;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(231, 391);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(75, 20);
+            this.label22.TabIndex = 54;
+            this.label22.Text = "Direccion";
+            // 
+            // panel120
+            // 
+            this.panel120.BackColor = System.Drawing.Color.White;
+            this.panel120.Controls.Add(this.panel121);
+            this.panel120.Controls.Add(this.panel123);
+            this.panel120.Location = new System.Drawing.Point(312, 354);
+            this.panel120.Name = "panel120";
+            this.panel120.Size = new System.Drawing.Size(128, 3);
+            this.panel120.TabIndex = 53;
+            // 
+            // panel121
+            // 
+            this.panel121.BackColor = System.Drawing.Color.White;
+            this.panel121.Controls.Add(this.panel122);
+            this.panel121.Location = new System.Drawing.Point(0, 11);
+            this.panel121.Name = "panel121";
+            this.panel121.Size = new System.Drawing.Size(311, 2);
+            this.panel121.TabIndex = 24;
+            // 
+            // panel122
+            // 
+            this.panel122.BackColor = System.Drawing.Color.White;
+            this.panel122.Location = new System.Drawing.Point(0, 39);
+            this.panel122.Name = "panel122";
+            this.panel122.Size = new System.Drawing.Size(311, 2);
+            this.panel122.TabIndex = 23;
+            // 
+            // panel123
+            // 
+            this.panel123.BackColor = System.Drawing.Color.White;
+            this.panel123.Location = new System.Drawing.Point(0, 39);
+            this.panel123.Name = "panel123";
+            this.panel123.Size = new System.Drawing.Size(311, 2);
+            this.panel123.TabIndex = 23;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtEmail.Location = new System.Drawing.Point(312, 336);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(128, 19);
+            this.txtEmail.TabIndex = 52;
+            // 
+            // lblCredencialAP
+            // 
+            this.lblCredencialAP.AutoSize = true;
+            this.lblCredencialAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCredencialAP.Location = new System.Drawing.Point(258, 335);
+            this.lblCredencialAP.Name = "lblCredencialAP";
+            this.lblCredencialAP.Size = new System.Drawing.Size(48, 20);
+            this.lblCredencialAP.TabIndex = 51;
+            this.lblCredencialAP.Text = "Email";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(268, 232);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(157, 20);
+            this.label29.TabIndex = 49;
+            this.label29.Text = "Fecha de nacimiento";
+            // 
+            // panel124
+            // 
+            this.panel124.BackColor = System.Drawing.Color.White;
+            this.panel124.Controls.Add(this.panel125);
+            this.panel124.Controls.Add(this.panel128);
+            this.panel124.Location = new System.Drawing.Point(312, 213);
+            this.panel124.Name = "panel124";
+            this.panel124.Size = new System.Drawing.Size(128, 3);
+            this.panel124.TabIndex = 48;
+            // 
+            // panel125
+            // 
+            this.panel125.BackColor = System.Drawing.Color.White;
+            this.panel125.Controls.Add(this.panel127);
+            this.panel125.Location = new System.Drawing.Point(0, 11);
+            this.panel125.Name = "panel125";
+            this.panel125.Size = new System.Drawing.Size(311, 2);
+            this.panel125.TabIndex = 24;
+            // 
+            // panel127
+            // 
+            this.panel127.BackColor = System.Drawing.Color.White;
+            this.panel127.Location = new System.Drawing.Point(0, 39);
+            this.panel127.Name = "panel127";
+            this.panel127.Size = new System.Drawing.Size(311, 2);
+            this.panel127.TabIndex = 23;
+            // 
+            // panel128
+            // 
+            this.panel128.BackColor = System.Drawing.Color.White;
+            this.panel128.Location = new System.Drawing.Point(0, 39);
+            this.panel128.Name = "panel128";
+            this.panel128.Size = new System.Drawing.Size(311, 2);
+            this.panel128.TabIndex = 23;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtApellido.Location = new System.Drawing.Point(312, 195);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(128, 19);
+            this.txtApellido.TabIndex = 47;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(241, 194);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(65, 20);
+            this.label30.TabIndex = 46;
+            this.label30.Text = "Apellido";
+            // 
+            // panel129
+            // 
+            this.panel129.BackColor = System.Drawing.Color.White;
+            this.panel129.Controls.Add(this.panel130);
+            this.panel129.Controls.Add(this.panel132);
+            this.panel129.Location = new System.Drawing.Point(312, 144);
+            this.panel129.Name = "panel129";
+            this.panel129.Size = new System.Drawing.Size(128, 3);
+            this.panel129.TabIndex = 45;
+            // 
+            // panel130
+            // 
+            this.panel130.BackColor = System.Drawing.Color.White;
+            this.panel130.Controls.Add(this.panel131);
+            this.panel130.Location = new System.Drawing.Point(0, 11);
+            this.panel130.Name = "panel130";
+            this.panel130.Size = new System.Drawing.Size(311, 2);
+            this.panel130.TabIndex = 24;
+            // 
+            // panel131
+            // 
+            this.panel131.BackColor = System.Drawing.Color.White;
+            this.panel131.Location = new System.Drawing.Point(0, 39);
+            this.panel131.Name = "panel131";
+            this.panel131.Size = new System.Drawing.Size(311, 2);
+            this.panel131.TabIndex = 23;
+            // 
+            // panel132
+            // 
+            this.panel132.BackColor = System.Drawing.Color.White;
+            this.panel132.Location = new System.Drawing.Point(0, 39);
+            this.panel132.Name = "panel132";
+            this.panel132.Size = new System.Drawing.Size(311, 2);
+            this.panel132.TabIndex = 23;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtNombre.Location = new System.Drawing.Point(312, 126);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(128, 19);
+            this.txtNombre.TabIndex = 44;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(241, 125);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(65, 20);
+            this.label43.TabIndex = 43;
+            this.label43.Text = "Nombre";
+            // 
+            // panel133
+            // 
+            this.panel133.BackColor = System.Drawing.Color.White;
+            this.panel133.Controls.Add(this.panel134);
+            this.panel133.Controls.Add(this.panel136);
+            this.panel133.Location = new System.Drawing.Point(312, 81);
+            this.panel133.Name = "panel133";
+            this.panel133.Size = new System.Drawing.Size(128, 3);
+            this.panel133.TabIndex = 42;
+            // 
+            // panel134
+            // 
+            this.panel134.BackColor = System.Drawing.Color.White;
+            this.panel134.Controls.Add(this.panel135);
+            this.panel134.Location = new System.Drawing.Point(0, 11);
+            this.panel134.Name = "panel134";
+            this.panel134.Size = new System.Drawing.Size(311, 2);
+            this.panel134.TabIndex = 24;
+            // 
+            // panel135
+            // 
+            this.panel135.BackColor = System.Drawing.Color.White;
+            this.panel135.Location = new System.Drawing.Point(0, 39);
+            this.panel135.Name = "panel135";
+            this.panel135.Size = new System.Drawing.Size(311, 2);
+            this.panel135.TabIndex = 23;
+            // 
+            // panel136
+            // 
+            this.panel136.BackColor = System.Drawing.Color.White;
+            this.panel136.Location = new System.Drawing.Point(0, 39);
+            this.panel136.Name = "panel136";
+            this.panel136.Size = new System.Drawing.Size(311, 2);
+            this.panel136.TabIndex = 23;
+            // 
+            // txtCi
+            // 
+            this.txtCi.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtCi.Location = new System.Drawing.Point(312, 63);
+            this.txtCi.Name = "txtCi";
+            this.txtCi.Size = new System.Drawing.Size(128, 19);
+            this.txtCi.TabIndex = 41;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(283, 62);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(23, 20);
+            this.label44.TabIndex = 40;
+            this.label44.Text = "Ci";
             // 
             // panel106
             // 
@@ -4439,743 +5151,6 @@
             this.dtpFecvenAP.Size = new System.Drawing.Size(204, 20);
             this.dtpFecvenAP.TabIndex = 55;
             // 
-            // CrearPostulante
-            // 
-            this.CrearPostulante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.CrearPostulante.Controls.Add(this.pictureBoxAP);
-            this.CrearPostulante.Controls.Add(this.lblUserCreadoCorrectamente);
-            this.CrearPostulante.Controls.Add(this.panel149);
-            this.CrearPostulante.Controls.Add(this.txtTelefono);
-            this.CrearPostulante.Controls.Add(this.lblTelefono);
-            this.CrearPostulante.Controls.Add(this.btnSubirFoto);
-            this.CrearPostulante.Controls.Add(this.lblFoto);
-            this.CrearPostulante.Controls.Add(this.dtpFechVen);
-            this.CrearPostulante.Controls.Add(this.lblDecVenc);
-            this.CrearPostulante.Controls.Add(this.cboxTipoLic);
-            this.CrearPostulante.Controls.Add(this.lblTipoLicencia);
-            this.CrearPostulante.Controls.Add(this.panel145);
-            this.CrearPostulante.Controls.Add(this.txtPaisPreferencia);
-            this.CrearPostulante.Controls.Add(this.lblPaisPreferencia);
-            this.CrearPostulante.Controls.Add(this.panel141);
-            this.CrearPostulante.Controls.Add(this.txtPuestoPreferencia);
-            this.CrearPostulante.Controls.Add(this.lblPuestoPreferencia);
-            this.CrearPostulante.Controls.Add(this.panel137);
-            this.CrearPostulante.Controls.Add(this.txtSueldoEsperado);
-            this.CrearPostulante.Controls.Add(this.lblSueldoEsperado);
-            this.CrearPostulante.Controls.Add(this.btnCrearAP);
-            this.CrearPostulante.Controls.Add(this.dtpFechNac);
-            this.CrearPostulante.Controls.Add(this.panel52);
-            this.CrearPostulante.Controls.Add(this.txtDireccion);
-            this.CrearPostulante.Controls.Add(this.label22);
-            this.CrearPostulante.Controls.Add(this.panel120);
-            this.CrearPostulante.Controls.Add(this.txtEmail);
-            this.CrearPostulante.Controls.Add(this.lblCredencialAP);
-            this.CrearPostulante.Controls.Add(this.label29);
-            this.CrearPostulante.Controls.Add(this.panel124);
-            this.CrearPostulante.Controls.Add(this.txtApellido);
-            this.CrearPostulante.Controls.Add(this.label30);
-            this.CrearPostulante.Controls.Add(this.panel129);
-            this.CrearPostulante.Controls.Add(this.txtNombre);
-            this.CrearPostulante.Controls.Add(this.label43);
-            this.CrearPostulante.Controls.Add(this.panel133);
-            this.CrearPostulante.Controls.Add(this.txtCi);
-            this.CrearPostulante.Controls.Add(this.label44);
-            this.CrearPostulante.Location = new System.Drawing.Point(4, 46);
-            this.CrearPostulante.Name = "CrearPostulante";
-            this.CrearPostulante.Padding = new System.Windows.Forms.Padding(3);
-            this.CrearPostulante.Size = new System.Drawing.Size(850, 766);
-            this.CrearPostulante.TabIndex = 20;
-            this.CrearPostulante.Text = "tabPage1";
-            // 
-            // panel52
-            // 
-            this.panel52.BackColor = System.Drawing.Color.White;
-            this.panel52.Controls.Add(this.panel53);
-            this.panel52.Controls.Add(this.panel119);
-            this.panel52.Location = new System.Drawing.Point(312, 411);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(128, 3);
-            this.panel52.TabIndex = 56;
-            // 
-            // panel53
-            // 
-            this.panel53.BackColor = System.Drawing.Color.White;
-            this.panel53.Controls.Add(this.panel54);
-            this.panel53.Location = new System.Drawing.Point(0, 11);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(311, 2);
-            this.panel53.TabIndex = 24;
-            // 
-            // panel54
-            // 
-            this.panel54.BackColor = System.Drawing.Color.White;
-            this.panel54.Location = new System.Drawing.Point(0, 39);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(311, 2);
-            this.panel54.TabIndex = 23;
-            // 
-            // panel119
-            // 
-            this.panel119.BackColor = System.Drawing.Color.White;
-            this.panel119.Location = new System.Drawing.Point(0, 39);
-            this.panel119.Name = "panel119";
-            this.panel119.Size = new System.Drawing.Size(311, 2);
-            this.panel119.TabIndex = 23;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtDireccion.Location = new System.Drawing.Point(312, 393);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(128, 19);
-            this.txtDireccion.TabIndex = 55;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(231, 391);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 20);
-            this.label22.TabIndex = 54;
-            this.label22.Text = "Direccion";
-            // 
-            // panel120
-            // 
-            this.panel120.BackColor = System.Drawing.Color.White;
-            this.panel120.Controls.Add(this.panel121);
-            this.panel120.Controls.Add(this.panel123);
-            this.panel120.Location = new System.Drawing.Point(312, 354);
-            this.panel120.Name = "panel120";
-            this.panel120.Size = new System.Drawing.Size(128, 3);
-            this.panel120.TabIndex = 53;
-            // 
-            // panel121
-            // 
-            this.panel121.BackColor = System.Drawing.Color.White;
-            this.panel121.Controls.Add(this.panel122);
-            this.panel121.Location = new System.Drawing.Point(0, 11);
-            this.panel121.Name = "panel121";
-            this.panel121.Size = new System.Drawing.Size(311, 2);
-            this.panel121.TabIndex = 24;
-            // 
-            // panel122
-            // 
-            this.panel122.BackColor = System.Drawing.Color.White;
-            this.panel122.Location = new System.Drawing.Point(0, 39);
-            this.panel122.Name = "panel122";
-            this.panel122.Size = new System.Drawing.Size(311, 2);
-            this.panel122.TabIndex = 23;
-            // 
-            // panel123
-            // 
-            this.panel123.BackColor = System.Drawing.Color.White;
-            this.panel123.Location = new System.Drawing.Point(0, 39);
-            this.panel123.Name = "panel123";
-            this.panel123.Size = new System.Drawing.Size(311, 2);
-            this.panel123.TabIndex = 23;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtEmail.Location = new System.Drawing.Point(312, 336);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(128, 19);
-            this.txtEmail.TabIndex = 52;
-            // 
-            // lblCredencialAP
-            // 
-            this.lblCredencialAP.AutoSize = true;
-            this.lblCredencialAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCredencialAP.Location = new System.Drawing.Point(258, 335);
-            this.lblCredencialAP.Name = "lblCredencialAP";
-            this.lblCredencialAP.Size = new System.Drawing.Size(48, 20);
-            this.lblCredencialAP.TabIndex = 51;
-            this.lblCredencialAP.Text = "Email";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(268, 232);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(157, 20);
-            this.label29.TabIndex = 49;
-            this.label29.Text = "Fecha de nacimiento";
-            // 
-            // panel124
-            // 
-            this.panel124.BackColor = System.Drawing.Color.White;
-            this.panel124.Controls.Add(this.panel125);
-            this.panel124.Controls.Add(this.panel128);
-            this.panel124.Location = new System.Drawing.Point(312, 213);
-            this.panel124.Name = "panel124";
-            this.panel124.Size = new System.Drawing.Size(128, 3);
-            this.panel124.TabIndex = 48;
-            // 
-            // panel125
-            // 
-            this.panel125.BackColor = System.Drawing.Color.White;
-            this.panel125.Controls.Add(this.panel127);
-            this.panel125.Location = new System.Drawing.Point(0, 11);
-            this.panel125.Name = "panel125";
-            this.panel125.Size = new System.Drawing.Size(311, 2);
-            this.panel125.TabIndex = 24;
-            // 
-            // panel127
-            // 
-            this.panel127.BackColor = System.Drawing.Color.White;
-            this.panel127.Location = new System.Drawing.Point(0, 39);
-            this.panel127.Name = "panel127";
-            this.panel127.Size = new System.Drawing.Size(311, 2);
-            this.panel127.TabIndex = 23;
-            // 
-            // panel128
-            // 
-            this.panel128.BackColor = System.Drawing.Color.White;
-            this.panel128.Location = new System.Drawing.Point(0, 39);
-            this.panel128.Name = "panel128";
-            this.panel128.Size = new System.Drawing.Size(311, 2);
-            this.panel128.TabIndex = 23;
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtApellido.Location = new System.Drawing.Point(312, 195);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(128, 19);
-            this.txtApellido.TabIndex = 47;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(241, 194);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(65, 20);
-            this.label30.TabIndex = 46;
-            this.label30.Text = "Apellido";
-            // 
-            // panel129
-            // 
-            this.panel129.BackColor = System.Drawing.Color.White;
-            this.panel129.Controls.Add(this.panel130);
-            this.panel129.Controls.Add(this.panel132);
-            this.panel129.Location = new System.Drawing.Point(312, 144);
-            this.panel129.Name = "panel129";
-            this.panel129.Size = new System.Drawing.Size(128, 3);
-            this.panel129.TabIndex = 45;
-            // 
-            // panel130
-            // 
-            this.panel130.BackColor = System.Drawing.Color.White;
-            this.panel130.Controls.Add(this.panel131);
-            this.panel130.Location = new System.Drawing.Point(0, 11);
-            this.panel130.Name = "panel130";
-            this.panel130.Size = new System.Drawing.Size(311, 2);
-            this.panel130.TabIndex = 24;
-            // 
-            // panel131
-            // 
-            this.panel131.BackColor = System.Drawing.Color.White;
-            this.panel131.Location = new System.Drawing.Point(0, 39);
-            this.panel131.Name = "panel131";
-            this.panel131.Size = new System.Drawing.Size(311, 2);
-            this.panel131.TabIndex = 23;
-            // 
-            // panel132
-            // 
-            this.panel132.BackColor = System.Drawing.Color.White;
-            this.panel132.Location = new System.Drawing.Point(0, 39);
-            this.panel132.Name = "panel132";
-            this.panel132.Size = new System.Drawing.Size(311, 2);
-            this.panel132.TabIndex = 23;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtNombre.Location = new System.Drawing.Point(312, 126);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(128, 19);
-            this.txtNombre.TabIndex = 44;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(241, 125);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(65, 20);
-            this.label43.TabIndex = 43;
-            this.label43.Text = "Nombre";
-            // 
-            // panel133
-            // 
-            this.panel133.BackColor = System.Drawing.Color.White;
-            this.panel133.Controls.Add(this.panel134);
-            this.panel133.Controls.Add(this.panel136);
-            this.panel133.Location = new System.Drawing.Point(312, 81);
-            this.panel133.Name = "panel133";
-            this.panel133.Size = new System.Drawing.Size(128, 3);
-            this.panel133.TabIndex = 42;
-            // 
-            // panel134
-            // 
-            this.panel134.BackColor = System.Drawing.Color.White;
-            this.panel134.Controls.Add(this.panel135);
-            this.panel134.Location = new System.Drawing.Point(0, 11);
-            this.panel134.Name = "panel134";
-            this.panel134.Size = new System.Drawing.Size(311, 2);
-            this.panel134.TabIndex = 24;
-            // 
-            // panel135
-            // 
-            this.panel135.BackColor = System.Drawing.Color.White;
-            this.panel135.Location = new System.Drawing.Point(0, 39);
-            this.panel135.Name = "panel135";
-            this.panel135.Size = new System.Drawing.Size(311, 2);
-            this.panel135.TabIndex = 23;
-            // 
-            // panel136
-            // 
-            this.panel136.BackColor = System.Drawing.Color.White;
-            this.panel136.Location = new System.Drawing.Point(0, 39);
-            this.panel136.Name = "panel136";
-            this.panel136.Size = new System.Drawing.Size(311, 2);
-            this.panel136.TabIndex = 23;
-            // 
-            // txtCi
-            // 
-            this.txtCi.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtCi.Location = new System.Drawing.Point(312, 63);
-            this.txtCi.Name = "txtCi";
-            this.txtCi.Size = new System.Drawing.Size(128, 19);
-            this.txtCi.TabIndex = 41;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(283, 62);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(23, 20);
-            this.label44.TabIndex = 40;
-            this.label44.Text = "Ci";
-            // 
-            // dtpFechNac
-            // 
-            this.dtpFechNac.Location = new System.Drawing.Point(245, 271);
-            this.dtpFechNac.Name = "dtpFechNac";
-            this.dtpFechNac.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechNac.TabIndex = 57;
-            // 
-            // btnCrearAP
-            // 
-            this.btnCrearAP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCrearAP.FlatAppearance.BorderSize = 0;
-            this.btnCrearAP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearAP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCrearAP.Location = new System.Drawing.Point(345, 597);
-            this.btnCrearAP.Name = "btnCrearAP";
-            this.btnCrearAP.Size = new System.Drawing.Size(324, 63);
-            this.btnCrearAP.TabIndex = 69;
-            this.btnCrearAP.Text = "Crear";
-            this.btnCrearAP.UseVisualStyleBackColor = false;
-            this.btnCrearAP.Click += new System.EventHandler(this.btnCrearAP_Click);
-            // 
-            // lblSueldoEsperado
-            // 
-            this.lblSueldoEsperado.AutoSize = true;
-            this.lblSueldoEsperado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSueldoEsperado.Location = new System.Drawing.Point(494, 250);
-            this.lblSueldoEsperado.Name = "lblSueldoEsperado";
-            this.lblSueldoEsperado.Size = new System.Drawing.Size(130, 20);
-            this.lblSueldoEsperado.TabIndex = 70;
-            this.lblSueldoEsperado.Text = "Sueldo esperado";
-            // 
-            // panel137
-            // 
-            this.panel137.BackColor = System.Drawing.Color.White;
-            this.panel137.Controls.Add(this.panel138);
-            this.panel137.Controls.Add(this.panel140);
-            this.panel137.Location = new System.Drawing.Point(641, 268);
-            this.panel137.Name = "panel137";
-            this.panel137.Size = new System.Drawing.Size(128, 3);
-            this.panel137.TabIndex = 72;
-            // 
-            // panel138
-            // 
-            this.panel138.BackColor = System.Drawing.Color.White;
-            this.panel138.Controls.Add(this.panel139);
-            this.panel138.Location = new System.Drawing.Point(0, 11);
-            this.panel138.Name = "panel138";
-            this.panel138.Size = new System.Drawing.Size(311, 2);
-            this.panel138.TabIndex = 24;
-            // 
-            // panel139
-            // 
-            this.panel139.BackColor = System.Drawing.Color.White;
-            this.panel139.Location = new System.Drawing.Point(0, 39);
-            this.panel139.Name = "panel139";
-            this.panel139.Size = new System.Drawing.Size(311, 2);
-            this.panel139.TabIndex = 23;
-            // 
-            // panel140
-            // 
-            this.panel140.BackColor = System.Drawing.Color.White;
-            this.panel140.Location = new System.Drawing.Point(0, 39);
-            this.panel140.Name = "panel140";
-            this.panel140.Size = new System.Drawing.Size(311, 2);
-            this.panel140.TabIndex = 23;
-            // 
-            // txtSueldoEsperado
-            // 
-            this.txtSueldoEsperado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSueldoEsperado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSueldoEsperado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSueldoEsperado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtSueldoEsperado.Location = new System.Drawing.Point(641, 250);
-            this.txtSueldoEsperado.Name = "txtSueldoEsperado";
-            this.txtSueldoEsperado.Size = new System.Drawing.Size(128, 19);
-            this.txtSueldoEsperado.TabIndex = 71;
-            // 
-            // panel141
-            // 
-            this.panel141.BackColor = System.Drawing.Color.White;
-            this.panel141.Controls.Add(this.panel142);
-            this.panel141.Controls.Add(this.panel144);
-            this.panel141.Location = new System.Drawing.Point(641, 207);
-            this.panel141.Name = "panel141";
-            this.panel141.Size = new System.Drawing.Size(128, 3);
-            this.panel141.TabIndex = 75;
-            // 
-            // panel142
-            // 
-            this.panel142.BackColor = System.Drawing.Color.White;
-            this.panel142.Controls.Add(this.panel143);
-            this.panel142.Location = new System.Drawing.Point(0, 11);
-            this.panel142.Name = "panel142";
-            this.panel142.Size = new System.Drawing.Size(311, 2);
-            this.panel142.TabIndex = 24;
-            // 
-            // panel143
-            // 
-            this.panel143.BackColor = System.Drawing.Color.White;
-            this.panel143.Location = new System.Drawing.Point(0, 39);
-            this.panel143.Name = "panel143";
-            this.panel143.Size = new System.Drawing.Size(311, 2);
-            this.panel143.TabIndex = 23;
-            // 
-            // panel144
-            // 
-            this.panel144.BackColor = System.Drawing.Color.White;
-            this.panel144.Location = new System.Drawing.Point(0, 39);
-            this.panel144.Name = "panel144";
-            this.panel144.Size = new System.Drawing.Size(311, 2);
-            this.panel144.TabIndex = 23;
-            // 
-            // txtPuestoPreferencia
-            // 
-            this.txtPuestoPreferencia.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPuestoPreferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPuestoPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPuestoPreferencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPuestoPreferencia.Location = new System.Drawing.Point(641, 189);
-            this.txtPuestoPreferencia.Name = "txtPuestoPreferencia";
-            this.txtPuestoPreferencia.Size = new System.Drawing.Size(128, 19);
-            this.txtPuestoPreferencia.TabIndex = 74;
-            // 
-            // lblPuestoPreferencia
-            // 
-            this.lblPuestoPreferencia.AutoSize = true;
-            this.lblPuestoPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuestoPreferencia.Location = new System.Drawing.Point(487, 188);
-            this.lblPuestoPreferencia.Name = "lblPuestoPreferencia";
-            this.lblPuestoPreferencia.Size = new System.Drawing.Size(137, 20);
-            this.lblPuestoPreferencia.TabIndex = 73;
-            this.lblPuestoPreferencia.Text = "Puesto preferente";
-            // 
-            // panel145
-            // 
-            this.panel145.BackColor = System.Drawing.Color.White;
-            this.panel145.Controls.Add(this.panel146);
-            this.panel145.Controls.Add(this.panel148);
-            this.panel145.Location = new System.Drawing.Point(641, 332);
-            this.panel145.Name = "panel145";
-            this.panel145.Size = new System.Drawing.Size(128, 3);
-            this.panel145.TabIndex = 78;
-            // 
-            // panel146
-            // 
-            this.panel146.BackColor = System.Drawing.Color.White;
-            this.panel146.Controls.Add(this.panel147);
-            this.panel146.Location = new System.Drawing.Point(0, 11);
-            this.panel146.Name = "panel146";
-            this.panel146.Size = new System.Drawing.Size(311, 2);
-            this.panel146.TabIndex = 24;
-            // 
-            // panel147
-            // 
-            this.panel147.BackColor = System.Drawing.Color.White;
-            this.panel147.Location = new System.Drawing.Point(0, 39);
-            this.panel147.Name = "panel147";
-            this.panel147.Size = new System.Drawing.Size(311, 2);
-            this.panel147.TabIndex = 23;
-            // 
-            // panel148
-            // 
-            this.panel148.BackColor = System.Drawing.Color.White;
-            this.panel148.Location = new System.Drawing.Point(0, 39);
-            this.panel148.Name = "panel148";
-            this.panel148.Size = new System.Drawing.Size(311, 2);
-            this.panel148.TabIndex = 23;
-            // 
-            // txtPaisPreferencia
-            // 
-            this.txtPaisPreferencia.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPaisPreferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPaisPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaisPreferencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPaisPreferencia.Location = new System.Drawing.Point(641, 314);
-            this.txtPaisPreferencia.Name = "txtPaisPreferencia";
-            this.txtPaisPreferencia.Size = new System.Drawing.Size(128, 19);
-            this.txtPaisPreferencia.TabIndex = 77;
-            // 
-            // lblPaisPreferencia
-            // 
-            this.lblPaisPreferencia.AutoSize = true;
-            this.lblPaisPreferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaisPreferencia.Location = new System.Drawing.Point(487, 313);
-            this.lblPaisPreferencia.Name = "lblPaisPreferencia";
-            this.lblPaisPreferencia.Size = new System.Drawing.Size(137, 20);
-            this.lblPaisPreferencia.TabIndex = 76;
-            this.lblPaisPreferencia.Text = "Puesto preferente";
-            // 
-            // lblTipoLicencia
-            // 
-            this.lblTipoLicencia.AutoSize = true;
-            this.lblTipoLicencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoLicencia.Location = new System.Drawing.Point(518, 61);
-            this.lblTipoLicencia.Name = "lblTipoLicencia";
-            this.lblTipoLicencia.Size = new System.Drawing.Size(117, 20);
-            this.lblTipoLicencia.TabIndex = 79;
-            this.lblTipoLicencia.Text = "Tipo de licencia";
-            // 
-            // cboxTipoLic
-            // 
-            this.cboxTipoLic.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxTipoLic.FormattingEnabled = true;
-            this.cboxTipoLic.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "V",
-            "U",
-            "X",
-            "Y",
-            "Z"});
-            this.cboxTipoLic.Location = new System.Drawing.Point(652, 61);
-            this.cboxTipoLic.Name = "cboxTipoLic";
-            this.cboxTipoLic.Size = new System.Drawing.Size(128, 24);
-            this.cboxTipoLic.TabIndex = 80;
-            this.cboxTipoLic.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // dtpFechVen
-            // 
-            this.dtpFechVen.Location = new System.Drawing.Point(546, 151);
-            this.dtpFechVen.Name = "dtpFechVen";
-            this.dtpFechVen.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechVen.TabIndex = 82;
-            // 
-            // lblDecVenc
-            // 
-            this.lblDecVenc.AutoSize = true;
-            this.lblDecVenc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDecVenc.Location = new System.Drawing.Point(569, 112);
-            this.lblDecVenc.Name = "lblDecVenc";
-            this.lblDecVenc.Size = new System.Drawing.Size(164, 20);
-            this.lblDecVenc.TabIndex = 81;
-            this.lblDecVenc.Text = "Fecha de vencimiento";
-            // 
-            // lblFoto
-            // 
-            this.lblFoto.AutoSize = true;
-            this.lblFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoto.Location = new System.Drawing.Point(572, 353);
-            this.lblFoto.Name = "lblFoto";
-            this.lblFoto.Size = new System.Drawing.Size(42, 20);
-            this.lblFoto.TabIndex = 83;
-            this.lblFoto.Text = "Foto";
-            // 
-            // btnSubirFoto
-            // 
-            this.btnSubirFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSubirFoto.FlatAppearance.BorderSize = 0;
-            this.btnSubirFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubirFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubirFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubirFoto.Location = new System.Drawing.Point(485, 377);
-            this.btnSubirFoto.Name = "btnSubirFoto";
-            this.btnSubirFoto.Size = new System.Drawing.Size(129, 26);
-            this.btnSubirFoto.TabIndex = 84;
-            this.btnSubirFoto.Text = "Subir";
-            this.btnSubirFoto.UseVisualStyleBackColor = false;
-            this.btnSubirFoto.Click += new System.EventHandler(this.btnSubirFoto_Click);
-            // 
-            // panel149
-            // 
-            this.panel149.BackColor = System.Drawing.Color.White;
-            this.panel149.Controls.Add(this.panel150);
-            this.panel149.Controls.Add(this.panel152);
-            this.panel149.Location = new System.Drawing.Point(312, 463);
-            this.panel149.Name = "panel149";
-            this.panel149.Size = new System.Drawing.Size(128, 3);
-            this.panel149.TabIndex = 87;
-            // 
-            // panel150
-            // 
-            this.panel150.BackColor = System.Drawing.Color.White;
-            this.panel150.Controls.Add(this.panel151);
-            this.panel150.Location = new System.Drawing.Point(0, 11);
-            this.panel150.Name = "panel150";
-            this.panel150.Size = new System.Drawing.Size(311, 2);
-            this.panel150.TabIndex = 24;
-            // 
-            // panel151
-            // 
-            this.panel151.BackColor = System.Drawing.Color.White;
-            this.panel151.Location = new System.Drawing.Point(0, 39);
-            this.panel151.Name = "panel151";
-            this.panel151.Size = new System.Drawing.Size(311, 2);
-            this.panel151.TabIndex = 23;
-            // 
-            // panel152
-            // 
-            this.panel152.BackColor = System.Drawing.Color.White;
-            this.panel152.Location = new System.Drawing.Point(0, 39);
-            this.panel152.Name = "panel152";
-            this.panel152.Size = new System.Drawing.Size(311, 2);
-            this.panel152.TabIndex = 23;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtTelefono.Location = new System.Drawing.Point(312, 445);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(128, 19);
-            this.txtTelefono.TabIndex = 86;
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(231, 444);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(71, 20);
-            this.lblTelefono.TabIndex = 85;
-            this.lblTelefono.Text = "Telefono";
-            // 
-            // lblUserCreadoCorrectamente
-            // 
-            this.lblUserCreadoCorrectamente.AutoSize = true;
-            this.lblUserCreadoCorrectamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserCreadoCorrectamente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblUserCreadoCorrectamente.Location = new System.Drawing.Point(400, 565);
-            this.lblUserCreadoCorrectamente.Name = "lblUserCreadoCorrectamente";
-            this.lblUserCreadoCorrectamente.Size = new System.Drawing.Size(224, 20);
-            this.lblUserCreadoCorrectamente.TabIndex = 88;
-            this.lblUserCreadoCorrectamente.Text = "Usuario creado correctamente";
-            this.lblUserCreadoCorrectamente.Visible = false;
-            // 
-            // pictureBoxAP
-            // 
-            this.pictureBoxAP.Location = new System.Drawing.Point(629, 351);
-            this.pictureBoxAP.Name = "pictureBoxAP";
-            this.pictureBoxAP.Size = new System.Drawing.Size(151, 138);
-            this.pictureBoxAP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAP.TabIndex = 89;
-            this.pictureBoxAP.TabStop = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(608, 217);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(99, 26);
-            this.btnModificar.TabIndex = 105;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(729, 217);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(99, 26);
-            this.btnGuardar.TabIndex = 106;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // txtDescripcionConcoimiento
-            // 
-            this.txtDescripcionConcoimiento.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtDescripcionConcoimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescripcionConcoimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcionConcoimiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtDescripcionConcoimiento.Location = new System.Drawing.Point(495, 38);
-            this.txtDescripcionConcoimiento.Multiline = true;
-            this.txtDescripcionConcoimiento.Name = "txtDescripcionConcoimiento";
-            this.txtDescripcionConcoimiento.Size = new System.Drawing.Size(144, 64);
-            this.txtDescripcionConcoimiento.TabIndex = 82;
-            // 
-            // panel153
-            // 
-            this.panel153.BackColor = System.Drawing.Color.White;
-            this.panel153.Location = new System.Drawing.Point(495, 102);
-            this.panel153.Name = "panel153";
-            this.panel153.Size = new System.Drawing.Size(144, 2);
-            this.panel153.TabIndex = 83;
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -5262,9 +5237,30 @@
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerPostulante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConocimientosVP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.CrearPostulante.ResumeLayout(false);
+            this.CrearPostulante.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAP)).EndInit();
+            this.panel149.ResumeLayout(false);
+            this.panel150.ResumeLayout(false);
+            this.panel145.ResumeLayout(false);
+            this.panel146.ResumeLayout(false);
+            this.panel141.ResumeLayout(false);
+            this.panel142.ResumeLayout(false);
+            this.panel137.ResumeLayout(false);
+            this.panel138.ResumeLayout(false);
+            this.panel52.ResumeLayout(false);
+            this.panel53.ResumeLayout(false);
+            this.panel120.ResumeLayout(false);
+            this.panel121.ResumeLayout(false);
+            this.panel124.ResumeLayout(false);
+            this.panel125.ResumeLayout(false);
+            this.panel129.ResumeLayout(false);
+            this.panel130.ResumeLayout(false);
+            this.panel133.ResumeLayout(false);
+            this.panel134.ResumeLayout(false);
             this.panel106.ResumeLayout(false);
             this.panel107.ResumeLayout(false);
             this.panel88.ResumeLayout(false);
@@ -5285,27 +5281,6 @@
             this.panel42.ResumeLayout(false);
             this.AltaPostulante.ResumeLayout(false);
             this.AltaPostulante.PerformLayout();
-            this.CrearPostulante.ResumeLayout(false);
-            this.CrearPostulante.PerformLayout();
-            this.panel52.ResumeLayout(false);
-            this.panel53.ResumeLayout(false);
-            this.panel120.ResumeLayout(false);
-            this.panel121.ResumeLayout(false);
-            this.panel124.ResumeLayout(false);
-            this.panel125.ResumeLayout(false);
-            this.panel129.ResumeLayout(false);
-            this.panel130.ResumeLayout(false);
-            this.panel133.ResumeLayout(false);
-            this.panel134.ResumeLayout(false);
-            this.panel137.ResumeLayout(false);
-            this.panel138.ResumeLayout(false);
-            this.panel141.ResumeLayout(false);
-            this.panel142.ResumeLayout(false);
-            this.panel145.ResumeLayout(false);
-            this.panel146.ResumeLayout(false);
-            this.panel149.ResumeLayout(false);
-            this.panel150.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5517,13 +5492,11 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.ComboBox cboxConocimientos;
-        private System.Windows.Forms.DataGridView VerPostulante;
+        private System.Windows.Forms.DataGridView dgvConocimientosVP;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ComboBox comboBox4;
