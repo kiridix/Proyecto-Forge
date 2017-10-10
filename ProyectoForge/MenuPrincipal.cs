@@ -230,6 +230,7 @@ namespace ProyectoForge
             TabMain.SelectTab(7);
             SelectMenu(3);
             disableOptions();
+            dataGridACEstudio.DataSource = BD.Listar("estudio");
             listarConocimientos();
 
         }
@@ -311,6 +312,7 @@ namespace ProyectoForge
             cargarVistaPostulante(p);
             this.P = p;
             BD.listarConocimientos(cboxConocimientos);
+            dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
             TabMain.SelectTab(15);
 
         }
@@ -571,7 +573,6 @@ namespace ProyectoForge
             int idpos = Int32.Parse(BD.getIdPostulante(P.Ci));
             BD.insetrarConocimiento(idcon, idpos);
             dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
-            // BD.ListarMasConocimientos(dgvConocimientosVP);
 
         }
 
@@ -587,6 +588,17 @@ namespace ProyectoForge
             BD.BorrarconocimientoP(idcon, idpos);
             dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
 
+        }
+
+        private void dataGridACEstudio_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+      
+        }
+
+        private void btnACAgregarEstudio_Click(object sender, EventArgs e)
+        {
+            BD.instertEstudio(txtACEstudio.Text);
+            dataGridACEstudio.DataSource = BD.Listar("estudio");
         }
     }
     }

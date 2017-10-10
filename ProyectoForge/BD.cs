@@ -338,5 +338,21 @@ namespace ProyectoForge
 
             return 0;
         }
+        public static void insertEstudioinpostulante(int idestudio, int idpost)
+        {
+            conn.Open();
+            string sentenciaSQL = "insert into posee (idestudio, idpostulante) Values (" + idestudio + ", " + idpost + ")";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static void instertEstudio(string nombre)
+        {
+            conn.Open();
+            string sentenciaSQL = "insert into estudio(nombre) values('"+nombre+"')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
     }

@@ -1428,6 +1428,7 @@
             this.btnACAgregarEstudio.TabIndex = 77;
             this.btnACAgregarEstudio.Text = "Agregar";
             this.btnACAgregarEstudio.UseVisualStyleBackColor = false;
+            this.btnACAgregarEstudio.Click += new System.EventHandler(this.btnACAgregarEstudio_Click);
             // 
             // dataGridACEstudio
             // 
@@ -1436,6 +1437,7 @@
             this.dataGridACEstudio.Name = "dataGridACEstudio";
             this.dataGridACEstudio.Size = new System.Drawing.Size(374, 166);
             this.dataGridACEstudio.TabIndex = 76;
+            this.dataGridACEstudio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridACEstudio_CellContentClick);
             // 
             // panelRelleno10
             // 
