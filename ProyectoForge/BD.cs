@@ -282,7 +282,7 @@ namespace ProyectoForge
             {
                 cb.Items.Add(dr[1].ToString());
             }
-            cb.SelectedIndex = 0;
+           
             conn.Close();
         }
         public static void insertConocimiento(string conocimiento, string desc)

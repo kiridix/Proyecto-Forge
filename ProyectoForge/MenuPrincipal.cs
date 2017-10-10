@@ -539,7 +539,18 @@ namespace ProyectoForge
         }
         public Image foto;
 
-        internal postulante P { get => p; set => p = value; }
+        internal postulante P
+        {
+            get
+            {
+                return p;
+            }
+
+            set
+            {
+                p = value;
+            }
+        }
 
         private void btnSubirFoto_Click(object sender, EventArgs e)
         {
