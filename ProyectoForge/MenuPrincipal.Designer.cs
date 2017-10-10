@@ -2966,7 +2966,7 @@
             this.TabMain.Controls.Add(this.ListarPostulantes);
             this.TabMain.Controls.Add(this.tabPage3);
             this.TabMain.Controls.Add(this.CrearPostulante);
-            this.TabMain.Location = new System.Drawing.Point(56, -39);
+            this.TabMain.Location = new System.Drawing.Point(56, -38);
             this.TabMain.Multiline = true;
             this.TabMain.Name = "TabMain";
             this.TabMain.SelectedIndex = 0;

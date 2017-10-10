@@ -230,7 +230,7 @@ namespace ProyectoForge
 
         private void btnCualidades_Click(object sender, EventArgs e)
         {
-            TabMain.SelectTab(3);
+            TabMain.SelectTab(7);
             SelectMenu(3);
             disableOptions();
         }
@@ -350,7 +350,7 @@ namespace ProyectoForge
         private void btnMatcheo_Click(object sender, EventArgs e)
         {
             menuOption = 4;
-            TabMain.SelectTab(7);
+            TabMain.SelectTab(8);
             SelectMenu(4);
             disableOptions();
 
