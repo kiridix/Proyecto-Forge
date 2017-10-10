@@ -30,12 +30,12 @@ namespace ProyectoForge
                 return (false);
             }
         }
-        public static int InsertarPersona(int ci, string nombre, string apellido)
+        public static int InsertarPersona(int ci, string nombre, string apellido, string fecha, string telefono)
         {
             try
             {
                 conn.Open();
-                String sentenciaSQL = "INSERT INTO persona VALUES (" + ci + ", '" + nombre + "', '" + apellido + "')";
+                String sentenciaSQL = "INSERT INTO persona VALUES (" + ci + ", '" + nombre + "', '" + apellido + "', '"+ fecha +"', '"+ telefono +"')";
                 cmnd = new SqlCommand(sentenciaSQL, conn);
                 cmnd.ExecuteNonQuery();
                 conn.Close();
@@ -63,14 +63,30 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
         }
-        public static void insertPersona()
+        public static void insertPersona(int ci, string nombre, string apellido, DateTime fecha, string telefono)
         {
             conn.Open();
-            String sentenciaSQL = "INSERT INTO persona(ci, nombre, apellido, fech_nac, tel ) VALUES (1234567,'Mati','Martinez','20170809','26008003')";
+            String sentenciaSQL = "INSERT INTO persona(ci, nombre, apellido, fech_nac, tel ) VALUES (" + ci + ", '" + nombre + "', '" + apellido + "', '" + fecha + "', '" + telefono + "')";
             cmnd = new SqlCommand(sentenciaSQL, conn);
             cmnd.ExecuteNonQuery();
             conn.Close();
            
+        }
+        public static void deletePersona(string ci)
+        {
+            conn.Open();
+            String sentenciaSQL = "DELETE FROM persona WHERE ci='" + ci + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static void deletePostulante(string ci)
+        {
+            conn.Open();
+            String sentenciaSQL = "DELETE FROM postulante WHERE ci='"+ ci +"'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
         }
         public static void instertarRol()
         {
@@ -115,13 +131,54 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
         }
-            public static int InsertarPostulante(int ci, int idPostulante, int sueldoEsperado, string paisDePreferencia, string puestoDePreferencia, string direccion,DateTime date, string email)
+            public static int InsertarPostulante(int ci, string licencia, DateTime fecLic, int sueldo, string pais, string cargo, string direccion, string email)
+        {
+                conn.Open();
+                String sentenciaSQL = "Insert into postulante values ("+ ci +", '"+ licencia +"', '"+ fecLic +"', null , "+ sueldo +" , '"+ pais +"' , null , '"+ cargo +"', '" + direccion + "', '" + email + "')";
+                cmnd = new SqlCommand(sentenciaSQL, conn);
+                cmnd.ExecuteNonQuery();
+                conn.Close();
+                return 0;
+           
+        }
+        public static System.Data.DataTable Listar(string Table)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            try
+            {
+                conn.Open();
+                cmnd = new SqlCommand("SELECT * FROM " + Table + "", conn);
+                dtr = cmnd.ExecuteReader();
+                dt.Load(dtr);
+                dtr.Close();
+                conn.Close();
+                return dt;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+            public static string Select(string dato, string tabla, string donde) {
+                string resultado = string.Empty;
+                conn.Open();
+                cmnd = new SqlCommand("SELECT "+ dato +" FROM "+ tabla +" WHERE ci=" + donde +"", conn);
+                resultado = Convert.ToString(cmnd.ExecuteScalar());
+                conn.Close();
+                return resultado;
+            }
+        public static int InsertEmpresa(int rut, string nombre, string direccion_fiscal, String direccion_ficica, String tel, String email, DateTime fecha_ingreso, String rubro)
+
         {
             try
             {
                 conn.Open();
-                String sentenciaSQL = "INSERT INTO postulante VALUES (" + ci + ", '" + idPostulante + "', '" + "a" + "', '" + date + "', '" + null + "', '" + sueldoEsperado + "', '" + paisDePreferencia + "', '" + null + "', '" + puestoDePreferencia + "', '" + direccion + "', '" + email + "')";
+
+
+                String sentenciaSQL = "INSERT INTO empresa VALUES (" + rut + ", '" + nombre + "', '" + direccion_fiscal + "', '" + direccion_ficica + "', '" + tel + "', '" + email + "', '" + fecha_ingreso + "', '" + rubro + "')";
+
                 cmnd = new SqlCommand(sentenciaSQL, conn);
+
                 cmnd.ExecuteNonQuery();
                 conn.Close();
                 return 0;
@@ -140,13 +197,17 @@ namespace ProyectoForge
                 }
             }
         }
-        public static System.Data.DataTable ListarPostulantes()
+
+        public static System.Data.DataTable ListarEmpresa(string atributo, string nom)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
             try
             {
+
+
+
                 conn.Open();
-                cmnd = new SqlCommand("SELECT * FROM usuario", conn);
+                cmnd = new SqlCommand("SELECT * FROM empresa where " + atributo + " like '%" + nom + "%'", conn);
                 dtr = cmnd.ExecuteReader();
                 dt.Load(dtr);
                 dtr.Close();
@@ -158,5 +219,18 @@ namespace ProyectoForge
                 return null;
             }
         }
+
+        public static int BorrarEmpresa(int dato)
+
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM empresa where rut like '%" + dato + "%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
+
+
+            return 0;
+        }
     }
-}
+    }

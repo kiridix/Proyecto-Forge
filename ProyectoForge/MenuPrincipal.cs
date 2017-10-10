@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoForge
@@ -141,7 +142,7 @@ namespace ProyectoForge
         {
             switch (menuOption)
             {
-                case 1: TabMain.SelectTab(13);
+                case 1: TabMain.SelectTab(16);
                     break;
                 case 2: TabMain.SelectTab(12);
                     break;
@@ -233,34 +234,97 @@ namespace ProyectoForge
             SelectMenu(3);
             disableOptions();
         }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private string prepararDate(string[] dt)
         {
-           
-        }
+            string fecha;
+            string[] aux = new string[2];
+            string[] aux2 = new string[3];
 
+            aux = dt;
+            aux2 = aux[0].Split('/');
+            if (Int32.Parse(aux2[1]) < 10)
+            {
+                aux2[1] = "0" + aux2[1];
+            }
+            fecha = aux2[2] + aux2[1] + aux2[0];
+            return fecha;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
-           
-            this.Text = "22/11/2009";
+            string fecha;
+            string fecVen;
+            fecha = prepararDate(dtpAP.Value.ToString().Split(' '));
+            fecVen = prepararDate(dtpFecvenAP.Value.ToString().Split(' '));  
+           // BD.insertPersona(Int32.Parse(txtCiAP.Text), txtNombreAP.Text, txtApellidoAP.Text, fecha, txtTelefonoAP.Text );
+           // BD.InsertarPostulante(Int32.Parse(txtCiAP.Text), cboxLicAP.Text, fecVen, Int32.Parse(txtSueldoEsperadoAP.Text), txtPaisDePreferenciaAP.Text , txtPuestoDePreferencia.Text, fecha, txtDireccionAp.Text, txtEmailAP.Text);
+            clearCamposAP();
+            Blink();
 
-            DateTime date = DateTime.ParseExact(this.Text, "dd/MM/yyyy", null);
-            BD.prueba(Int32.Parse(txtCiAP.Text), 123, 25000, "Uruguay", "Desarrollo", "palermo 5605", date, "Matiasmartineeez@gmail.com");
-                }
+
+        }
+        private async void Blink()
+        {
+            await Task.Delay(250);
+            lblUserCreadoCorrectamente.Visible = true;
+            await Task.Delay(250);
+            lblUserCreadoCorrectamente.Visible = false;
+            await Task.Delay(250);
+            lblUserCreadoCorrectamente.Visible = true;
+            await Task.Delay(250);
+            lblUserCreadoCorrectamente.Visible = false;
+            await Task.Delay(250);
+            lblUserCreadoCorrectamente.Visible = true;
+            await Task.Delay(1250);
+            lblUserCreadoCorrectamente.Visible = false;
+        }
+        private void clearCamposAP()
+        {
+            txtCi.Text = "";
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtTelefono.Text = "";
+            txtEmail.Text = "";
+            txtDireccion.Text = "";
+            txtSueldoEsperado.Text = "";
+            txtPuestoPreferencia.Text = "";
+            txtPaisPreferencia.Text = "";
+            cboxTipoLic.Text = "";
+        }
 
         private void btnBuscarLP_Click(object sender, EventArgs e)
         {
-            dgvLP.DataSource = BD.ListarPostulantes();
+            dgvLP.DataSource = BD.Listar("postulante");
         }
 
         private void dgvLP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
+        private void MostrarNombre(int ci)
+        {
+            MessageBox.Show(BD.Select("nombre", "persona", ci.ToString()));
+        }
         private void btnVerLP_Click(object sender, EventArgs e)
         {
+            
+            int ci = (int)dgvLP.CurrentRow.Cells["ci"].Value;
+            postulante p = new postulante(ci.ToString());
+            cargarVistaPostulante(p);
             TabMain.SelectTab(15);
+
+        }
+        private void cargarVistaPostulante(postulante p)
+        {
+            p.CargarPostulante();
+            txtNombreVP.Text = p.Nombre + " " + p.Apellido ;
+            txtCiVP.Text = p.Ci;
+            txtFecNacVP.Text = p.FechaNac;
+            txtEmailVP.Text = p.Email;
+            txtDireccionVP.Text = p.Direccion;
+            txtSueldoEsperadoVP.Text = p.SueldoEsperado.ToString();
+            txtPaisPreferenciaVP.Text = p.PaisPreferncia;
+            txtPuestoPreferenciaVP.Text = p.PuestoPreferencia;
+
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -387,5 +451,85 @@ namespace ProyectoForge
                     break;
             }
         }
+
+        private void lblTipoAP_Click(object sender, EventArgs e)
+        {
+                    }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            int ci = (int)dgvLP.CurrentRow.Cells["ci"].Value;
+            BD.deletePostulante(ci.ToString());
+            BD.deletePersona(ci.ToString());
+            dgvLP.DataSource = BD.Listar("postulante");
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+
+                if (!String.IsNullOrWhiteSpace(txtAERUT.Text) && !String.IsNullOrWhiteSpace(txtAENombre.Text) && !String.IsNullOrWhiteSpace(txtAEDireccionFisica.Text) && !String.IsNullOrWhiteSpace(txtAEDireccionFiscal.Text) && !String.IsNullOrWhiteSpace(txtAETelefono.Text) && !String.IsNullOrWhiteSpace(txtAEEmail.Text) && !String.IsNullOrWhiteSpace(txtAERubro.Text))
+                {
+
+                    switch (BD.InsertEmpresa(Convert.ToInt32(txtAERUT.Text), txtAENombre.Text, txtAEDireccionFiscal.Text, txtAEDireccionFisica.Text, txtAETelefono.Text, txtAEEmail.Text, dateTimePickerAE.Value.Date, txtAERubro.Text))
+                    {
+                        case 0:
+                            MessageBox.Show("La empresa se ha ingresado con éxito", "Listo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            txtAENombre.Text = null;
+                            txtAERUT.Text = null;
+                            txtAEDireccionFiscal.Text = null;
+                            txtAEDireccionFisica.Text = null;
+                            txtAETelefono.Text = null;
+                            txtAEEmail.Text = null;
+                            txtAERubro.Text = null;
+                            break;
+                        case 1:
+                            MessageBox.Show("La persona con la cédula ingresada ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("¡No debe dejar campos vacíos!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+
+        private void btnBuscarEmpresa_Click(object sender, EventArgs e)
+        {
+                if (cnbxLEmpresa.Text != "listar todo")
+                {
+                dataGridLE.DataSource = BD.ListarEmpresa(cnbxLEmpresa.Text, txtBuscarLE.Text);
+                }
+                else
+                {
+                   dataGridLE.DataSource = BD.Listar("empresa");
+                }
+            }
+
+        private void btnBorrarEmpresa_Click(object sender, EventArgs e)
+        {
+            int rut = (int)dataGridLE.CurrentRow.Cells["rut"].Value;
+            BD.BorrarEmpresa(rut);
+        }
+
+        private void AltapostulantePage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCrearAP_Click(object sender, EventArgs e)
+        {
+            BD.insertPersona(Int32.Parse(txtCi.Text), txtNombre.Text, txtApellido.Text, dtpFechNac.Value.Date, txtTelefono.Text);
+            BD.InsertarPostulante(Int32.Parse(txtCi.Text), cboxTipoLic.Text, dtpFechVen.Value.Date, Int32.Parse(txtSueldoEsperado.Text), txtPaisPreferencia.Text, txtPuestoPreferencia.Text, txtDireccion.Text, txtEmail.Text);
+            clearCamposAP();
+            Blink();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }
+
+
