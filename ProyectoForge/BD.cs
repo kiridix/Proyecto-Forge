@@ -552,6 +552,24 @@ namespace ProyectoForge
                 return null;
             }
         }
+        public static System.Data.DataTable Listarsolicitudestodas(string nombre)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            try
+            {
+                conn.Open();
+                cmnd = new SqlCommand("SELECT * FROM solicitud WHERE nombresol LIKE '%" + nombre + "'", conn);
+                dtr = cmnd.ExecuteReader();
+                dt.Load(dtr);
+                dtr.Close();
+                conn.Close();
+                return dt;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
         public static void aaa()
         {
            
@@ -587,12 +605,52 @@ namespace ProyectoForge
         {
             System.Data.DataTable dt = new System.Data.DataTable();
             conn.Open();
-            cmnd = new SqlCommand("SELECT estudio.nombre, tienesol.idestudio FROM estudio, tienesol WHERE tienesol.idestudio=estudio.idestudio AND tienesol.idsol= " + idsol + "", conn);
+            cmnd = new SqlCommand("SELECT estudio.nombre FROM estudio, tienesol WHERE tienesol.idestudio=estudio.idestudio AND tienesol.idsol= " + idsol + "", conn);
             dtr = cmnd.ExecuteReader();
             dt.Load(dtr);
             dtr.Close();
             conn.Close();
             return dt;
+        }
+        public static void listarsolicitudescbox(ComboBox cb)
+        {
+            cb.Items.Clear();
+            conn.Open();
+            SqlCommand cmnd = new SqlCommand("SELECT nombresol from solicitud", conn);
+            SqlDataReader dr = cmnd.ExecuteReader();
+            while (dr.Read())
+            {
+                cb.Items.Add(dr[0].ToString());
+            }
+
+            conn.Close();
+        }
+        public static DataTable matching(int idsol)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            conn.Open();
+            cmnd = new SqlCommand("SELECT postulante.ci from postulante, tiene where tiene.idcon=44", conn);
+            dtr = cmnd.ExecuteReader();
+            dt.Load(dtr);
+            dtr.Close();
+            conn.Close();
+            return dt;
+        }
+        public static void deletePoseesol(int idsol)
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM poseesol where idsol like '%" + idsol + "%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
+        }
+        public static void deleteTienesol(int idsol)
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM tienesol where idsol like '%" + idsol + "%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
         }
     }
     }

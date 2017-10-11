@@ -367,6 +367,7 @@ namespace ProyectoForge
             TabMain.SelectTab(8);
             SelectMenu(4);
             disableOptions();
+            BD.listarsolicitudescbox(cboxSolicitudes);
 
         }
 
@@ -752,9 +753,11 @@ namespace ProyectoForge
 
         private void btnMEEliminarSolicitud_Click(object sender, EventArgs e)
         {
-            int idsol = (int)dataGridView2.CurrentRow.Cells["idestudio"].Value;
+            int idsol = (int)dataGridView2.CurrentRow.Cells["idsol"].Value;
+            BD.deleteTienesol(idsol);
+            BD.deletePoseesol(idsol);
             BD.deleteSolicitud(idsol);
-            dataGridView2.DataSource = BD.Listar("solicitud");
+            dataGridView2.DataSource = BD.Listarsol(Empresa.Nombre);
         }
 
         private void btnCrearASE_Click(object sender, EventArgs e)
@@ -794,7 +797,20 @@ namespace ProyectoForge
             int idest = Int32.Parse(BD.getIdcon(cmbASEEstudios, "idestudio", "estudio", "nombre"));
             int idsol = Int32.Parse(BD.getIdsolicitud(txtASENombreS.Text, Empresa.Nombre));
             BD.insertarEstudioSol(idest, idsol);
-            cmbASEEstudios.DataSource = BD.listarEstudiosSol(idsol);
+            dataGridView1.DataSource = BD.listarEstudiosSol(idsol);
+
+        }
+
+        private void btnDelEstudioASE_Click(object sender, EventArgs e)
+        {
+            int idsol = Int32.Parse(BD.getIdsolicitud(txtASENombreS.Text, Empresa.Nombre));
+            dataGridView1.DataSource = BD.listarEstudiosSol(idsol);
+        }
+
+        private void cboxSolicitudes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idsol = Int32.Parse(BD.getIdsol(cboxSolicitudes));
+            DGVMATCHING.DataSource = BD.matching(idsol);
 
         }
     }

@@ -80,22 +80,8 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.MatcheoSolicitudEmpresa = new System.Windows.Forms.TabPage();
-            this.button26 = new System.Windows.Forms.Button();
-            this.dataGridMSEMarching = new System.Windows.Forms.DataGridView();
-            this.dataGridMSEOferta = new System.Windows.Forms.DataGridView();
-            this.cmbMSEConocimientos = new System.Windows.Forms.ComboBox();
-            this.dataGridMSEConocimientos = new System.Windows.Forms.DataGridView();
-            this.btnMSEAceptarE = new System.Windows.Forms.Button();
-            this.dataGridMSEPostulantes = new System.Windows.Forms.DataGridView();
-            this.dataGridMSEEstudios = new System.Windows.Forms.DataGridView();
-            this.label34 = new System.Windows.Forms.Label();
-            this.cmbMSEEstudios = new System.Windows.Forms.ComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
+            this.DGVMATCHING = new System.Windows.Forms.DataGridView();
             this.label40 = new System.Windows.Forms.Label();
-            this.btnMSEAgregarConocimiento = new System.Windows.Forms.Button();
-            this.btnMSEAgregarEstudio = new System.Windows.Forms.Button();
             this.AltaCualidades = new System.Windows.Forms.TabPage();
             this.txtDescripcionConcoimiento = new System.Windows.Forms.TextBox();
             this.panel153 = new System.Windows.Forms.Panel();
@@ -475,6 +461,8 @@
             this.btnAddEstudiosASE = new System.Windows.Forms.Button();
             this.btnDelConocimientoASE = new System.Windows.Forms.Button();
             this.btnAddConocimientoASE = new System.Windows.Forms.Button();
+            this.cboxSolicitudes = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.AltaEntrevista.SuspendLayout();
@@ -482,11 +470,7 @@
             this.ListarPostulante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLP)).BeginInit();
             this.MatcheoSolicitudEmpresa.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEMarching)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEOferta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEConocimientos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEPostulantes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEEstudios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMATCHING)).BeginInit();
             this.AltaCualidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridACEstudio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridACConocimientos)).BeginInit();
@@ -1197,22 +1181,10 @@
             // MatcheoSolicitudEmpresa
             // 
             this.MatcheoSolicitudEmpresa.BackColor = System.Drawing.Color.Gainsboro;
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.button26);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.dataGridMSEMarching);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.dataGridMSEOferta);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.cmbMSEConocimientos);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.dataGridMSEConocimientos);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.btnMSEAceptarE);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.dataGridMSEPostulantes);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.dataGridMSEEstudios);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.label34);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.cmbMSEEstudios);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.label36);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.label37);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.label39);
+            this.MatcheoSolicitudEmpresa.Controls.Add(this.label28);
+            this.MatcheoSolicitudEmpresa.Controls.Add(this.cboxSolicitudes);
+            this.MatcheoSolicitudEmpresa.Controls.Add(this.DGVMATCHING);
             this.MatcheoSolicitudEmpresa.Controls.Add(this.label40);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.btnMSEAgregarConocimiento);
-            this.MatcheoSolicitudEmpresa.Controls.Add(this.btnMSEAgregarEstudio);
             this.MatcheoSolicitudEmpresa.Location = new System.Drawing.Point(4, 46);
             this.MatcheoSolicitudEmpresa.Name = "MatcheoSolicitudEmpresa";
             this.MatcheoSolicitudEmpresa.Padding = new System.Windows.Forms.Padding(3);
@@ -1220,128 +1192,13 @@
             this.MatcheoSolicitudEmpresa.TabIndex = 10;
             this.MatcheoSolicitudEmpresa.Text = "tabPage9";
             // 
-            // button26
+            // DGVMATCHING
             // 
-            this.button26.BackColor = System.Drawing.Color.White;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Location = new System.Drawing.Point(745, 66);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(62, 26);
-            this.button26.TabIndex = 57;
-            this.button26.Text = "Quitar";
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // dataGridMSEMarching
-            // 
-            this.dataGridMSEMarching.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMSEMarching.Location = new System.Drawing.Point(503, 225);
-            this.dataGridMSEMarching.Name = "dataGridMSEMarching";
-            this.dataGridMSEMarching.Size = new System.Drawing.Size(284, 126);
-            this.dataGridMSEMarching.TabIndex = 56;
-            // 
-            // dataGridMSEOferta
-            // 
-            this.dataGridMSEOferta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMSEOferta.Location = new System.Drawing.Point(169, 452);
-            this.dataGridMSEOferta.Name = "dataGridMSEOferta";
-            this.dataGridMSEOferta.Size = new System.Drawing.Size(618, 126);
-            this.dataGridMSEOferta.TabIndex = 55;
-            // 
-            // cmbMSEConocimientos
-            // 
-            this.cmbMSEConocimientos.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbMSEConocimientos.FormattingEnabled = true;
-            this.cmbMSEConocimientos.Location = new System.Drawing.Point(633, 18);
-            this.cmbMSEConocimientos.Name = "cmbMSEConocimientos";
-            this.cmbMSEConocimientos.Size = new System.Drawing.Size(156, 24);
-            this.cmbMSEConocimientos.TabIndex = 52;
-            // 
-            // dataGridMSEConocimientos
-            // 
-            this.dataGridMSEConocimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMSEConocimientos.Location = new System.Drawing.Point(503, 66);
-            this.dataGridMSEConocimientos.Name = "dataGridMSEConocimientos";
-            this.dataGridMSEConocimientos.Size = new System.Drawing.Size(236, 90);
-            this.dataGridMSEConocimientos.TabIndex = 51;
-            // 
-            // btnMSEAceptarE
-            // 
-            this.btnMSEAceptarE.BackColor = System.Drawing.Color.White;
-            this.btnMSEAceptarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMSEAceptarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMSEAceptarE.Location = new System.Drawing.Point(411, 66);
-            this.btnMSEAceptarE.Name = "btnMSEAceptarE";
-            this.btnMSEAceptarE.Size = new System.Drawing.Size(62, 26);
-            this.btnMSEAceptarE.TabIndex = 45;
-            this.btnMSEAceptarE.Text = "Quitar";
-            this.btnMSEAceptarE.UseVisualStyleBackColor = false;
-            this.btnMSEAceptarE.Click += new System.EventHandler(this.btnMSEAceptarE_Click);
-            // 
-            // dataGridMSEPostulantes
-            // 
-            this.dataGridMSEPostulantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMSEPostulantes.Location = new System.Drawing.Point(169, 225);
-            this.dataGridMSEPostulantes.Name = "dataGridMSEPostulantes";
-            this.dataGridMSEPostulantes.Size = new System.Drawing.Size(284, 126);
-            this.dataGridMSEPostulantes.TabIndex = 44;
-            // 
-            // dataGridMSEEstudios
-            // 
-            this.dataGridMSEEstudios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMSEEstudios.Location = new System.Drawing.Point(169, 66);
-            this.dataGridMSEEstudios.Name = "dataGridMSEEstudios";
-            this.dataGridMSEEstudios.Size = new System.Drawing.Size(236, 90);
-            this.dataGridMSEEstudios.TabIndex = 43;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(499, 22);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(128, 20);
-            this.label34.TabIndex = 41;
-            this.label34.Text = "Conocimientos: *";
-            // 
-            // cmbMSEEstudios
-            // 
-            this.cmbMSEEstudios.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbMSEEstudios.FormattingEnabled = true;
-            this.cmbMSEEstudios.Location = new System.Drawing.Point(249, 15);
-            this.cmbMSEEstudios.Name = "cmbMSEEstudios";
-            this.cmbMSEEstudios.Size = new System.Drawing.Size(156, 24);
-            this.cmbMSEEstudios.TabIndex = 40;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(165, 20);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(85, 20);
-            this.label36.TabIndex = 39;
-            this.label36.Text = "Estudios: *";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(165, 394);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(62, 20);
-            this.label37.TabIndex = 32;
-            this.label37.Text = "Ofertas";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(499, 184);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(74, 20);
-            this.label39.TabIndex = 30;
-            this.label39.Text = "Matching";
+            this.DGVMATCHING.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVMATCHING.Location = new System.Drawing.Point(169, 225);
+            this.DGVMATCHING.Name = "DGVMATCHING";
+            this.DGVMATCHING.Size = new System.Drawing.Size(618, 384);
+            this.DGVMATCHING.TabIndex = 44;
             // 
             // label40
             // 
@@ -1352,30 +1209,6 @@
             this.label40.Size = new System.Drawing.Size(93, 20);
             this.label40.TabIndex = 29;
             this.label40.Text = "Postulantes";
-            // 
-            // btnMSEAgregarConocimiento
-            // 
-            this.btnMSEAgregarConocimiento.FlatAppearance.BorderSize = 0;
-            this.btnMSEAgregarConocimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMSEAgregarConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMSEAgregarConocimiento.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.btnMSEAgregarConocimiento.Location = new System.Drawing.Point(799, 15);
-            this.btnMSEAgregarConocimiento.Name = "btnMSEAgregarConocimiento";
-            this.btnMSEAgregarConocimiento.Size = new System.Drawing.Size(24, 25);
-            this.btnMSEAgregarConocimiento.TabIndex = 50;
-            this.btnMSEAgregarConocimiento.UseVisualStyleBackColor = true;
-            // 
-            // btnMSEAgregarEstudio
-            // 
-            this.btnMSEAgregarEstudio.FlatAppearance.BorderSize = 0;
-            this.btnMSEAgregarEstudio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMSEAgregarEstudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMSEAgregarEstudio.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.btnMSEAgregarEstudio.Location = new System.Drawing.Point(429, 17);
-            this.btnMSEAgregarEstudio.Name = "btnMSEAgregarEstudio";
-            this.btnMSEAgregarEstudio.Size = new System.Drawing.Size(24, 25);
-            this.btnMSEAgregarEstudio.TabIndex = 49;
-            this.btnMSEAgregarEstudio.UseVisualStyleBackColor = true;
             // 
             // AltaCualidades
             // 
@@ -1801,7 +1634,7 @@
             this.txtMEDireccionFiscal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtMEDireccionFiscal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMEDireccionFiscal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMEDireccionFiscal.ForeColor = System.Drawing.Color.White;
+            this.txtMEDireccionFiscal.ForeColor = System.Drawing.Color.Black;
             this.txtMEDireccionFiscal.Location = new System.Drawing.Point(686, 252);
             this.txtMEDireccionFiscal.Name = "txtMEDireccionFiscal";
             this.txtMEDireccionFiscal.Size = new System.Drawing.Size(139, 19);
@@ -1822,7 +1655,7 @@
             this.txtMERUT.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtMERUT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMERUT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMERUT.ForeColor = System.Drawing.Color.White;
+            this.txtMERUT.ForeColor = System.Drawing.Color.Black;
             this.txtMERUT.Location = new System.Drawing.Point(686, 150);
             this.txtMERUT.Name = "txtMERUT";
             this.txtMERUT.Size = new System.Drawing.Size(139, 19);
@@ -5459,6 +5292,7 @@
             this.btnDelEstudioASE.TabIndex = 98;
             this.btnDelEstudioASE.Text = "Eliminar";
             this.btnDelEstudioASE.UseVisualStyleBackColor = false;
+            this.btnDelEstudioASE.Click += new System.EventHandler(this.btnDelEstudioASE_Click);
             // 
             // btnAddEstudiosASE
             // 
@@ -5505,6 +5339,26 @@
             this.btnAddConocimientoASE.UseVisualStyleBackColor = false;
             this.btnAddConocimientoASE.Click += new System.EventHandler(this.btnAddConocimientoASE_Click);
             // 
+            // cboxSolicitudes
+            // 
+            this.cboxSolicitudes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxSolicitudes.FormattingEnabled = true;
+            this.cboxSolicitudes.Location = new System.Drawing.Point(169, 53);
+            this.cboxSolicitudes.Name = "cboxSolicitudes";
+            this.cboxSolicitudes.Size = new System.Drawing.Size(617, 24);
+            this.cboxSolicitudes.TabIndex = 57;
+            this.cboxSolicitudes.SelectedIndexChanged += new System.EventHandler(this.cboxSolicitudes_SelectedIndexChanged);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(165, 23);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(86, 20);
+            this.label28.TabIndex = 58;
+            this.label28.Text = "Solicitudes";
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -5532,11 +5386,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLP)).EndInit();
             this.MatcheoSolicitudEmpresa.ResumeLayout(false);
             this.MatcheoSolicitudEmpresa.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEMarching)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEOferta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEConocimientos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEPostulantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMSEEstudios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMATCHING)).EndInit();
             this.AltaCualidades.ResumeLayout(false);
             this.AltaCualidades.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridACEstudio)).EndInit();
@@ -5679,20 +5529,7 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TabPage MatcheoSolicitudEmpresa;
-        private System.Windows.Forms.DataGridView dataGridMSEMarching;
-        private System.Windows.Forms.DataGridView dataGridMSEOferta;
-        private System.Windows.Forms.ComboBox cmbMSEConocimientos;
-        private System.Windows.Forms.DataGridView dataGridMSEConocimientos;
-        private System.Windows.Forms.Button btnMSEAgregarConocimiento;
-        private System.Windows.Forms.Button btnMSEAgregarEstudio;
-        private System.Windows.Forms.Button btnMSEAceptarE;
-        private System.Windows.Forms.DataGridView dataGridMSEPostulantes;
-        private System.Windows.Forms.DataGridView dataGridMSEEstudios;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox cmbMSEEstudios;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.DataGridView DGVMATCHING;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TabPage AltaCualidades;
         private System.Windows.Forms.Label label31;
@@ -5925,7 +5762,6 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button btnSubirFotoAP;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel62;
@@ -6093,5 +5929,7 @@
         private System.Windows.Forms.Button btnDelEstudioASE;
         private System.Windows.Forms.Button btnAddEstudiosASE;
         private System.Windows.Forms.Button btnCrearASE;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.ComboBox cboxSolicitudes;
     }
 }
