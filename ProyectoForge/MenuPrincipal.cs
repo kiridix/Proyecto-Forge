@@ -810,7 +810,17 @@ namespace ProyectoForge
         private void cboxSolicitudes_SelectedIndexChanged(object sender, EventArgs e)
         {
             int idsol = Int32.Parse(BD.getIdsol(cboxSolicitudes));
-            DGVMATCHING.DataSource = BD.matching(idsol);
+
+            string nombreCon = BD.getNomCon(idsol);
+            int idcon = Int32.Parse(BD.getIdconsol(nombreCon));
+
+            string nombreEst = BD.getNomEst(idsol);
+           // int idest = Int32.Parse(BD.getIdestudio(nombreEst));
+
+
+
+           
+            DGVMATCHING.DataSource = BD.matching(idcon,0 );
 
         }
     }

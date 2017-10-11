@@ -323,6 +323,48 @@ namespace ProyectoForge
             conn.Close();
             return idcon;
         }
+        public static string getNomCon(int idsol)
+        {
+            string nombre = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT conocimiento.nombre FROM conocimiento, poseesol where poseesol.idsol LIKE "+idsol+"";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            nombre = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return nombre;
+        }
+        public static string getNomEst(int idsol)
+        {
+            string idcon = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT estudio.nombre FROM estudio, tienesol where tienesol.idsol="+idsol+"";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            idcon = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return idcon;
+        }
+
+        public static string getIdconsol(string nombre)//asasdasd
+        {
+
+            string idcon = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT idcon FROM conocimiento where nombre LIKE '" + nombre + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            idcon = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return idcon;
+        }
+        public static string getIdestudio(string nombre)
+        {
+            string idcon = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT idestudio FROM estudio where nombre= '" + nombre + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            idcon = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return idcon;
+        }
 
         public static string getIdPostulante(string ci)
         {
@@ -625,11 +667,11 @@ namespace ProyectoForge
 
             conn.Close();
         }
-        public static DataTable matching(int idsol)
+        public static DataTable matching(int idcon, int idestudio)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
             conn.Open();
-            cmnd = new SqlCommand("SELECT postulante.ci from postulante, tiene where tiene.idcon=44", conn);
+            cmnd = new SqlCommand("SELECT postulante.ci, persona.nombre, persona.apellido from tiene, postulante, persona where tiene.idcon="+idcon+" AND tiene.idpostulante=postulante.idpostulante AND postulante.ci=persona.ci", conn);
             dtr = cmnd.ExecuteReader();
             dt.Load(dtr);
             dtr.Close();
