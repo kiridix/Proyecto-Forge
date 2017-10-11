@@ -50,7 +50,6 @@ namespace ProyectoForge
 
         private void llblForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
         }
     }
 }

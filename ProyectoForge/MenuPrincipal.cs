@@ -11,7 +11,9 @@ namespace ProyectoForge
         public MenuPrincipal()
         {
             InitializeComponent();
-            TabMain.SelectTab(2);
+            TabMain.SelectTab(0);
+            cnbxLEmpresa.SelectedIndex = 3;
+
             
         }
 
@@ -218,6 +220,7 @@ namespace ProyectoForge
             {
                 case 1:
                     TabMain.SelectTab(14);
+                    dgvLP.DataSource = BD.Listar("postulante");
                     break;
                 case 5:
                     TabMain.SelectTab(6);
@@ -232,6 +235,7 @@ namespace ProyectoForge
             disableOptions();
             dataGridACEstudio.DataSource = BD.Listar("estudio");
             listarConocimientos();
+
 
 
         }
@@ -314,6 +318,7 @@ namespace ProyectoForge
             this.P = p;
             BD.listarConocimientos(cboxConocimientos, "conocimiento");
             BD.listarConocimientos(comboBox3, "estudio");
+            dataGridView3.DataSource = BD.listarMasEstudios(Int32.Parse(BD.getIdPostulante(P.Ci)));
             dgvConocimientosVP.DataSource = BD.ListarMasConocimientos(Int32.Parse(BD.getIdPostulante(P.Ci).ToString()));
             TabMain.SelectTab(15);
 
@@ -341,7 +346,9 @@ namespace ProyectoForge
 
         private void button23_Click(object sender, EventArgs e)
         {
-            TabMain.SelectTab(0);
+            TabMain.SelectTab(1);
+            BD.listarConocimientos(cmbASEConocimientos, "conocimiento");
+            BD.listarConocimientos(cmbASEEstudios, "estudio");
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -383,11 +390,58 @@ namespace ProyectoForge
         {
             TabMain.SelectTab(15);
         }
+        private Empresa empresa;
 
+        private void enableCualidadesSol()
+        {
+            cmbASEConocimientos.Enabled = true;
+            cmbASEEstudios.Enabled = true;
+            dataGridView1.Enabled = true;
+            dataGridASEConocimientos.Enabled = true;
+            btnAddConocimientoASE.Enabled = true;
+            btnAddEstudiosASE.Enabled = true;
+            btnDelConocimientoASE.Enabled = true;
+            btnDelEstudioASE.Enabled = true;
+            btnCrearASE.Enabled = true;
+        }
+        private void disableCualidadesSol()
+        {
+            cmbASEConocimientos.Enabled = false;
+            cmbASEEstudios.Enabled = false;
+            dataGridView1.Enabled = false;
+            dataGridASEConocimientos.Enabled = false;
+            btnAddConocimientoASE.Enabled = false;
+            btnAddEstudiosASE.Enabled = false;
+            btnDelConocimientoASE.Enabled = false;
+            btnDelEstudioASE.Enabled = false;
+            btnCrearASE.Enabled = false;
+        }
         private void button16_Click_1(object sender, EventArgs e)
         {
-            TabMain.SelectTab(4);
-        }
+            enableCualidadesSol();
+
+                String nac = "";
+
+                if (rbtnASEInter.Checked)
+                {
+                    nac = "Internacional";
+            }else { 
+                    nac = "Nacional";
+                }
+
+                BD.insertSolicitud(txtASENombreS.Text +" --- "+ Empresa.Nombre, nac, Int32.Parse(txtASESueldoMin.Text), Int32.Parse(txtASESueldoMax.Text), cmbASECondicionEmpleado.Text);
+
+                listarSolicitudes();
+
+
+
+
+                /*int rut = Int32.Parse(txtASENombreS.Text);
+                int idsol = Int32.Parse(BDPruebaSol.getIdsol(Solicitud.));
+                BDPruebaSol.insertarSolicitud(rut, idsol);*/
+
+            }
+
 
         private void TabMain_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -466,6 +520,8 @@ namespace ProyectoForge
         private void button17_Click(object sender, EventArgs e)
         {
             int ci = (int)dgvLP.CurrentRow.Cells["ci"].Value;
+            BD.EliminarCualidadDePostulante("tiene", Int32.Parse(BD.getIdPostulante(ci.ToString())));
+            BD.EliminarCualidadDePostulante("posee", Int32.Parse(BD.getIdPostulante(ci.ToString())));
             BD.deletePostulante(ci.ToString());
             BD.deletePersona(ci.ToString());
             dgvLP.DataSource = BD.Listar("postulante");
@@ -503,15 +559,15 @@ namespace ProyectoForge
 
         private void btnBuscarEmpresa_Click(object sender, EventArgs e)
         {
-                if (cnbxLEmpresa.Text != "listar todo")
-                {
+            if (cnbxLEmpresa.Text != "listar todo")
+            {
                 dataGridLE.DataSource = BD.ListarEmpresa(cnbxLEmpresa.Text, txtBuscarLE.Text);
-                }
-                else
-                {
-                   dataGridLE.DataSource = BD.Listar("empresa");
-                }
             }
+            else
+            {
+                dataGridLE.DataSource = BD.Listar("empresa");
+            }
+        }
 
         private void btnBorrarEmpresa_Click(object sender, EventArgs e)
         {
@@ -553,6 +609,8 @@ namespace ProyectoForge
                 p = value;
             }
         }
+
+        internal Empresa Empresa { get => empresa; set => empresa = value; }
 
         private void btnSubirFoto_Click(object sender, EventArgs e)
         {
@@ -597,8 +655,8 @@ namespace ProyectoForge
         {
             int idest = Int32.Parse(BD.getIdcon(comboBox3, "idestudio", "estudio", "nombre"));
             int id = Int32.Parse(BD.getIdPostulante(P.Ci));
-            BD.insertarestudio(idest, id,dateTimePicker1,dateTimePicker2);
-            dataGridView3.DataSource = BD.Listar("posee");
+            BD.insertarestudio(idest, id,dateTimePicker1,dateTimePickerME);
+            dataGridView3.DataSource = BD.listarMasEstudios(id);
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -630,11 +688,113 @@ namespace ProyectoForge
         private void btnVerLE_Click(object sender, EventArgs e)
         {
             TabMain.SelectedIndex = 5;
+            this.Empresa = new Empresa(dataGridLE.CurrentRow.Cells["rut"].Value.ToString());
+            cargarVistaEmpresa();
+            dataGridView2.DataSource = BD.Listarsol(Empresa.Nombre);
         }
 
         private void tabPage3_Click(object sender, EventArgs e)
         {
 
+
+        }
+        public void cargarVistaEmpresa()
+        {
+            txtMENombre.Text = this.Empresa.Nombre;
+            txtMEEmail.Text = this.Empresa.Email;
+            txtMEDireccionFiscal.Text = this.Empresa.Direccion_fiscal;
+            txtMEDireccionFisica.Text = this.Empresa.Direccion_fisica;
+            txtMERUT.Text = this.Empresa.RUT.ToString();
+            txtMERubro.Text = this.Empresa.Rubro;
+            txtMETelefono.Text = this.Empresa.Tel;
+
+        }
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            int idestudio = (int)dataGridView3.CurrentRow.Cells["idestudio"].Value;
+            int idpos = Int32.Parse(BD.getIdPostulante(P.Ci));
+            BD.BorrarEstudioP(idestudio, idpos);
+            dataGridView3.DataSource =  BD.listarMasEstudios(idpos);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        { }
+
+        private void listarSolicitudes()
+        {
+            dataGridView2.DataSource = BD.Listar("solicitud");
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            btnGuardarEmpresa.Visible = true;
+            txtMERUT.Enabled = true;
+            txtMEDireccionFiscal.Enabled = true;
+            txtMEDireccionFisica.Enabled = true;
+            txtMETelefono.Enabled = true;
+            txtMEEmail.Enabled = true;
+            txtMERubro.Enabled = true;
+            dateTimePickerME.Enabled = true;
+        }
+
+        private void btnGuardarEmpresa_Click(object sender, EventArgs e)
+        {
+            btnGuardarEmpresa.Visible = false;
+            btnGuardarEmpresa.Visible = false;
+            txtMERUT.Enabled = false;
+            txtMEDireccionFiscal.Enabled = false;
+            txtMEDireccionFisica.Enabled = false;
+            txtMETelefono.Enabled = false;
+            txtMEEmail.Enabled = false;
+            txtMERubro.Enabled = false;
+            dateTimePickerME.Enabled = false;
+        }
+
+        private void btnMEEliminarSolicitud_Click(object sender, EventArgs e)
+        {
+            int idsol = (int)dataGridView2.CurrentRow.Cells["idestudio"].Value;
+            BD.deleteSolicitud(idsol);
+            dataGridView2.DataSource = BD.Listar("solicitud");
+        }
+
+        private void btnCrearASE_Click(object sender, EventArgs e)
+        {
+            TabMain.SelectTab(5);
+            disableCualidadesSol();
+            txtASENombreS.Text = "";
+            txtASESueldoMin.Text = "";
+            txtASESueldoMax.Text = "";
+            cmbASECondicionEmpleado.Text = "";
+            cmbASEEstudios.Text = "";
+            cmbASEConocimientos.Text = "";
+            dataGridView2.DataSource = BD.Listarsol(Empresa.Nombre);
+
+        }
+
+        private void btnAddConocimientoASE_Click(object sender, EventArgs e)
+        {
+            int idcon = Int32.Parse(BD.getIdcon(cmbASEConocimientos, "idcon", "conocimiento", "nombre"));
+            int idsol = Int32.Parse(BD.getIdsolicitud(txtASENombreS.Text, Empresa.Nombre));
+            BD.insertarConocimientosol(idcon, idsol);
+            dataGridASEConocimientos.DataSource = BD.ListarMasConocimientosSol(idsol);
+        }
+
+        private void ListarEmpresa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelConocimientoASE_Click(object sender, EventArgs e)
+        {
+            int idsol = (int)dataGridView2.CurrentRow.Cells["idestudio"].Value;
+        }
+
+        private void btnAddEstudiosASE_Click(object sender, EventArgs e)
+        {
+            int idest = Int32.Parse(BD.getIdcon(cmbASEEstudios, "idestudio", "estudio", "nombre"));
+            int idsol = Int32.Parse(BD.getIdsolicitud(txtASENombreS.Text, Empresa.Nombre));
+            BD.insertarEstudioSol(idest, idsol);
+            cmbASEEstudios.DataSource = BD.listarEstudiosSol(idsol);
 
         }
     }

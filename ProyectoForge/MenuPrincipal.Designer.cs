@@ -124,22 +124,17 @@
             this.label26 = new System.Windows.Forms.Label();
             this.ModificacionEmpresa = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
+            this.btnMEEliminarSolicitud = new System.Windows.Forms.Button();
+            this.btnMEAgregarSolicitud = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button20 = new System.Windows.Forms.Button();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.dateTimePickerME = new System.Windows.Forms.DateTimePicker();
+            this.txtMEDireccionFiscal = new System.Windows.Forms.TextBox();
+            this.txtMEDireccionFisica = new System.Windows.Forms.TextBox();
+            this.txtMERUT = new System.Windows.Forms.TextBox();
+            this.txtMETelefono = new System.Windows.Forms.TextBox();
+            this.txtMERubro = new System.Windows.Forms.TextBox();
+            this.txtMEEmail = new System.Windows.Forms.TextBox();
             this.panel49 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
             this.panel82 = new System.Windows.Forms.Panel();
@@ -153,8 +148,6 @@
             this.panel98 = new System.Windows.Forms.Panel();
             this.panel99 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.panel100 = new System.Windows.Forms.Panel();
             this.panel101 = new System.Windows.Forms.Panel();
@@ -164,7 +157,6 @@
             this.panel105 = new System.Windows.Forms.Panel();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -222,8 +214,6 @@
             this.BajaSolicitudEmpresa = new System.Windows.Forms.TabPage();
             this.AltaSolicitudEmpresa = new System.Windows.Forms.TabPage();
             this.button16 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -271,6 +261,8 @@
             this.lblNombreYApellido = new System.Windows.Forms.Label();
             this.lblCiLP = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.txtPaisPreferenciaVP = new System.Windows.Forms.TextBox();
@@ -450,8 +442,39 @@
             this.lblUserCreadoAP = new System.Windows.Forms.Label();
             this.AltaPostulante = new System.Windows.Forms.TabPage();
             this.dtpFecvenAP = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.panel154 = new System.Windows.Forms.Panel();
+            this.panel155 = new System.Windows.Forms.Panel();
+            this.panel156 = new System.Windows.Forms.Panel();
+            this.panel157 = new System.Windows.Forms.Panel();
+            this.panel158 = new System.Windows.Forms.Panel();
+            this.panel159 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.btnGuardarEmpresa = new System.Windows.Forms.Button();
+            this.txtMENombre = new System.Windows.Forms.TextBox();
+            this.panel160 = new System.Windows.Forms.Panel();
+            this.btnCrearASE = new System.Windows.Forms.Button();
+            this.btnDelEstudioASE = new System.Windows.Forms.Button();
+            this.btnAddEstudiosASE = new System.Windows.Forms.Button();
+            this.btnDelConocimientoASE = new System.Windows.Forms.Button();
+            this.btnAddConocimientoASE = new System.Windows.Forms.Button();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.AltaEntrevista.SuspendLayout();
@@ -471,8 +494,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLE)).BeginInit();
             this.ModificacionEmpresa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.panel44.SuspendLayout();
-            this.panel45.SuspendLayout();
             this.panel49.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel91.SuspendLayout();
@@ -495,6 +516,7 @@
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.Bienvenido.SuspendLayout();
+            this.BajaSolicitudEmpresa.SuspendLayout();
             this.AltaSolicitudEmpresa.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -552,6 +574,10 @@
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
             this.AltaPostulante.SuspendLayout();
+            this.panel156.SuspendLayout();
+            this.panel157.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
@@ -1563,6 +1589,7 @@
             this.ListarEmpresa.Size = new System.Drawing.Size(850, 766);
             this.ListarEmpresa.TabIndex = 5;
             this.ListarEmpresa.Text = "tabPage4";
+            this.ListarEmpresa.Click += new System.EventHandler(this.ListarEmpresa_Click);
             // 
             // cnbxLEmpresa
             // 
@@ -1662,33 +1689,31 @@
             // ModificacionEmpresa
             // 
             this.ModificacionEmpresa.BackColor = System.Drawing.Color.Gainsboro;
+            this.ModificacionEmpresa.Controls.Add(this.txtMENombre);
+            this.ModificacionEmpresa.Controls.Add(this.panel160);
+            this.ModificacionEmpresa.Controls.Add(this.btnGuardarEmpresa);
             this.ModificacionEmpresa.Controls.Add(this.label1);
-            this.ModificacionEmpresa.Controls.Add(this.button22);
-            this.ModificacionEmpresa.Controls.Add(this.button23);
+            this.ModificacionEmpresa.Controls.Add(this.btnMEEliminarSolicitud);
+            this.ModificacionEmpresa.Controls.Add(this.btnMEAgregarSolicitud);
             this.ModificacionEmpresa.Controls.Add(this.dataGridView2);
             this.ModificacionEmpresa.Controls.Add(this.button20);
-            this.ModificacionEmpresa.Controls.Add(this.panel44);
-            this.ModificacionEmpresa.Controls.Add(this.dateTimePicker2);
-            this.ModificacionEmpresa.Controls.Add(this.textBox1);
-            this.ModificacionEmpresa.Controls.Add(this.textBox3);
-            this.ModificacionEmpresa.Controls.Add(this.textBox5);
-            this.ModificacionEmpresa.Controls.Add(this.textBox6);
-            this.ModificacionEmpresa.Controls.Add(this.textBox7);
-            this.ModificacionEmpresa.Controls.Add(this.textBox8);
-            this.ModificacionEmpresa.Controls.Add(this.textBox9);
+            this.ModificacionEmpresa.Controls.Add(this.dateTimePickerME);
+            this.ModificacionEmpresa.Controls.Add(this.txtMEDireccionFiscal);
+            this.ModificacionEmpresa.Controls.Add(this.txtMEDireccionFisica);
+            this.ModificacionEmpresa.Controls.Add(this.txtMERUT);
+            this.ModificacionEmpresa.Controls.Add(this.txtMETelefono);
+            this.ModificacionEmpresa.Controls.Add(this.txtMERubro);
+            this.ModificacionEmpresa.Controls.Add(this.txtMEEmail);
             this.ModificacionEmpresa.Controls.Add(this.panel49);
             this.ModificacionEmpresa.Controls.Add(this.panel91);
             this.ModificacionEmpresa.Controls.Add(this.panel96);
             this.ModificacionEmpresa.Controls.Add(this.label27);
-            this.ModificacionEmpresa.Controls.Add(this.label28);
-            this.ModificacionEmpresa.Controls.Add(this.label70);
             this.ModificacionEmpresa.Controls.Add(this.label71);
             this.ModificacionEmpresa.Controls.Add(this.panel100);
             this.ModificacionEmpresa.Controls.Add(this.panel101);
             this.ModificacionEmpresa.Controls.Add(this.panel102);
             this.ModificacionEmpresa.Controls.Add(this.label72);
             this.ModificacionEmpresa.Controls.Add(this.label73);
-            this.ModificacionEmpresa.Controls.Add(this.comboBox5);
             this.ModificacionEmpresa.Controls.Add(this.label74);
             this.ModificacionEmpresa.Controls.Add(this.label75);
             this.ModificacionEmpresa.Controls.Add(this.label76);
@@ -1704,43 +1729,48 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(173, 455);
+            this.label1.Location = new System.Drawing.Point(173, 337);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 98;
             this.label1.Text = "Solicitudes";
             // 
-            // button22
+            // btnMEEliminarSolicitud
             // 
-            this.button22.BackColor = System.Drawing.Color.White;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(583, 524);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(99, 31);
-            this.button22.TabIndex = 96;
-            this.button22.Text = "Eliminar";
-            this.button22.UseVisualStyleBackColor = false;
+            this.btnMEEliminarSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMEEliminarSolicitud.FlatAppearance.BorderSize = 0;
+            this.btnMEEliminarSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMEEliminarSolicitud.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMEEliminarSolicitud.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnMEEliminarSolicitud.Location = new System.Drawing.Point(738, 407);
+            this.btnMEEliminarSolicitud.Name = "btnMEEliminarSolicitud";
+            this.btnMEEliminarSolicitud.Size = new System.Drawing.Size(99, 31);
+            this.btnMEEliminarSolicitud.TabIndex = 96;
+            this.btnMEEliminarSolicitud.Text = "Eliminar";
+            this.btnMEEliminarSolicitud.UseVisualStyleBackColor = false;
+            this.btnMEEliminarSolicitud.Click += new System.EventHandler(this.btnMEEliminarSolicitud_Click);
             // 
-            // button23
+            // btnMEAgregarSolicitud
             // 
-            this.button23.BackColor = System.Drawing.Color.White;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(583, 489);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(99, 29);
-            this.button23.TabIndex = 95;
-            this.button23.Text = "Agregar";
-            this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.btnMEAgregarSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMEAgregarSolicitud.FlatAppearance.BorderSize = 0;
+            this.btnMEAgregarSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMEAgregarSolicitud.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMEAgregarSolicitud.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnMEAgregarSolicitud.Location = new System.Drawing.Point(738, 372);
+            this.btnMEAgregarSolicitud.Name = "btnMEAgregarSolicitud";
+            this.btnMEAgregarSolicitud.Size = new System.Drawing.Size(99, 29);
+            this.btnMEAgregarSolicitud.TabIndex = 95;
+            this.btnMEAgregarSolicitud.Text = "Agregar";
+            this.btnMEAgregarSolicitud.UseVisualStyleBackColor = false;
+            this.btnMEAgregarSolicitud.Click += new System.EventHandler(this.button23_Click);
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(204, 489);
+            this.dataGridView2.Location = new System.Drawing.Point(204, 370);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(374, 142);
+            this.dataGridView2.Size = new System.Drawing.Size(523, 261);
             this.dataGridView2.TabIndex = 94;
             // 
             // button20
@@ -1750,127 +1780,83 @@
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button20.Location = new System.Drawing.Point(287, 56);
+            this.button20.Location = new System.Drawing.Point(475, 56);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(123, 28);
             this.button20.TabIndex = 93;
             this.button20.Text = "Modificar";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
-            // panel44
+            // dateTimePickerME
             // 
-            this.panel44.BackColor = System.Drawing.Color.White;
-            this.panel44.Controls.Add(this.panel45);
-            this.panel44.Controls.Add(this.panel48);
-            this.panel44.Location = new System.Drawing.Point(396, 436);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(170, 2);
-            this.panel44.TabIndex = 90;
+            this.dateTimePickerME.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerME.Location = new System.Drawing.Point(354, 300);
+            this.dateTimePickerME.Name = "dateTimePickerME";
+            this.dateTimePickerME.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePickerME.TabIndex = 66;
             // 
-            // panel45
+            // txtMEDireccionFiscal
             // 
-            this.panel45.BackColor = System.Drawing.Color.White;
-            this.panel45.Controls.Add(this.panel46);
-            this.panel45.Location = new System.Drawing.Point(0, 11);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(311, 2);
-            this.panel45.TabIndex = 24;
+            this.txtMEDireccionFiscal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMEDireccionFiscal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMEDireccionFiscal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMEDireccionFiscal.ForeColor = System.Drawing.Color.White;
+            this.txtMEDireccionFiscal.Location = new System.Drawing.Point(686, 252);
+            this.txtMEDireccionFiscal.Name = "txtMEDireccionFiscal";
+            this.txtMEDireccionFiscal.Size = new System.Drawing.Size(139, 19);
+            this.txtMEDireccionFiscal.TabIndex = 91;
             // 
-            // panel46
+            // txtMEDireccionFisica
             // 
-            this.panel46.BackColor = System.Drawing.Color.White;
-            this.panel46.Location = new System.Drawing.Point(0, 39);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(311, 2);
-            this.panel46.TabIndex = 23;
+            this.txtMEDireccionFisica.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMEDireccionFisica.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMEDireccionFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMEDireccionFisica.Location = new System.Drawing.Point(354, 252);
+            this.txtMEDireccionFisica.Name = "txtMEDireccionFisica";
+            this.txtMEDireccionFisica.Size = new System.Drawing.Size(170, 19);
+            this.txtMEDireccionFisica.TabIndex = 85;
             // 
-            // panel48
+            // txtMERUT
             // 
-            this.panel48.BackColor = System.Drawing.Color.White;
-            this.panel48.Location = new System.Drawing.Point(0, 39);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(311, 2);
-            this.panel48.TabIndex = 23;
+            this.txtMERUT.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMERUT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMERUT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMERUT.ForeColor = System.Drawing.Color.White;
+            this.txtMERUT.Location = new System.Drawing.Point(686, 150);
+            this.txtMERUT.Name = "txtMERUT";
+            this.txtMERUT.Size = new System.Drawing.Size(139, 19);
+            this.txtMERUT.TabIndex = 83;
             // 
-            // dateTimePicker2
+            // txtMETelefono
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(354, 300);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 66;
+            this.txtMETelefono.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMETelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMETelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMETelefono.Location = new System.Drawing.Point(354, 204);
+            this.txtMETelefono.Name = "txtMETelefono";
+            this.txtMETelefono.Size = new System.Drawing.Size(170, 19);
+            this.txtMETelefono.TabIndex = 72;
             // 
-            // textBox1
+            // txtMERubro
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(396, 415);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 19);
-            this.textBox1.TabIndex = 88;
+            this.txtMERubro.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMERubro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMERubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMERubro.Location = new System.Drawing.Point(354, 150);
+            this.txtMERubro.Name = "txtMERubro";
+            this.txtMERubro.Size = new System.Drawing.Size(170, 19);
+            this.txtMERubro.TabIndex = 71;
             // 
-            // textBox3
+            // txtMEEmail
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(686, 252);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(139, 19);
-            this.textBox3.TabIndex = 91;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(354, 252);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(170, 19);
-            this.textBox5.TabIndex = 85;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(686, 150);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(139, 19);
-            this.textBox6.TabIndex = 83;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(354, 204);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(170, 19);
-            this.textBox7.TabIndex = 72;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(354, 150);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(170, 19);
-            this.textBox8.TabIndex = 71;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(686, 199);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(139, 19);
-            this.textBox9.TabIndex = 70;
+            this.txtMEEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMEEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMEEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMEEmail.Location = new System.Drawing.Point(686, 199);
+            this.txtMEEmail.Name = "txtMEEmail";
+            this.txtMEEmail.Size = new System.Drawing.Size(139, 19);
+            this.txtMEEmail.TabIndex = 70;
             // 
             // panel49
             // 
@@ -1987,26 +1973,6 @@
             this.label27.TabIndex = 82;
             this.label27.Text = "E-mail*";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(173, 414);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(200, 20);
-            this.label28.TabIndex = 81;
-            this.label28.Text = "Monto del tipo de contrato*";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(173, 350);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(130, 20);
-            this.label70.TabIndex = 80;
-            this.label70.Text = "Tipo de contrato*";
-            // 
             // label71
             // 
             this.label71.AutoSize = true;
@@ -2087,17 +2053,6 @@
             this.label73.Size = new System.Drawing.Size(48, 20);
             this.label73.TabIndex = 74;
             this.label73.Text = "RUT*";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(396, 347);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 28);
-            this.comboBox5.TabIndex = 73;
             // 
             // label74
             // 
@@ -2662,6 +2617,28 @@
             // BajaSolicitudEmpresa
             // 
             this.BajaSolicitudEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BajaSolicitudEmpresa.Controls.Add(this.button15);
+            this.BajaSolicitudEmpresa.Controls.Add(this.dataGridView6);
+            this.BajaSolicitudEmpresa.Controls.Add(this.dataGridView7);
+            this.BajaSolicitudEmpresa.Controls.Add(this.button7);
+            this.BajaSolicitudEmpresa.Controls.Add(this.button8);
+            this.BajaSolicitudEmpresa.Controls.Add(this.panel154);
+            this.BajaSolicitudEmpresa.Controls.Add(this.panel155);
+            this.BajaSolicitudEmpresa.Controls.Add(this.panel156);
+            this.BajaSolicitudEmpresa.Controls.Add(this.comboBox1);
+            this.BajaSolicitudEmpresa.Controls.Add(this.label45);
+            this.BajaSolicitudEmpresa.Controls.Add(this.comboBox2);
+            this.BajaSolicitudEmpresa.Controls.Add(this.label46);
+            this.BajaSolicitudEmpresa.Controls.Add(this.radioButton1);
+            this.BajaSolicitudEmpresa.Controls.Add(this.radioButton2);
+            this.BajaSolicitudEmpresa.Controls.Add(this.comboBox7);
+            this.BajaSolicitudEmpresa.Controls.Add(this.textBox2);
+            this.BajaSolicitudEmpresa.Controls.Add(this.textBox11);
+            this.BajaSolicitudEmpresa.Controls.Add(this.textBox12);
+            this.BajaSolicitudEmpresa.Controls.Add(this.label51);
+            this.BajaSolicitudEmpresa.Controls.Add(this.label52);
+            this.BajaSolicitudEmpresa.Controls.Add(this.label53);
+            this.BajaSolicitudEmpresa.Controls.Add(this.label54);
             this.BajaSolicitudEmpresa.Location = new System.Drawing.Point(4, 46);
             this.BajaSolicitudEmpresa.Name = "BajaSolicitudEmpresa";
             this.BajaSolicitudEmpresa.Padding = new System.Windows.Forms.Padding(3);
@@ -2674,9 +2651,12 @@
             // AltaSolicitudEmpresa
             // 
             this.AltaSolicitudEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.AltaSolicitudEmpresa.Controls.Add(this.btnDelConocimientoASE);
+            this.AltaSolicitudEmpresa.Controls.Add(this.btnAddConocimientoASE);
+            this.AltaSolicitudEmpresa.Controls.Add(this.btnDelEstudioASE);
+            this.AltaSolicitudEmpresa.Controls.Add(this.btnAddEstudiosASE);
+            this.AltaSolicitudEmpresa.Controls.Add(this.btnCrearASE);
             this.AltaSolicitudEmpresa.Controls.Add(this.button16);
-            this.AltaSolicitudEmpresa.Controls.Add(this.button2);
-            this.AltaSolicitudEmpresa.Controls.Add(this.button4);
             this.AltaSolicitudEmpresa.Controls.Add(this.panel11);
             this.AltaSolicitudEmpresa.Controls.Add(this.panel10);
             this.AltaSolicitudEmpresa.Controls.Add(this.panel6);
@@ -2712,37 +2692,13 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button16.Location = new System.Drawing.Point(378, 518);
+            this.button16.Location = new System.Drawing.Point(387, 277);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(217, 63);
+            this.button16.Size = new System.Drawing.Size(217, 47);
             this.button16.TabIndex = 69;
-            this.button16.Text = "Crear";
+            this.button16.Text = "Continuar";
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button16_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.button2.Location = new System.Drawing.Point(778, 304);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(24, 25);
-            this.button2.TabIndex = 29;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
-            this.button4.Location = new System.Drawing.Point(419, 300);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(24, 25);
-            this.button4.TabIndex = 28;
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // panel11
             // 
@@ -2798,7 +2754,8 @@
             // dataGridASEConocimientos
             // 
             this.dataGridASEConocimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridASEConocimientos.Location = new System.Drawing.Point(511, 341);
+            this.dataGridASEConocimientos.Enabled = false;
+            this.dataGridASEConocimientos.Location = new System.Drawing.Point(514, 438);
             this.dataGridASEConocimientos.Name = "dataGridASEConocimientos";
             this.dataGridASEConocimientos.Size = new System.Drawing.Size(306, 90);
             this.dataGridASEConocimientos.TabIndex = 19;
@@ -2806,7 +2763,8 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(165, 341);
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.Location = new System.Drawing.Point(168, 438);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(306, 90);
             this.dataGridView1.TabIndex = 18;
@@ -2814,17 +2772,20 @@
             // cmbASEConocimientos
             // 
             this.cmbASEConocimientos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbASEConocimientos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbASEConocimientos.Enabled = false;
             this.cmbASEConocimientos.FormattingEnabled = true;
-            this.cmbASEConocimientos.Location = new System.Drawing.Point(616, 302);
+            this.cmbASEConocimientos.Location = new System.Drawing.Point(619, 399);
             this.cmbASEConocimientos.Name = "cmbASEConocimientos";
-            this.cmbASEConocimientos.Size = new System.Drawing.Size(156, 24);
+            this.cmbASEConocimientos.Size = new System.Drawing.Size(201, 24);
             this.cmbASEConocimientos.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Enabled = false;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(492, 305);
+            this.label8.Location = new System.Drawing.Point(495, 402);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 20);
             this.label8.TabIndex = 14;
@@ -2833,17 +2794,20 @@
             // cmbASEEstudios
             // 
             this.cmbASEEstudios.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbASEEstudios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbASEEstudios.Enabled = false;
             this.cmbASEEstudios.FormattingEnabled = true;
-            this.cmbASEEstudios.Location = new System.Drawing.Point(242, 302);
+            this.cmbASEEstudios.Location = new System.Drawing.Point(245, 399);
             this.cmbASEEstudios.Name = "cmbASEEstudios";
-            this.cmbASEEstudios.Size = new System.Drawing.Size(156, 24);
+            this.cmbASEEstudios.Size = new System.Drawing.Size(229, 24);
             this.cmbASEEstudios.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(158, 305);
+            this.label7.Location = new System.Drawing.Point(161, 402);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 20);
             this.label7.TabIndex = 12;
@@ -3294,6 +3258,22 @@
             this.tabPage3.Text = "VerPostulante";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(302, 324);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(86, 22);
+            this.dateTimePicker4.TabIndex = 108;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(195, 324);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(87, 22);
+            this.dateTimePicker1.TabIndex = 107;
+            // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -3608,6 +3588,7 @@
             this.button6.TabIndex = 76;
             this.button6.Text = "Eliminar";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // button12
             // 
@@ -3846,11 +3827,11 @@
             // lblUserCreadoCorrectamente
             // 
             this.lblUserCreadoCorrectamente.AutoSize = true;
-            this.lblUserCreadoCorrectamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserCreadoCorrectamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserCreadoCorrectamente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblUserCreadoCorrectamente.Location = new System.Drawing.Point(400, 565);
+            this.lblUserCreadoCorrectamente.Location = new System.Drawing.Point(383, 561);
             this.lblUserCreadoCorrectamente.Name = "lblUserCreadoCorrectamente";
-            this.lblUserCreadoCorrectamente.Size = new System.Drawing.Size(224, 20);
+            this.lblUserCreadoCorrectamente.Size = new System.Drawing.Size(252, 20);
             this.lblUserCreadoCorrectamente.TabIndex = 88;
             this.lblUserCreadoCorrectamente.Text = "Usuario creado correctamente";
             this.lblUserCreadoCorrectamente.Visible = false;
@@ -5166,21 +5147,363 @@
             this.dtpFecvenAP.Size = new System.Drawing.Size(204, 20);
             this.dtpFecvenAP.TabIndex = 55;
             // 
-            // dateTimePicker1
+            // button7
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(195, 324);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(87, 22);
-            this.dateTimePicker1.TabIndex = 107;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
+            this.button7.Location = new System.Drawing.Point(780, 336);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(24, 25);
+            this.button7.TabIndex = 48;
+            this.button7.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker4
+            // button8
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(302, 324);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(86, 22);
-            this.dateTimePicker4.TabIndex = 108;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = global::ProyectoForge.Properties.Resources.icons8_Plus_48;
+            this.button8.Location = new System.Drawing.Point(421, 332);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(24, 25);
+            this.button8.TabIndex = 47;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // panel154
+            // 
+            this.panel154.BackColor = System.Drawing.Color.White;
+            this.panel154.Location = new System.Drawing.Point(611, 163);
+            this.panel154.Name = "panel154";
+            this.panel154.Size = new System.Drawing.Size(124, 2);
+            this.panel154.TabIndex = 46;
+            // 
+            // panel155
+            // 
+            this.panel155.BackColor = System.Drawing.Color.White;
+            this.panel155.Location = new System.Drawing.Point(418, 163);
+            this.panel155.Name = "panel155";
+            this.panel155.Size = new System.Drawing.Size(124, 2);
+            this.panel155.TabIndex = 45;
+            // 
+            // panel156
+            // 
+            this.panel156.BackColor = System.Drawing.Color.White;
+            this.panel156.Controls.Add(this.panel157);
+            this.panel156.Controls.Add(this.panel159);
+            this.panel156.Location = new System.Drawing.Point(418, 114);
+            this.panel156.Name = "panel156";
+            this.panel156.Size = new System.Drawing.Size(317, 2);
+            this.panel156.TabIndex = 44;
+            // 
+            // panel157
+            // 
+            this.panel157.BackColor = System.Drawing.Color.White;
+            this.panel157.Controls.Add(this.panel158);
+            this.panel157.Location = new System.Drawing.Point(0, 11);
+            this.panel157.Name = "panel157";
+            this.panel157.Size = new System.Drawing.Size(311, 2);
+            this.panel157.TabIndex = 24;
+            // 
+            // panel158
+            // 
+            this.panel158.BackColor = System.Drawing.Color.White;
+            this.panel158.Location = new System.Drawing.Point(0, 39);
+            this.panel158.Name = "panel158";
+            this.panel158.Size = new System.Drawing.Size(311, 2);
+            this.panel158.TabIndex = 23;
+            // 
+            // panel159
+            // 
+            this.panel159.BackColor = System.Drawing.Color.White;
+            this.panel159.Location = new System.Drawing.Point(0, 39);
+            this.panel159.Name = "panel159";
+            this.panel159.Size = new System.Drawing.Size(311, 2);
+            this.panel159.TabIndex = 23;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(618, 334);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(156, 24);
+            this.comboBox1.TabIndex = 43;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(494, 337);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(128, 20);
+            this.label45.TabIndex = 42;
+            this.label45.Text = "Conocimientos: *";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(244, 334);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(156, 24);
+            this.comboBox2.TabIndex = 41;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(160, 337);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(85, 20);
+            this.label46.TabIndex = 40;
+            this.label46.Text = "Estudios: *";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(509, 250);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(119, 24);
+            this.radioButton1.TabIndex = 39;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Internacional";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(281, 250);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(88, 24);
+            this.radioButton2.TabIndex = 38;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Nacional";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(418, 188);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(317, 28);
+            this.comboBox7.TabIndex = 37;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(611, 143);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(124, 19);
+            this.textBox2.TabIndex = 36;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(418, 144);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(124, 19);
+            this.textBox11.TabIndex = 35;
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(418, 93);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(317, 19);
+            this.textBox12.TabIndex = 34;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(163, 191);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(185, 20);
+            this.label51.TabIndex = 33;
+            this.label51.Text = "Condición de empleado *";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(542, 142);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(73, 20);
+            this.label52.TabIndex = 32;
+            this.label52.Text = "maximo *";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(163, 142);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(182, 20);
+            this.label53.TabIndex = 31;
+            this.label53.Text = "Sueldo nominal minimo *";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(163, 92);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(158, 20);
+            this.label54.TabIndex = 30;
+            this.label54.Text = "Nombre de solicitud *";
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button15.Location = new System.Drawing.Point(385, 568);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(217, 63);
+            this.button15.TabIndex = 72;
+            this.button15.Text = "Crear";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(510, 368);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(306, 90);
+            this.dataGridView6.TabIndex = 71;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Location = new System.Drawing.Point(164, 368);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(306, 90);
+            this.dataGridView7.TabIndex = 70;
+            // 
+            // btnGuardarEmpresa
+            // 
+            this.btnGuardarEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnGuardarEmpresa.FlatAppearance.BorderSize = 0;
+            this.btnGuardarEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGuardarEmpresa.Location = new System.Drawing.Point(604, 57);
+            this.btnGuardarEmpresa.Name = "btnGuardarEmpresa";
+            this.btnGuardarEmpresa.Size = new System.Drawing.Size(123, 28);
+            this.btnGuardarEmpresa.TabIndex = 99;
+            this.btnGuardarEmpresa.Text = "Guardar";
+            this.btnGuardarEmpresa.UseVisualStyleBackColor = false;
+            this.btnGuardarEmpresa.Visible = false;
+            this.btnGuardarEmpresa.Click += new System.EventHandler(this.btnGuardarEmpresa_Click);
+            // 
+            // txtMENombre
+            // 
+            this.txtMENombre.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMENombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMENombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMENombre.Location = new System.Drawing.Point(279, 60);
+            this.txtMENombre.Name = "txtMENombre";
+            this.txtMENombre.Size = new System.Drawing.Size(170, 19);
+            this.txtMENombre.TabIndex = 100;
+            // 
+            // panel160
+            // 
+            this.panel160.BackColor = System.Drawing.Color.White;
+            this.panel160.Location = new System.Drawing.Point(279, 79);
+            this.panel160.Name = "panel160";
+            this.panel160.Size = new System.Drawing.Size(170, 2);
+            this.panel160.TabIndex = 101;
+            // 
+            // btnCrearASE
+            // 
+            this.btnCrearASE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCrearASE.Enabled = false;
+            this.btnCrearASE.FlatAppearance.BorderSize = 0;
+            this.btnCrearASE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearASE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearASE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCrearASE.Location = new System.Drawing.Point(387, 577);
+            this.btnCrearASE.Name = "btnCrearASE";
+            this.btnCrearASE.Size = new System.Drawing.Size(217, 79);
+            this.btnCrearASE.TabIndex = 70;
+            this.btnCrearASE.Text = "Crear";
+            this.btnCrearASE.UseVisualStyleBackColor = false;
+            this.btnCrearASE.Click += new System.EventHandler(this.btnCrearASE_Click);
+            // 
+            // btnDelEstudioASE
+            // 
+            this.btnDelEstudioASE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDelEstudioASE.FlatAppearance.BorderSize = 0;
+            this.btnDelEstudioASE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelEstudioASE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelEstudioASE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDelEstudioASE.Location = new System.Drawing.Point(349, 529);
+            this.btnDelEstudioASE.Name = "btnDelEstudioASE";
+            this.btnDelEstudioASE.Size = new System.Drawing.Size(99, 31);
+            this.btnDelEstudioASE.TabIndex = 98;
+            this.btnDelEstudioASE.Text = "Eliminar";
+            this.btnDelEstudioASE.UseVisualStyleBackColor = false;
+            // 
+            // btnAddEstudiosASE
+            // 
+            this.btnAddEstudiosASE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAddEstudiosASE.FlatAppearance.BorderSize = 0;
+            this.btnAddEstudiosASE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEstudiosASE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEstudiosASE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddEstudiosASE.Location = new System.Drawing.Point(196, 529);
+            this.btnAddEstudiosASE.Name = "btnAddEstudiosASE";
+            this.btnAddEstudiosASE.Size = new System.Drawing.Size(99, 29);
+            this.btnAddEstudiosASE.TabIndex = 97;
+            this.btnAddEstudiosASE.Text = "Agregar";
+            this.btnAddEstudiosASE.UseVisualStyleBackColor = false;
+            this.btnAddEstudiosASE.Click += new System.EventHandler(this.btnAddEstudiosASE_Click);
+            // 
+            // btnDelConocimientoASE
+            // 
+            this.btnDelConocimientoASE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDelConocimientoASE.FlatAppearance.BorderSize = 0;
+            this.btnDelConocimientoASE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelConocimientoASE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelConocimientoASE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDelConocimientoASE.Location = new System.Drawing.Point(696, 529);
+            this.btnDelConocimientoASE.Name = "btnDelConocimientoASE";
+            this.btnDelConocimientoASE.Size = new System.Drawing.Size(99, 31);
+            this.btnDelConocimientoASE.TabIndex = 100;
+            this.btnDelConocimientoASE.Text = "Eliminar";
+            this.btnDelConocimientoASE.UseVisualStyleBackColor = false;
+            this.btnDelConocimientoASE.Click += new System.EventHandler(this.btnDelConocimientoASE_Click);
+            // 
+            // btnAddConocimientoASE
+            // 
+            this.btnAddConocimientoASE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAddConocimientoASE.FlatAppearance.BorderSize = 0;
+            this.btnAddConocimientoASE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddConocimientoASE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddConocimientoASE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddConocimientoASE.Location = new System.Drawing.Point(545, 529);
+            this.btnAddConocimientoASE.Name = "btnAddConocimientoASE";
+            this.btnAddConocimientoASE.Size = new System.Drawing.Size(99, 29);
+            this.btnAddConocimientoASE.TabIndex = 99;
+            this.btnAddConocimientoASE.Text = "Agregar";
+            this.btnAddConocimientoASE.UseVisualStyleBackColor = false;
+            this.btnAddConocimientoASE.Click += new System.EventHandler(this.btnAddConocimientoASE_Click);
             // 
             // MenuPrincipal
             // 
@@ -5224,8 +5547,6 @@
             this.ModificacionEmpresa.ResumeLayout(false);
             this.ModificacionEmpresa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.panel44.ResumeLayout(false);
-            this.panel45.ResumeLayout(false);
             this.panel49.ResumeLayout(false);
             this.panel50.ResumeLayout(false);
             this.panel91.ResumeLayout(false);
@@ -5250,6 +5571,8 @@
             this.panel18.ResumeLayout(false);
             this.Bienvenido.ResumeLayout(false);
             this.Bienvenido.PerformLayout();
+            this.BajaSolicitudEmpresa.ResumeLayout(false);
+            this.BajaSolicitudEmpresa.PerformLayout();
             this.AltaSolicitudEmpresa.ResumeLayout(false);
             this.AltaSolicitudEmpresa.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -5312,6 +5635,10 @@
             this.panel42.ResumeLayout(false);
             this.AltaPostulante.ResumeLayout(false);
             this.AltaPostulante.PerformLayout();
+            this.panel156.ResumeLayout(false);
+            this.panel157.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5435,8 +5762,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage BajaSolicitudEmpresa;
         private System.Windows.Forms.TabPage AltaSolicitudEmpresa;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel6;
@@ -5542,18 +5867,13 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Panel panel45;
-        private System.Windows.Forms.Panel panel46;
-        private System.Windows.Forms.Panel panel48;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.DateTimePicker dateTimePickerME;
+        private System.Windows.Forms.TextBox txtMEDireccionFiscal;
+        private System.Windows.Forms.TextBox txtMEDireccionFisica;
+        private System.Windows.Forms.TextBox txtMERUT;
+        private System.Windows.Forms.TextBox txtMETelefono;
+        private System.Windows.Forms.TextBox txtMERubro;
+        private System.Windows.Forms.TextBox txtMEEmail;
         private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.Panel panel50;
         private System.Windows.Forms.Panel panel82;
@@ -5567,8 +5887,6 @@
         private System.Windows.Forms.Panel panel98;
         private System.Windows.Forms.Panel panel99;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Panel panel100;
         private System.Windows.Forms.Panel panel101;
@@ -5578,7 +5896,6 @@
         private System.Windows.Forms.Panel panel105;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
@@ -5586,8 +5903,8 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button btnMEEliminarSolicitud;
+        private System.Windows.Forms.Button btnMEAgregarSolicitud;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button10;
@@ -5743,5 +6060,38 @@
         private System.Windows.Forms.Panel panel153;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel154;
+        private System.Windows.Forms.Panel panel155;
+        private System.Windows.Forms.Panel panel156;
+        private System.Windows.Forms.Panel panel157;
+        private System.Windows.Forms.Panel panel158;
+        private System.Windows.Forms.Panel panel159;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Button btnGuardarEmpresa;
+        private System.Windows.Forms.TextBox txtMENombre;
+        private System.Windows.Forms.Panel panel160;
+        private System.Windows.Forms.Button btnDelConocimientoASE;
+        private System.Windows.Forms.Button btnAddConocimientoASE;
+        private System.Windows.Forms.Button btnDelEstudioASE;
+        private System.Windows.Forms.Button btnAddEstudiosASE;
+        private System.Windows.Forms.Button btnCrearASE;
     }
 }

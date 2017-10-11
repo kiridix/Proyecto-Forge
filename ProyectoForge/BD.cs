@@ -164,6 +164,11 @@ namespace ProyectoForge
 
 
         }
+
+
+
+
+
         public static System.Data.DataTable Listar(string Table)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
@@ -181,6 +186,15 @@ namespace ProyectoForge
             {
                 return null;
             }
+        }
+        public static string Selecttt(string dato, string tabla, string donde)
+        {
+            string resultado = string.Empty;
+            conn.Open();
+            cmnd = new SqlCommand("SELECT " + dato + " FROM " + tabla + " WHERE rut=" + donde + "", conn);
+            resultado = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return resultado;
         }
         public static string Select(string dato, string tabla, string donde)
         {
@@ -339,12 +353,20 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
         }
+        public static void insertarConocimientosol(int idcon, int idsol)
+        {
+            conn.Open();
+            string sentenciaSQL = "insert into poseesol (idcon, idsol) Values (" + idcon + ", " + idsol + ")";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
 
-        public static DataTable listarMasEstudios()
+        public static DataTable listarMasEstudios(int idpos)
         {
             DataTable dt = new DataTable();
             conn.Open();
-            cmnd = new SqlCommand("SELECT * FROM POSEE"); //TRABAJO DE SANTIAGO NO TOCAR CANT TAUCH DIS TU TURUTU YU YU YIUNUYT TU TUT UTyugihoAHREXD
+            cmnd = new SqlCommand("SELECT estudio.nombre, posee.fech_Inicio, posee.fech_fin, posee.idestudio FROM estudio, posee WHERE posee.idestudio = estudio.idestudio AND posee.idpostulante = "+ idpos +"", conn); 
             dt.Load(cmnd.ExecuteReader());
             conn.Close();
             return dt;
@@ -361,6 +383,18 @@ namespace ProyectoForge
                 conn.Close();
                 return dt;
         }
+        public static DataTable ListarMasConocimientosSol(int idsol)
+        {
+
+            System.Data.DataTable dt = new System.Data.DataTable();
+            conn.Open();
+            cmnd = new SqlCommand("SELECT conocimiento.nombre, conocimiento.descripcion, poseesol.idcon FROM conocimiento, poseesol WHERE poseesol.idcon=conocimiento.idcon AND poseesol.idsol= " + idsol + "", conn);
+            dtr = cmnd.ExecuteReader();
+            dt.Load(dtr);
+            dtr.Close();
+            conn.Close();
+            return dt;
+        }
         public static int BorrarconocimientoP(int idcon, int idpos)
 
         {
@@ -372,6 +406,14 @@ namespace ProyectoForge
 
 
             return 0;
+        }
+        public static void BorrarEstudioP(int idestudio, int idpos)
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM posee where idestudio=" + idestudio + " and idpostulante=" + idpos + "", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
         }
         public static void insertEstudioinpostulante(int idestudio, int idpost)
         {
@@ -397,6 +439,160 @@ namespace ProyectoForge
             cmnd.ExecuteNonQuery();
             conn.Close();
 
+        }
+        public static void EliminarCualidadDePostulante(string table, int idpos)
+        {
+            conn.Open();
+            string sentenciaSql = "delete from "+table+" where idpostulante=" + idpos + "";
+            cmnd = new SqlCommand(sentenciaSql, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+
+        }
+        public static void insertSolicitud(string nombresol, string pais, int sueldo_min, int sueldo_max, string cond_contrato, int estudios, int conocimientos)
+        {
+            conn.Open();
+            String sentenciaSQL = "INSERT INTO solicitud(nombresol, pais, sueldo_min, sueldo_max, cond_contrato, estudios, conocimientos) VALUES ('" + nombresol + "', '" + pais + "', '" + sueldo_min + "', '" + sueldo_max + "', '" + cond_contrato + "', '" + estudios + "', '" + conocimientos + "')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public static string getIdsol(ComboBox cb)
+        {
+
+            string idsol = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT idsol FROM solicitud where nombresol = '" + cb.SelectedItem.ToString() + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            idsol = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return idsol;
+        }
+
+        public static void listarSolicitudes(ComboBox cb)
+        {
+            cb.Items.Clear();
+            conn.Open();
+            SqlCommand cmnd = new SqlCommand("Select * from solicitud", conn);
+            SqlDataReader dr = cmnd.ExecuteReader();
+            while (dr.Read())
+            {
+                cb.Items.Add(dr[1].ToString());
+            }
+
+            conn.Close();
+        }
+
+        public static void deleteSolicitud(int idsol)
+        {
+            conn.Open();
+            cmnd = new SqlCommand("DELETE FROM solicitud where idsol like '%" + idsol + "%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dtr.Close();
+            conn.Close();
+        }
+
+        public static void insertSolicitud(string nombresol, string pais, int sueldo_min, int sueldo_max, string cond_contrato)
+        {
+            conn.Open();
+            String sentenciaSQL = "INSERT INTO solicitud(nombresol, pais, sueldo_min, sueldo_max, cond_contrato) VALUES ('" + nombresol + "', '" + pais + "', '" + sueldo_min + "', '" + sueldo_max + "', '" + cond_contrato + "')";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public static string Selectt(string dato, string tabla, string donde)
+        {
+            string resultado = string.Empty;
+            conn.Open();
+            cmnd = new SqlCommand("SELECT " + dato + " FROM " + tabla + " WHERE idsol=" + donde + "", conn);
+            resultado = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return resultado;
+        }
+
+        public static string getIdEmpresa(int rut)
+        {
+            string id = string.Empty;
+            conn.Open();
+            string sentenciaSQL = "SELECT idempresa FROM postulante where rut = '" + rut + "'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            id = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return id;
+        }
+        public static string getIdsolicitud(string nombre, string nombreEmpresa)
+        {
+
+            string idsol = string.Empty;
+            string cadena = nombre + " --- " + nombreEmpresa;
+            conn.Open();
+            string sentenciaSQL = "SELECT idsol FROM solicitud where nombresol='" + cadena +"'";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            idsol = Convert.ToString(cmnd.ExecuteScalar());
+            conn.Close();
+            return idsol;
+        }
+        public static System.Data.DataTable Listarsol(string nombre)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            try
+            {
+                conn.Open();
+                cmnd = new SqlCommand("SELECT * FROM solicitud WHERE nombresol LIKE '%"+nombre+ "'", conn);
+                dtr = cmnd.ExecuteReader();
+                dt.Load(dtr);
+                dtr.Close();
+                conn.Close();
+                return dt;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+        public static void aaa()
+        {
+           
+            conn.Open();
+            String sentenciaSQL = "ALTER TABLE tienesol ADD CONSTRAINT PK_tienesol PRIMARY KEY(idestudio, idsol)";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+            
+        }
+
+        //"SELECT * FROM sysobjects WHERE name LIKE 'PK__poseesol%"
+        public static DataTable wea()
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            conn.Open();
+            cmnd = new SqlCommand("SELECT * FROM sysobjects WHERE name LIKE 'PK%'", conn);
+            dtr = cmnd.ExecuteReader();
+            dt.Load(dtr);
+            dtr.Close();
+            conn.Close();
+            return dt;
+        }
+        public static void insertarEstudioSol(int idestudio, int idsol)
+        {
+            conn.Open();
+            String sentenciaSQL = "Insert into tienesol(idestudio, idsol)  values ("+idestudio+", "+idsol+")";
+            cmnd = new SqlCommand(sentenciaSQL, conn);
+            cmnd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static  DataTable listarEstudiosSol(int idsol)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            conn.Open();
+            cmnd = new SqlCommand("SELECT estudio.nombre, tienesol.idestudio FROM estudio, tienesol WHERE tienesol.idestudio=estudio.idestudio AND tienesol.idsol= " + idsol + "", conn);
+            dtr = cmnd.ExecuteReader();
+            dt.Load(dtr);
+            dtr.Close();
+            conn.Close();
+            return dt;
         }
     }
     }
